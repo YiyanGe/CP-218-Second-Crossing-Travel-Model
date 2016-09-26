@@ -184,3 +184,25 @@ ZONEACCESS link=14241-14231 mode=5
 
 ; E-BART Mokelumne Trail Station
 ZONEACCESS link=14237-14236 mode=5
+
+; ———Test————
+; Ballpark station
+ZONEACCESS link=18101-18001 mode=5
+
+; 2nd and Mission
+ZONEACCESS link=18102-18002 mode=5
+
+; Union Square
+ZONEACCESS link=18103-18003 mode=5
+
+; Van Ness
+ZONEACCESS link=18104-18004 mode=5
+
+; Fillmore
+ZONEACCESS link=18105-18005 mode=5
+
+; Jack London Square
+ZONEACCESS link=18106-18006 mode=5
+
+
+

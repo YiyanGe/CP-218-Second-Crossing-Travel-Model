@@ -235,3 +235,9 @@
 14105  562618 4208314 ; Hercules Ferry Terminal
 14106  562620 4208310 ; Hercules Ferry Access Node
 14107  562610 4208320 ; Hercules Ferry PNR
+;—————TEST RUN————
+18001  553684 4181652 ; Ballpark Station
+18101  553734 4181702 ; Ballpark Access Node18002  552848 4182477 ; 2nd and Mission Station
+18102  552898 4182527 ; 2nd and Mission Access Node18003  551796 4182354 ; Union Square Station18103  551846 4182404 ; Union Square Access Node18004  550969 4182215 ; Van Ness Station18104  551019 4182265 ; Van Ness Access Node18005  549929 4182017 ; Fillmore Station18105  551019 4182265 ; Fillmore Access Node18006  563689 4183365 ; Jack London Square Station
+18106  563739 4183415 ; Jack London Access Node
+
