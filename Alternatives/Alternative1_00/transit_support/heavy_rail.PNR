@@ -62,3 +62,7 @@ PNR NODE=14238-14236 TIME=2.00 ZONES=1-1454          ;  E-BART Mokelumne Trail S
 ;PNR NODE=14252-14232 TIME=2.00 ZONES=1-1454          ;  E-BART Empire Avenue Oakley [6/4/07]
 ;PNR NODE=14253-14233 TIME=2.00 ZONES=1-1454          ;  E-BART Central Avenue Brentwood [6/4/07]
 ;PNR NODE=14254-14234 TIME=2.00 ZONES=1-1454          ;  E-BART Downtown Byron  [6/4/07]
+
+;-----------ALT 1-------------
+PNR NODE=18113-18003 TIME=2.00 ZONES=1-1454           ;  Alameda Station (BART)
+
