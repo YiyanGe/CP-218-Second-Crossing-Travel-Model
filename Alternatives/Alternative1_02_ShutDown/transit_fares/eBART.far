@@ -1,0 +1,6 @@
+14235	14245	95	;	Pittsbrug/Bay Point to	Railroad Avenue
+14235	14231	133	;	Pittsbrug/Bay Point to	Hillcrest
+14235	14236	172	;	Pittsbrug/Bay Point to	Mokelumne Trail
+14245	14231	95	;	Railroad Avenue to	Hillcrest
+14245	14236	133	;	Railroad Avenue to	Mokelumne Trail
+14231	14236	95	;	Hillcrest to	Mokelumne Trail
