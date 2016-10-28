@@ -91,6 +91,19 @@ LINK NODES= 14235, 14245, TIME= 6.0, DIST= 300, ONEWAY=NO, MODES=136 ; BayPt-Rai
 LINK NODES= 14245, 14231, TIME= 7.0, DIST= 700, ONEWAY=NO, MODES=136 ; Railroad Ave-Hillcrest
 LINK NODES= 14231, 14236, TIME= 6.0, DIST= 360, ONEWAY=NO, MODES=136 ; Hillcrest-Mokelumne Trail
 
+; ----------ALT 1--------------
+LINK NODES= 15507, 18001, TIME= 3.4, DIST= 176, ONEWAY=NO, MODES=120 ; MacArthur-15th/Franklin
+LINK NODES= 18001, 18002, TIME= 1.4, DIST= 064, ONEWAY=NO, MODES=120 ; 15th/Franklin-Jack London Square
+LINK NODES= 18002, 18003, TIME= 4.4, DIST= 187, ONEWAY=NO, MODES=120 ; Jack London Square-Alameda
+LINK NODES= 18003, 18004, TIME= 6.9, DIST= 578, ONEWAY=NO, MODES=120 ; Alameda-Mission Rock
+LINK NODES= 18004, 18005, TIME= 1.3, DIST= 042, ONEWAY=NO, MODES=120 ; Mission Rock-Ballpark
+LINK NODES= 18005, 18006, TIME= 1.4, DIST= 059, ONEWAY=NO, MODES=120 ; Ballpark-3rd and Mission
+LINK NODES= 18006, 18007, TIME= 2.1, DIST= 057, ONEWAY=NO, MODES=120 ; 3rd and Mission-Union Square
+LINK NODES= 18007, 18008, TIME= 1.4, DIST= 066, ONEWAY=NO, MODES=120 ; Union Square-Van Ness
+LINK NODES= 18008, 18009, TIME= 1.4, DIST= 063, ONEWAY=NO, MODES=120 ; Van Ness-Fillmore
+LINK NODES= 15533, 18002, TIME= 4.4, DIST= 329, ONEWAY=NO, MODES=120 ; Fruitvale-Jack London Square
+
+
 ;------------------- BART LINES--------------------------------------------------
 
 ; Millbrae - Richmond 
