@@ -235,3 +235,23 @@
 14105  562618 4208314 ; Hercules Ferry Terminal
 14106  562620 4208310 ; Hercules Ferry Access Node
 14107  562610 4208320 ; Hercules Ferry PNR
+;--------ALT 1---------- access node +50, +50; PNR node, +50, -50
+18001  564323 4184440 ; 15th and Franklin Station
+18101  564373 4184490 ; 15th and Franklin access node
+18002  563815 4183334 ; Jack London Square
+18102  563865 4183384 ; Jack London Square access node
+18003  562388 4181654 ; Alameda Station
+18103  562438 4181704 ; Alameda access node
+18113  562438 4181604 ; Alameda PNR node
+18004  553752 4180880 ; Mission Rock station
+18104  553802 4180930 ; Mission Rock access node
+18005  553476 4181475 ; Ballpark Station
+18105  553526 4181525 ; Ballpark access node
+18006  552774 4182128 ; 3rd and Mission station
+18106  552824 4182178 ; 3rd and Mission access node
+18007  551973 4182377 ; Union Square Station (different from existing one)
+18107  552023 4182427 ; Union Square access node (can ppl access via the other access node?)
+18008  550926 4182176 ; Van Ness station
+18108  550976 4182226 ; Van Ness access node
+18009  549919 4182068 ; Fillmore station
+18109  549969 4182118 ; Fillmore access node
