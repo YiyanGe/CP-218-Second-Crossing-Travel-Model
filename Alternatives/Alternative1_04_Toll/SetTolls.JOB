@@ -1,0 +1,2251 @@
+; ----------------------------------------------------------------------------------------------------------------
+;
+; SetTolls.job
+;
+; TP+ script to set the bridge and value tolls in the highway network.  A value toll is paid to save time by 
+; taking a parallel (e.g. HOT) or nearby facility.  The time periods are: early AM, 3 am to 6 am; AM peak, 6 am to
+; 10 am; midday, 10 am to 3 pm; PM peak, 3 pm to 7 pm; and evening, 7 pm to 3 am the next day.
+;
+; A separate SetTolls.job is needed for each forecast year and for each pricing alternative. 
+;
+; The variable TOLL is a legacy from the previous model and it is referenced here.  Eventually, the variable TOLLCLASS
+; will replace TOLL.  Each of the eight existing Bay Area bridge toll booths has a unique TOLLCLASS code as follows:
+; (1) Benicia-Martinez Bridge; (2) Carquinez Bridge; (3) Richmond Bridge; (4) Golden Gate Bridge; (5) San Francisco/
+; Oakland Bay Bridge; (6) San Mateo Bridge; (7) Dumbarton Bridge; (8) Antioch Bridge.  TOLLCLASS codes nine and ten
+; are reserved for testing new Bridges. 
+;
+; TOLLCLASS codes 11 and above (please see hwyParam.block which denotes this value) are reserved for so-called "value
+; toll" facilities, which are currently used to model high-occupancy toll (HOT) lanes.  These variables can be used
+; to toll specific links (each link with a different toll needs a different TOLLCLASS code). 
+;
+; All tolls should be expressed in year 2000 cents.
+;
+; Separate tolls can be charged to each of seven vehicle classes, as follows: (1) single-occupancy passenger 
+; vehicles, or drive alone, "DA"; (2) two-occupant passenger vehicles, or shared ride two, "S2"; (3) three-or-more-
+; occupant passenger vehicles, or shared ride three, "S3"; (4) very small commercial trucks, which are assumed to 
+; be two-axle vehicles, "VSM"; (5) small commercial trucks, which are assumed to be two-axle vehicles, "SML"; (6)
+; medium commercial trucks, which are assumed to be three-axle vehicles, "MED"; and, (7) combination trucks, which
+; are charged the average of the five- and six-axle fee, "LRG". 
+;
+;
+; Input:  A highway network containing the field TOLL, where TOLL holds an integer representing the toll booth at 
+;         each bridge.  
+;
+; Output: A highway network containing the following fields: TOLLCLASS, TOLLXX_YY, where XX is a two-letter code
+;         representing one of the five time periods and YY is the path in question, be it drive alone, shared
+;         ride 2 or 3+, or very small, small, medium, or large (combination) trucks. 
+;
+;; See also: (1) hwyParam.block, which stores the "firstValue" variable denoting 11 as the first value toll. 
+;
+; version:  Travel Model One
+; authors:  dto (2010 08 10); gde (2009 03 12)
+;
+;
+; ----------------------------------------------------------------------------------------------------------------
+
+run pgm = hwynet
+
+   ; begin with the standard input network
+   neti = hwy\freeflow.net
+
+   ; write out to the same name with the added variables   
+   neto = hwy\withTolls.net
+   
+   ; set a generic bridge toll value and only change the bridge-specific values below as needed
+   if (TOLLCLASS > 0 && TOLLCLASS < 11)
+   
+      ; early AM
+      ;   - drive alone
+      TOLLEA_DA  = 700 * 180.20 / 251.99  
+      
+      ;   - shared ride 2
+      TOLLEA_S2  = 700 * 180.20 / 251.99    
+      
+      ;   - shared ride 3+
+      TOLLEA_S3  = 700 * 180.20 / 251.99    
+      
+      ;   - very small commercial trucks
+      TOLLEA_VSM = 700 * 180.20 / 251.99    
+      
+      ;   - small commercial trucks
+      TOLLEA_SML = 700 * 180.20 / 251.99    
+      
+      ;   - medium commercial trucks
+      TOLLEA_MED = 1500 * 180.20 / 251.99 
+      
+      ;   - large (combination) commercial trucks
+      TOLLEA_LRG = 2750 * 180.20 / 251.99  
+      
+      ; AM peak 
+      TOLLAM_DA  = 700 * 180.20 / 251.99  
+      TOLLAM_S2  = 700 * 180.20 / 251.99  
+      TOLLAM_S3  = 350 * 180.20 / 251.99  
+      TOLLAM_VSM = 700 * 180.20 / 251.99  
+      TOLLAM_SML = 700 * 180.20 / 251.99  
+      TOLLAM_MED = 1500 * 180.20 / 251.99 
+      TOLLAM_LRG = 2750 * 180.20 / 251.99 
+      
+      ; midday 
+      TOLLMD_DA  = 700 * 180.20 / 251.99  
+      TOLLMD_S2  = 700 * 180.20 / 251.99  
+      TOLLMD_S3  = 700 * 180.20 / 251.99  
+      TOLLMD_VSM = 700 * 180.20 / 251.99  
+      TOLLMD_SML = 700 * 180.20 / 251.99  
+      TOLLMD_MED = 1500 * 180.20 / 251.99 
+      TOLLMD_LRG = 2750 * 180.20 / 251.99 
+      
+      ; PM peak
+      TOLLPM_DA  = 700 * 180.20 / 251.99  
+      TOLLPM_S2  = 700 * 180.20 / 251.99  
+      TOLLPM_S3  = 350 * 180.20 / 251.99  
+      TOLLPM_VSM = 700 * 180.20 / 251.99  
+      TOLLPM_SML = 700 * 180.20 / 251.99  
+      TOLLPM_MED = 1500 * 180.20 / 251.99 
+      TOLLPM_LRG = 2750 * 180.20 / 251.99 
+      
+      ; evening
+      TOLLEV_DA  = 700 * 180.20 / 251.99  
+      TOLLEV_S2  = 700 * 180.20 / 251.99  
+      TOLLEV_S3  = 700 * 180.20 / 251.99  
+      TOLLEV_VSM = 700 * 180.20 / 251.99  
+      TOLLEV_SML = 700 * 180.20 / 251.99  
+      TOLLEV_MED = 1500 * 180.20 / 251.99 
+      TOLLEV_LRG = 2750 * 180.20 / 251.99 
+      
+   endif
+   
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; golden gate bridge (assume everyone pays fastrak rate)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 4)
+    
+      ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLEA_DA  = 625 * 180.20 / 251.99
+      TOLLEA_S2  = 625 * 180.20 / 251.99
+      TOLLEA_S3  = 625 * 180.20 / 251.99
+      TOLLEA_VSM = 625 * 180.20 / 251.99
+      TOLLEA_SML = 625 * 180.20 / 251.99
+      TOLLEA_MED = 1875 * 180.20 / 251.99 
+      TOLLEA_LRG = 3437.5 * 180.20 / 251.99 
+      
+      ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLAM_DA  = 625 * 180.20 / 251.99
+      TOLLAM_S2  = 625 * 180.20 / 251.99
+      TOLLAM_S3  = 425 * 180.20 / 251.99
+      TOLLAM_VSM = 625 * 180.20 / 251.99
+      TOLLAM_SML = 625 * 180.20 / 251.99
+      TOLLAM_MED = 1875 * 180.20 / 251.99 
+      TOLLAM_LRG = 3437.5 * 180.20 / 251.99 
+
+      ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLMD_DA  = 625 * 180.20 / 251.99
+      TOLLMD_S2  = 625 * 180.20 / 251.99
+      TOLLMD_S3  = 625 * 180.20 / 251.99
+      TOLLMD_VSM = 625 * 180.20 / 251.99
+      TOLLMD_SML = 625 * 180.20 / 251.99
+      TOLLMD_MED = 1875 * 180.20 / 251.99 
+      TOLLMD_LRG = 3437.5 * 180.20 / 251.99
+      
+      ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLPM_DA  = 625 * 180.20 / 251.99
+      TOLLPM_S2  = 625 * 180.20 / 251.99
+      TOLLPM_S3  = 425 * 180.20 / 251.99
+      TOLLPM_VSM = 625 * 180.20 / 251.99
+      TOLLPM_SML = 625 * 180.20 / 251.99
+      TOLLPM_MED = 1875 * 180.20 / 251.99 
+      TOLLPM_LRG = 3437.5 * 180.20 / 251.99
+      
+      ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLEV_DA  = 625 * 180.20 / 251.99
+      TOLLEV_S2  = 625 * 180.20 / 251.99
+      TOLLEV_S3  = 625 * 180.20 / 251.99
+      TOLLEV_VSM = 625 * 180.20 / 251.99
+      TOLLEV_SML = 625 * 180.20 / 251.99
+      TOLLEV_MED = 1875 * 180.20 / 251.99 
+      TOLLEV_LRG = 3437.5 * 180.20 / 251.99
+      
+   endif ; end: golden gate bridge
+   
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; san francisco-oakland bridge (changes from base tolls above)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 5)
+    
+    ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLEA_DA  = 600 * 180.20 / 251.99  
+      TOLLEA_S2  = 600 * 180.20 / 251.99 
+      TOLLEA_S3  = 600 * 180.20 / 251.99 
+      TOLLEA_VSM = 600 * 180.20 / 251.99 
+      TOLLEA_SML = 600 * 180.20 / 251.99 
+      
+      ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLAM_DA  = 800 * 180.20 / 251.99 
+      TOLLAM_S2  = 800 * 180.20 / 251.99 
+      TOLLAM_S3  = 400 * 180.20 / 251.99 
+      TOLLAM_VSM = 800 * 180.20 / 251.99 
+      TOLLAM_SML = 800 * 180.20 / 251.99 
+
+      ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLMD_DA  = 600 * 180.20 / 251.99 
+      TOLLMD_S2  = 600 * 180.20 / 251.99 
+      TOLLMD_S3  = 600 * 180.20 / 251.99 
+      TOLLMD_VSM = 600 * 180.20 / 251.99 
+      TOLLMD_SML = 600 * 180.20 / 251.99 
+      
+      ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLPM_DA  = 800 * 180.20 / 251.99 
+      TOLLPM_S2  = 800 * 180.20 / 251.99 
+      TOLLPM_S3  = 400 * 180.20 / 251.99 
+      TOLLPM_VSM = 800 * 180.20 / 251.99 
+      TOLLPM_SML = 800 * 180.20 / 251.99 
+      
+      ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLEV_DA  = 600 * 180.20 / 251.99 
+      TOLLEV_S2  = 600 * 180.20 / 251.99 
+      TOLLEV_S3  = 600 * 180.20 / 251.99 
+      TOLLEV_VSM = 600 * 180.20 / 251.99 
+      TOLLEV_SML = 600 * 180.20 / 251.99 
+      
+            
+   endif ; end: san francisco oakland bridge
+   
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; san mateo - hayward bridge
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 6)
+      
+      ; AM peak, shared ride 2
+      TOLLAM_S2 = 350 * 180.20 / 251.99  
+      
+      ; PM peak, shared ride 2
+      TOLLPM_S2 = 350 * 180.20 / 251.99  
+      
+   endif ; end: san mateo - hayward bridge
+   
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; dumbarton bridge
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 7)
+      
+      ; AM peak, shared ride 2
+      TOLLAM_S2 = 350 * 180.20 / 251.99  
+
+      ; PM peak, shared ride 2
+      TOLLPM_S2 = 350 * 180.20 / 251.99  
+      
+      
+   endif ; end: dumbarton bridge
+   
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; san francisco cordon toll
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 9)
+
+      ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLEA_DA  = 0
+      TOLLEA_S2  = 0
+      TOLLEA_S3  = 0
+      TOLLEA_VSM = 0
+      TOLLEA_SML = 0
+      TOLLEA_MED = 0
+      TOLLEA_LRG = 0
+      
+      ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLAM_DA  = 0
+      TOLLAM_S2  = 0
+      TOLLAM_S3  = 0
+      TOLLAM_VSM = 0
+      TOLLAM_SML = 0
+      TOLLAM_MED = 0
+      TOLLAM_LRG = 0
+   
+      ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLMD_DA  = 0
+      TOLLMD_S2  = 0
+      TOLLMD_S3  = 0
+      TOLLMD_VSM = 0
+      TOLLMD_SML = 0
+      TOLLMD_MED = 0
+      TOLLMD_LRG = 0
+      
+      ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLPM_DA  = 600 * 180.20 / 251.99 
+      TOLLPM_S2  = 600 * 180.20 / 251.99 
+      TOLLPM_S3  = 600 * 180.20 / 251.99 
+      TOLLPM_VSM = 600 * 180.20 / 251.99 
+      TOLLPM_SML = 600 * 180.20 / 251.99 
+      TOLLPM_MED = 600 * 180.20 / 251.99 
+      TOLLPM_LRG = 600 * 180.20 / 251.99 
+      
+      ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLEV_DA  = 0
+      TOLLEV_S2  = 0
+      TOLLEV_S3  = 0
+      TOLLEV_VSM = 0
+      TOLLEV_SML = 0
+      TOLLEV_MED = 0
+      TOLLEV_LRG = 0
+      
+      
+   endif ; end: sf cordon toll
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; westbound bay bridge to treasure island
+   ; travelers pay a total of $6 to cross the bridge and to enter treasure island
+   ; so take the lower of the treasure island toll and the difference between $6 and the bay bridge
+   ; toll, with the latter censored at zero (no negative tolls) 
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 10)
+    
+      ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLEA_DA  = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 400))) 
+      TOLLEA_S2  = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 400)))
+      TOLLEA_S3  = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 400)))
+      TOLLEA_VSM = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 400)))
+      TOLLEA_SML = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 400)))
+      TOLLEA_MED = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 1875)))
+      TOLLEA_LRG = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 3437.5)))
+      
+      ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLAM_DA  = 180.20 / 251.99 * MIN(500, MAX(0,(600 - 600)))
+      TOLLAM_S2  = 180.20 / 251.99 * MIN(500, MAX(0,(600 - 600)))
+      TOLLAM_S3  = 180.20 / 251.99 * MIN(500, MAX(0,(600 - 250))) 
+      TOLLAM_VSM = 180.20 / 251.99 * MIN(500, MAX(0,(600 - 600)))
+      TOLLAM_SML = 180.20 / 251.99 * MIN(500, MAX(0,(600 - 600)))
+      TOLLAM_MED = 180.20 / 251.99 * MIN(500, MAX(0,(600 - 1875)))
+      TOLLAM_LRG = 180.20 / 251.99 * MIN(500, MAX(0,(600 - 3437.5)))
+
+      ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLMD_DA  = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 400))) 
+      TOLLMD_S2  = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 400)))
+      TOLLMD_S3  = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 400)))
+      TOLLMD_VSM = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 400)))
+      TOLLMD_SML = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 400)))
+      TOLLMD_MED = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 1875)))
+      TOLLMD_LRG = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 3437.5)))
+      
+      ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLPM_DA  = 180.20 / 251.99 * MIN(500, MAX(0,(600 - 600)))
+      TOLLPM_S2  = 180.20 / 251.99 * MIN(500, MAX(0,(600 - 600)))
+      TOLLPM_S3  = 180.20 / 251.99 * MIN(500, MAX(0,(600 - 250))) 
+      TOLLPM_VSM = 180.20 / 251.99 * MIN(500, MAX(0,(600 - 600)))
+      TOLLPM_SML = 180.20 / 251.99 * MIN(500, MAX(0,(600 - 600)))
+      TOLLPM_MED = 180.20 / 251.99 * MIN(500, MAX(0,(600 - 1875)))
+      TOLLPM_LRG = 180.20 / 251.99 * MIN(500, MAX(0,(600 - 3437.5)))
+      
+      ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLEV_DA  = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 400)))  
+      TOLLEV_S2  = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 400))) 
+      TOLLEV_S3  = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 400))) 
+      TOLLEV_VSM = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 400))) 
+      TOLLEV_SML = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 400))) 
+      TOLLEV_MED = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 1875)))
+      TOLLEV_LRG = 180.20 / 251.99 * MIN(300, MAX(0,(600 - 3437.5)))
+      
+            
+   endif ; end: westbound bay bridge to treasure island
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; eastbound bay bridge to treasure island, and treasure island to bay bridge (both directions)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 11)
+    
+      ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLEA_DA  = 300 * 180.20 / 251.99  
+      TOLLEA_S2  = 300 * 180.20 / 251.99 
+      TOLLEA_S3  = 300 * 180.20 / 251.99 
+      TOLLEA_VSM = 300 * 180.20 / 251.99 
+      TOLLEA_SML = 300 * 180.20 / 251.99 
+      TOLLEA_MED = 300 * 180.20 / 251.99
+      TOLLEA_LRG = 300 * 180.20 / 251.99
+      
+      ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLAM_DA  = 500 * 180.20 / 251.99 
+      TOLLAM_S2  = 500 * 180.20 / 251.99 
+      TOLLAM_S3  = 500 * 180.20 / 251.99 
+      TOLLAM_VSM = 500 * 180.20 / 251.99 
+      TOLLAM_SML = 500 * 180.20 / 251.99 
+      TOLLAM_MED = 500 * 180.20 / 251.99
+      TOLLAM_LRG = 500 * 180.20 / 251.99
+
+      ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLMD_DA  = 300 * 180.20 / 251.99 
+      TOLLMD_S2  = 300 * 180.20 / 251.99 
+      TOLLMD_S3  = 300 * 180.20 / 251.99 
+      TOLLMD_VSM = 300 * 180.20 / 251.99 
+      TOLLMD_SML = 300 * 180.20 / 251.99 
+      TOLLMD_MED = 300 * 180.20 / 251.99
+      TOLLMD_LRG = 300 * 180.20 / 251.99
+      
+      ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLPM_DA  = 500 * 180.20 / 251.99
+      TOLLPM_S2  = 500 * 180.20 / 251.99
+      TOLLPM_S3  = 500 * 180.20 / 251.99
+      TOLLPM_VSM = 500 * 180.20 / 251.99
+      TOLLPM_SML = 500 * 180.20 / 251.99
+      TOLLPM_MED = 500 * 180.20 / 251.99
+      TOLLPM_LRG = 500 * 180.20 / 251.99
+      
+      ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TOLLEV_DA  = 300 * 180.20 / 251.99 
+      TOLLEV_S2  = 300 * 180.20 / 251.99 
+      TOLLEV_S3  = 300 * 180.20 / 251.99 
+      TOLLEV_VSM = 300 * 180.20 / 251.99 
+      TOLLEV_SML = 300 * 180.20 / 251.99 
+      TOLLEV_MED = 300 * 180.20 / 251.99
+      TOLLEV_LRG = 300 * 180.20 / 251.99
+      
+            
+   endif ; end: eastbound bay bridge to treasure island, treasure island to bridge (both directions)
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  I-80 eastbound from Bay Bridge to Carquinez Bridge (single lane, HOT 3+)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 12)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.0 * DISTANCE
+         TOLLAM_S3  = 0.0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0.0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 2.5 * DISTANCE
+         TOLLMD_S2  = 0.5 * 2.5 * DISTANCE
+         TOLLMD_S3  = 0.0
+         TOLLMD_VSM = 2.5 * DISTANCE
+         TOLLMD_SML = 2.5 * DISTANCE
+         TOLLMD_MED = 2.5 * DISTANCE
+         TOLLMD_LRG = 0.0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 30.0
+         TOLLPM_DA  = 35.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 35.0 * DISTANCE
+         TOLLPM_S3  = 0.0
+         TOLLPM_VSM = 35.0 * DISTANCE
+         TOLLPM_SML = 35.0 * DISTANCE
+         TOLLPM_MED = 35.0 * DISTANCE
+         TOLLPM_LRG = 0.0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 12
+
+  ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  I-80 westbound from Yolo County line to I-680 (single lane, HOT 3+)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 13)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 3.0
+         TOLLAM_DA  = 7.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 7.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 7.0 * DISTANCE
+         TOLLAM_SML = 7.0 * DISTANCE
+         TOLLAM_MED = 7.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 13
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  I-80 eastbound from I-680 to Yolo County line (single lane, HOT 3+)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 14)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 14
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  I-880 northbound from CA-237 to Oakland International (single lane, HOT 3+)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 15)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 2.5 * DISTANCE
+         TOLLAM_S2  = 0.5 * 2.5 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 2.5 * DISTANCE
+         TOLLAM_SML = 2.5 * DISTANCE
+         TOLLAM_MED = 2.5 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 9.0
+         TOLLPM_DA  = 11.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 11.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 11.0 * DISTANCE
+         TOLLPM_SML = 11.0 * DISTANCE
+         TOLLPM_MED = 11.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 15
+
+  ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  I-880 southbound from Oakland International to CA 237 (single lane, HOT 3+)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 16)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prior = 10.0
+         TOLLAM_DA  = 13.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 13.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 13.0 * DISTANCE
+         TOLLAM_SML = 13.0 * DISTANCE
+         TOLLAM_MED = 13.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 5.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 5.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 5.0 * DISTANCE
+         TOLLPM_SML = 5.0 * DISTANCE
+         TOLLPM_MED = 5.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 16
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  I-880/CA 17 northbound from CA 85 to US 101 (single lane, HOT 3+)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 17)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 2.0
+         TOLLAM_DA  = 4.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 4.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 4.0 * DISTANCE
+         TOLLAM_SML = 4.0 * DISTANCE
+         TOLLAM_MED = 4.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 4.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 4.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 4.0 * DISTANCE
+         TOLLMD_SML = 4.0 * DISTANCE
+         TOLLMD_MED = 4.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 6.0
+         TOLLPM_DA  = 8.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 8.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 8.0 * DISTANCE
+         TOLLPM_SML = 8.0 * DISTANCE
+         TOLLPM_MED = 8.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 17
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  I-880/CA 17 southbound from US 101 to CA 85 (single lane, HOT 3+)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 18)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 2.0
+         TOLLAM_DA  = 2.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 2.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 2.0 * DISTANCE
+         TOLLAM_SML = 2.0 * DISTANCE
+         TOLLAM_MED = 2.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 10.0
+         TOLLPM_DA  = 9.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 9.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 9.0 * DISTANCE
+         TOLLPM_SML = 9.0 * DISTANCE
+         TOLLPM_MED = 9.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 18
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  US 101 northbound from I-880 to Santa Clara County Line (HOT 3+, two lanes)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 19)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 2.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 2.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 2.0 * DISTANCE
+         TOLLAM_SML = 2.0 * DISTANCE
+         TOLLAM_MED = 2.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 19
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  US 101 southbound from Santa Clara County line to I-880 (HOT 3+, two lanes)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 20)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 20
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  US 101 northbound from Cochrane to I-880 (HOT 3+, two lanes)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 21)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 0.0
+         TOLLAM_DA  = 2.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 2.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 2.0 * DISTANCE
+         TOLLAM_SML = 2.0 * DISTANCE
+         TOLLAM_MED = 2.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 21
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  US 101 southbound from I-880 to Cochrane (HOT 3+, two lanes)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 22)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 22
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  CA 85 northbound from US 101 to I-280 and from SR 87 to US 101 (HOT 3+, one lane)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 23)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 23
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  CA 85 southbound from US 101 to SR 87 and from I-280 to US 101 (HOT 3+, one lane)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 24)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 24
+
+ 
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  I-680 southbound from Sunol Grade to Montague Expressway (single lane, HOT 3+)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 25)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 18.0
+         TOLLAM_DA  = 25.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 25.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 25.0 * DISTANCE
+         TOLLAM_SML = 25.0 * DISTANCE
+         TOLLAM_MED = 25.0 * DISTANCE
+         TOLLAM_LRG = 0.0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0.0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0.0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 25
+   
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  I-680 northbound from Montague Expressway to Sunol Grade (single lane, HOT 3+)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 26)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 2.0
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 2.0
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 26
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  I-680 southbound from south of Walnut Creek to before I-580 (single lane, HOT 3+)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 27)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 9.0
+         TOLLAM_DA  = 5.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 5.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 5.0 * DISTANCE
+         TOLLAM_SML = 5.0 * DISTANCE
+         TOLLAM_MED = 5.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 27
+   
+   
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  I-680 northbound from north of I-580 to south of Walnut Creek (single lane, HOT 3+)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 28)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 8.0
+         TOLLPM_DA  = 2.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 2.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 2.0 * DISTANCE
+         TOLLPM_SML = 2.0 * DISTANCE
+         TOLLPM_MED = 2.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 28
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  I-580 westbound from Greenville to I-680 (HOT 3+, one lane)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 29)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 5.0
+         TOLLAM_DA  = 3.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 3.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 3.0 * DISTANCE
+         TOLLAM_SML = 3.0 * DISTANCE
+         TOLLAM_MED = 3.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 29
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  I-580 eastbound from east of I-680 to Fallon and from Vasco to Greenville (HOT 3+, one lane) 
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 30)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0.0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0.0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 2.0
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE 
+         TOLLPM_LRG = 0.0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 30
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  CA 237 westbound from I-880 to North First Street (single lane, HOT 3+)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 31)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 15.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 15.0 * DISTANCE
+         TOLLAM_S3  = 0.0
+         TOLLAM_VSM = 15.0 * DISTANCE
+         TOLLAM_SML = 15.0 * DISTANCE
+         TOLLAM_MED = 15.0 * DISTANCE
+         TOLLAM_LRG = 0.0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0.0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0.0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 2.5 * DISTANCE
+         TOLLPM_S2  = 0.5 * 2.5 * DISTANCE
+         TOLLPM_S3  = 0.0
+         TOLLPM_VSM = 2.5 * DISTANCE
+         TOLLPM_SML = 2.5 * DISTANCE
+         TOLLPM_MED = 2.5 * DISTANCE
+         TOLLPM_LRG = 0.0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 31
+   
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  CA 237 eastbound from North First Street to I-880 (single lane, HOT 3+)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 32)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0.0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0.0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0.0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0.0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 18.0
+         TOLLPM_DA  = 20.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 20.0 * DISTANCE
+         TOLLPM_S3  = 0.0
+         TOLLPM_VSM = 20.0 * DISTANCE
+         TOLLPM_SML = 20.0 * DISTANCE
+         TOLLPM_MED = 20.0 * DISTANCE
+         TOLLPM_LRG = 0.0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 32
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  US 101 northbound from Whipple to Oregon Expressway (HOT 3+, one lane)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 43)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 2.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 2.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 2.0 * DISTANCE
+         TOLLAM_SML = 2.0 * DISTANCE
+         TOLLAM_MED = 2.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 43
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  US 101 southbound from Oregon Expressway to Whipple (HOT 3+, one lane)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 44)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 44
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  US 101 northbound from San Benito County line to Cochrane (HOT 3+, one lane)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 45)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 45
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  US 101 southbound from Cochrane to San Benito County line (HOT 3+, one lane)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 46)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 46
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  CA 85 northbound from I-280 to SR 87 (HOV 3+, 2 lanes)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 47)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 47
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  CA 85 southbound from SR 87 to I-280 (HOV 3+, 2 lanes)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 48)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 48
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  I-580 eastbound from Fallon Road to Vasco (HOT 3+, two lanes)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 50)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0.0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0.0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0.0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0.0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0.0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE 
+         TOLLPM_LRG = 0.0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 50
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  Dumbarton Bridge approach (HOT 3+, two lanes)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 51)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 300
+         TOLLAM_DA  = 500.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 500.0 * DISTANCE
+         TOLLAM_S3  = 0.0
+         TOLLAM_VSM = 500.0 * DISTANCE
+         TOLLAM_SML = 500.0 * DISTANCE
+         TOLLAM_MED = 500.0 * DISTANCE
+         TOLLAM_LRG = 0.0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0.0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0.0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 100.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 100.0 * DISTANCE
+         TOLLPM_S3  = 0.0
+         TOLLPM_VSM = 100.0 * DISTANCE
+         TOLLPM_SML = 100.0 * DISTANCE
+         TOLLPM_MED = 100.0 * DISTANCE 
+         TOLLPM_LRG = 0.0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 51
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  San Mateo Bridge approach (HOT 3+, two lanes)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 52)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 50.0
+         TOLLAM_DA  = 65.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 65.0 * DISTANCE
+         TOLLAM_S3  = 0.0
+         TOLLAM_VSM = 65.0 * DISTANCE
+         TOLLAM_SML = 65.0 * DISTANCE
+         TOLLAM_MED = 65.0 * DISTANCE
+         TOLLAM_LRG = 0.0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 0.0
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0.0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0.0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 20.0
+         TOLLPM_DA  = 25.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 25.0 * DISTANCE
+         TOLLPM_S3  = 0.0
+         TOLLPM_VSM = 25.0 * DISTANCE
+         TOLLPM_SML = 25.0 * DISTANCE
+         TOLLPM_MED = 25.0 * DISTANCE
+         TOLLPM_LRG = 0.0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 52
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  US 101 northbound from 84 Westbound to San Mateo County line (single lane, HOT 3+)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 54)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 2.5
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0.0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0.0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0.0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0.0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 4.0
+         TOLLPM_DA  = 2.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 2.0 * DISTANCE
+         TOLLPM_S3  = 0.0
+         TOLLPM_VSM = 2.0 * DISTANCE
+         TOLLPM_SML = 2.0 * DISTANCE
+         TOLLPM_MED = 2.0 * DISTANCE
+         TOLLPM_LRG = 0.0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 54
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  US 101 southbound from San Mateo County line to 84 Westbound (single lane, HOT 3+)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 55)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 3.0
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0.0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0.0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0.0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0.0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 5.0
+         TOLLPM_DA  = 2.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 2.0 * DISTANCE
+         TOLLPM_S3  = 0.0
+         TOLLPM_VSM = 2.0 * DISTANCE
+         TOLLPM_SML = 2.0 * DISTANCE
+         TOLLPM_MED = 2.0 * DISTANCE
+         TOLLPM_LRG = 0.0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 55
+
+  ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility: I-280/US-101 southbound, I-280 terminus to SF County Line 
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 56)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0.0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0.0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0.0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0.0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 5.0
+         TOLLPM_DA  = 8.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 8.0 * DISTANCE
+         TOLLPM_S3  = 0.0
+         TOLLPM_VSM = 8.0 * DISTANCE
+         TOLLPM_SML = 8.0 * DISTANCE
+         TOLLPM_MED = 8.0 * DISTANCE 
+         TOLLPM_LRG = 0.0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 56
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility: I-280, US 101 to I-280 terminus 
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 57)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLAM_DA  = 0.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLAM_S3  = 0.0
+         TOLLAM_VSM = 0.0 * DISTANCE
+         TOLLAM_SML = 0.0 * DISTANCE
+         TOLLAM_MED = 0.0 * DISTANCE
+         TOLLAM_LRG = 0.0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0.0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0.0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0.0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE 
+         TOLLPM_LRG = 0.0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 57
+
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ; Facility:  I-80 westbound from I-680 to Bay Bridge (single lane, HOT 3+)
+   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   if (TOLLCLASS = 84)
+       
+         ; early AM period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEA_DA  = 0
+         TOLLEA_S2  = 0
+         TOLLEA_S3  = 0
+         TOLLEA_VSM = 0
+         TOLLEA_SML = 0
+         TOLLEA_MED = 0
+         TOLLEA_LRG = 0
+         
+         ; AM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         ; prev = 30.0
+         TOLLAM_DA  = 40.0 * DISTANCE
+         TOLLAM_S2  = 0.5 * 40.0 * DISTANCE
+         TOLLAM_S3  = 0.0
+         TOLLAM_VSM = 40.0 * DISTANCE
+         TOLLAM_SML = 40.0 * DISTANCE
+         TOLLAM_MED = 40.0 * DISTANCE
+         TOLLAM_LRG = 0.0
+   
+         ; midday period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLMD_DA  = 0.0 * DISTANCE
+         TOLLMD_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLMD_S3  = 0.0
+         TOLLMD_VSM = 0.0 * DISTANCE
+         TOLLMD_SML = 0.0 * DISTANCE
+         TOLLMD_MED = 0.0 * DISTANCE
+         TOLLMD_LRG = 0.0
+         
+         ; PM peak period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLPM_DA  = 0.0 * DISTANCE
+         TOLLPM_S2  = 0.5 * 0.0 * DISTANCE
+         TOLLPM_S3  = 0.0
+         TOLLPM_VSM = 0.0 * DISTANCE
+         TOLLPM_SML = 0.0 * DISTANCE
+         TOLLPM_MED = 0.0 * DISTANCE
+         TOLLPM_LRG = 0.0
+         
+         ; evening period ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         TOLLEV_DA  = 0
+         TOLLEV_S2  = 0
+         TOLLEV_S3  = 0
+         TOLLEV_VSM = 0
+         TOLLEV_SML = 0
+         TOLLEV_MED = 0
+         TOLLEV_LRG = 0
+         
+   endif ; end: TOLLCLASS 84
+
+
+endrun
