@@ -44,14 +44,6 @@ set TARGET_DIR=%CD%
 if not exist metrics (mkdir metrics)
 copy INPUT\metrics\BC_config.csv metrics
 
-
-if not exist metrics\autos_owned.csv (
-  rem Tally auto ownership from household data
-  rem Input: main\householdData_%ITER%.csv
-  rem Output: metrics\autos_owned.csv
-  python "%CODE_DIR%\tallyAutos.py"
-)
-
 if not exist metrics\parking_costs.csv (
   rem Tally parking costs from tours, persons (for free parking choice)
   rem and tazdata (for parking costs)

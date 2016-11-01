@@ -33,13 +33,6 @@ if not exist database\IthimSkimsDatabaseAM.csv (
   IF ERRORLEVEL 2 goto error
 )
 
-if not exist hwy\iter%ITER%\avgload5period_vehclasses.csv (
-  rem Export network to csv version (with vehicle class volume columns intact)
-  rem Input : hwy\iter%ITER%\avgload5period.net
-  rem Output: hwy\iter%ITER%\avgload5period_vehclasses.csv
-  runtpp "%CODE_DIR%\metrics\net2csv_avgload5period.job"
-  IF ERRORLEVEL 2 goto error
-)
 
 if not exist metrics\vmt_vht_metrics.csv (
   rem Summarize network links to vmt, vht, and other collision and emissions estimations
