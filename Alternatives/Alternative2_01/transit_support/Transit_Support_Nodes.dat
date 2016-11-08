@@ -247,14 +247,14 @@
 18108  550976 4182226 ; Van Ness access node
 18009  549919 4182068 ; Fillmore station
 18109  549969 4182118 ; Fillmore access node
-18010 ;4th and Brannan station
-18110 ;4th and Brannan access node
-18011 ;6th and Brannan station
-18111 ;6th and Brannan access node
-18012 ;Howard station
-18112 ;Howard access node
-18013 ;Hyde station
-18113 ;Hyde access node
+18010  553244 4181498 ; 4th and Brannan station
+18110  549969 4182118 ; 4th and Brannan access node
+18011  552677 4180925 ; 6th and Brannan station
+18111  552727 4180975 ; 6th and Brannan access node
+18012  551814 4181153 ; Howard station
+18112  551864 4181203 ; Howard access node
+18013  551486 4181650 ; Hyde station
+18113  551536 4181700 ; Hyde access node
 
 
 
