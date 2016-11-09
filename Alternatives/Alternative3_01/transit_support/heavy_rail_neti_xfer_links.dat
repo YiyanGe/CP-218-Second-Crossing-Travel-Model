@@ -75,9 +75,7 @@
 6698 15540 0.05      ; South SF BART
 8769 16410 0.05      ; Portola
 3811 15549 0.05      ; Irvington
-;---------ALT 2----------------
-2888 18001 0.05      ; 15th/Franklin
-2815 18002 0.05      ; Jack London Square
+;---------ALT 3----------------
 3228 18003 0.05      ; Alameda
 7462 18008 0.05      ; Van Ness
 7405 18009 0.05      ; Fillmore
@@ -85,4 +83,7 @@
 6956 18011 0.05      ; 6th/Brannan
 7570 18012 0.05      ; Howard
 7627 18013 0.05      ; Hyde
-
+2889 18014 0.05      ; 14th Street
+968  18015 0.05      ; 11th Street
+3209 18016 0.05      ; Eastlake
+2824 18017 0.05      ; Howard Terminal
