@@ -988,7 +988,7 @@
 15000	15541	766	;	Oakland International Airport to	San Bruno
 15000	15542	1077	;	Oakland International Airport to	SFO
 15000	15543	787	;	Oakland International Airport to	Millbrae
-15544	15538	357	;	Warm Springs	Dublin/ Pleasanton to
+15544	15538	357	;	Warm Springs	Dublin/ Pleasanton
 15544	15545	346	;	Warm Springs	West Dublin/Pleasanton
 15544	15537	283	;	Warm Springs	Castro Valley
 15544	15526	129	;	Warm Springs	Fremont
@@ -1033,7 +1033,7 @@
 15544	15542	818	;	Warm Springs	SFO
 15544	15543	528	;	Warm Springs	Millbrae
 15544	15000	720	;	Warm Springs	Oakland International Airport
-14202	15538	367	;	Milpitas to	Dublin/ Pleasanton to
+14202	15538	367	;	Milpitas to	Dublin/ Pleasanton
 14202	15545	357	;	Milpitas to	West Dublin/Pleasanton
 14202	15537	294	;	Milpitas to	Castro Valley
 14202	15526	157	;	Milpitas to	Fremont
@@ -1080,7 +1080,7 @@
 14202	15000	731	;	Milpitas to	Oakland International Airport
 14202	15544	129	;	Milpitas to	Warm Springs
 14202	14203	129	;	Milpitas to	Berryessa
-14203	15538	378	;	Berryessa to	Dublin/ Pleasanton to
+14203	15538	378	;	Berryessa to	Dublin/ Pleasanton
 14203	15545	367	;	Berryessa to	West Dublin/Pleasanton
 14203	15537	304	;	Berryessa to	Castro Valley
 14203	15526	182	;	Berryessa to	Fremont
@@ -1126,7 +1126,7 @@
 14203	15543	549	;	Berryessa to	Millbrae
 14203	15000	741	;	Berryessa to	Oakland International Airport
 14203	15544	129	;	Berryessa to	Warm Springs
-14204	15538	465	;	Alum Rock to	Dublin/ Pleasanton to
+14204	15538	465	;	Alum Rock to	Dublin/ Pleasanton
 14204	15545	420	;	Alum Rock to	West Dublin/Pleasanton
 14204	15537	357	;	Alum Rock to	Castro Valley
 14204	15526	241	;	Alum Rock to	Fremont
@@ -1177,7 +1177,7 @@
 14204	14206	129	;	Alum Rock to	Downtown San Jose
 14204	14207	129	;	Alum Rock to	Diridon-Caltrain
 14204	14208	129	;	Alum Rock to	Santa Clara
-14206	15538	437	;	Downtown San Jose	Dublin/ Pleasanton to
+14206	15538	437	;	Downtown San Jose	Dublin/ Pleasanton
 14206	15545	430	;	Downtown San Jose	West Dublin/Pleasanton
 14206	15537	367	;	Downtown San Jose	Castro Valley
 14206	15526	252	;	Downtown San Jose	Fremont
@@ -1227,7 +1227,7 @@
 14206	14203	129	;	Downtown San Jose	Berryessa
 14206	14207	129	;	Downtown San Jose	Diridon-Caltrain
 14206	14208	129	;	Downtown San Jose	Santa Clara
-14207	15538	441	;	Diridon-Caltrain to	Dublin/ Pleasanton to
+14207	15538	441	;	Diridon-Caltrain to	Dublin/ Pleasanton
 14207	15545	430	;	Diridon-Caltrain to	West Dublin/Pleasanton
 14207	15537	367	;	Diridon-Caltrain to	Castro Valley
 14207	15526	245	;	Diridon-Caltrain to	Fremont
@@ -1276,7 +1276,7 @@
 14207	14202	129	;	Diridon-Caltrain to	Milpitas
 14207	14203	129	;	Diridon-Caltrain to	Berryessa
 14207	14208	129	;	Diridon-Caltrain to	Santa Clara
-14208	15538	458	;	Santa Clara to	Dublin/ Pleasanton to
+14208	15538	458	;	Santa Clara to	Dublin/ Pleasanton
 14208	15545	448	;	Santa Clara to	West Dublin/Pleasanton
 14208	15537	385	;	Santa Clara to	Castro Valley
 14208	15526	269	;	Santa Clara to	Fremont
