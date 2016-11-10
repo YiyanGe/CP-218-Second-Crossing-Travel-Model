@@ -102,6 +102,8 @@ LINK NODES= 18012, 18013, TIME= 1.3, DIST= 38, ONEWAY=NO, MODES=120 ; Howard-Hyd
 LINK NODES= 18013, 18008, TIME= 2.6, DIST= 59, ONEWAY=NO, MODES=120 ; Hyde-Van Ness
 LINK NODES= 18008, 18009, TIME= 1.6, DIST= 68, ONEWAY=NO, MODES=120 ; Van Ness-Fillmore
 LINK NODES= 15533, 18016, TIME= 2.9, DIST= 212, ONEWAY=NO, MODES=120 ; Fruitvale-Eastlake
+LINK NODES= 18016, 18015, TIME= 1.8, DIST= 105, ONEWAY=NO, MODES=120 ; Eastlake-11th Street
+LINK NODES= 18015, 18017, TIME= 3.8, DIST= 87, ONEWAY=NO, MODES=120 ; 11th Street-Howard Terminal
 
 ;------------------- BART LINES--------------------------------------------------
 

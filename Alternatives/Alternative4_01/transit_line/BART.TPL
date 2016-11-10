@@ -91,7 +91,7 @@ LINK NODES= 14235, 14245, TIME= 6.0, DIST= 300, ONEWAY=NO, MODES=136 ; BayPt-Rai
 LINK NODES= 14245, 14231, TIME= 7.0, DIST= 700, ONEWAY=NO, MODES=136 ; Railroad Ave-Hillcrest
 LINK NODES= 14231, 14236, TIME= 6.0, DIST= 360, ONEWAY=NO, MODES=136 ; Hillcrest-Mokelumne Trail
 
-; ----------ALT 1--------------
+; ----------ALT 4--------------
 LINK NODES= 15507, 18001, TIME= 3.7, DIST= 176, ONEWAY=NO, MODES=120 ; MacArthur-15th/Franklin
 LINK NODES= 18001, 18002, TIME= 1.6, DIST= 64, ONEWAY=NO, MODES=120 ; 15th/Franklin-Jack London Square
 LINK NODES= 18002, 18003, TIME= 5.1, DIST= 187, ONEWAY=NO, MODES=120 ; Jack London Square-Alameda
