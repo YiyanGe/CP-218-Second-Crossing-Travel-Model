@@ -53,12 +53,15 @@ LINK NODES= 13670,13664, TIME = 9, DIST=750, ONEWAY=NO, MODES=130 ; Redwood City
 LINK NODES= 13664,13661, TIME = 7, DIST=420, ONEWAY=NO, MODES=130 ; San Mateo - Millbrae 
 
 LINK NODES= 13661,13656, TIME = 12.5, DIST=1180, ONEWAY=NO, MODES=130 ; Millbrae - 22nd Street
-LINK NODES= 13661,13670, TIME = 13, DIST=1170,   ONEWAY=NO, MODES=130 ; Millbrae - Redwood City 
-LINK NODES= 13672,13677, TIME = 9, DIST=720,     ONEWAY=NO, MODES=130 ; Menlo Park - Mountain View 
-LINK NODES= 13672,13670, TIME = 6, DIST=350,   ONEWAY=NO, MODES=130 ; Menlo Park - Redwood City
+LINK NODES= 13661,13670, TIME = 13, DIST=1170,  ONEWAY=NO, MODES=130 ; Millbrae - Redwood City
+LINK NODES= 13672,13677, TIME = 9, DIST=720,  ONEWAY=NO, MODES=130 ; Menlo Park - Mountain View
+LINK NODES= 13672,13670, TIME = 6, DIST=350,  ONEWAY=NO, MODES=130 ; Menlo Park - Redwood City
 
 ;-----Alt 5----------
 LINK NODES= 18014,14264, TIME =10, DIST=800, ONEWAY=NO, MODES=130; 14th Street - Transbay Transit Center
+LINK NODES= 14649,18014, TIME =4, DIST=280, ONEWAY=NO, MODES=130; Emeryville - 14th Street
+LINK NODES= 14649,14650, TIME = 4.0, DIST=200, ONEWAY=NO, MODES=130 ; Emeryville - Berkeley
+LINK NODES= 14650,14651, TIME = 8.0, DIST=560, ONEWAY=NO, MODES=130 ; Berkeley - Richmond
 
 ;****************************************************************
 ;*    Northbound Trains         
