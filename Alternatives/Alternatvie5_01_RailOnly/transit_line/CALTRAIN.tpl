@@ -58,10 +58,10 @@ LINK NODES= 13672,13677, TIME = 9, DIST=720,  ONEWAY=NO, MODES=130 ; Menlo Park 
 LINK NODES= 13672,13670, TIME = 6, DIST=350,  ONEWAY=NO, MODES=130 ; Menlo Park - Redwood City
 
 ;-----Alt 5----------
-LINK NODES= 18014,13654, TIME =10, DIST=800, ONEWAY=NO, MODES=130; 14th Street - Transbay Transit Center
-LINK NODES= 14649,18014, TIME =4, DIST=280, ONEWAY=NO, MODES=130; Emeryville - 14th Street
-LINK NODES= 14649,14650, TIME = 4.0, DIST=200, ONEWAY=NO, MODES=130 ; Emeryville - Berkeley
-LINK NODES= 14650,14651, TIME = 8.0, DIST=560, ONEWAY=NO, MODES=130 ; Berkeley - Richmond
+LINK NODES= 18023,13654, TIME =10.0, DIST=800, ONEWAY=NO, MODES=130; 14th Street - Transbay Transit Center
+LINK NODES= 18020,18023, TIME =4.0, DIST=280, ONEWAY=NO, MODES=130; Emeryville - 14th Street
+LINK NODES= 18020,18021, TIME = 4.0, DIST=200, ONEWAY=NO, MODES=130 ; Emeryville - Berkeley
+LINK NODES= 18021,18022, TIME = 8.0, DIST=560, ONEWAY=NO, MODES=130 ; Berkeley - Richmond
 
 ;****************************************************************
 ;*    Northbound Trains         
@@ -179,10 +179,10 @@ LINE NAME="130_TAMSF2NB", LONGNAME=Caltrain_Tamien_SanFrancisco_105_113_121, ONE
 	13656,  ; 22nd Street
         13655,	  ; Fourth & Townsend
         13654,   ; Transbay Terminal
-    18014, ; 14th street
-    14649, ; Emeryville
-    14650, ; Berkeley
-    14651  ; Richmond
+    18023, ; 14th street
+    18020, ; Emeryville
+    18021, ; Berkeley
+    18022  ; Richmond
 
 
 ; Caltrain from Tamien to San Francisco
@@ -222,10 +222,10 @@ LINE NAME="130_TAMSF3NB", LONGNAME=Caltrain_Tamien_SanFrancisco_109_117_125, ONE
 	13656,  ; 22nd Street
         13655,	; Fourth & Townsend
         13654,   ; Tansbay Terminal
-    18014, ; 14th street
-    14649, ; Emeryville
-    14650, ; Berkeley
-    14651  ; Richmond
+    18023, ; 14th street
+    18020, ; Emeryville
+    18021, ; Berkeley
+    18022  ; Richmond
 
 ; Caltrain from San Jose to San Francisco
 ; skips College Park, Lawrence, Atherton, Hayward Park,
@@ -263,10 +263,10 @@ LINE NAME="130_SJSF2NB", LONGNAME=Caltrain_SanJose_SanFrancisco_111_115_127, ONE
        -13656,  ; 22nd Street
        13655,   ; Fourth & Townsend
        13654,    ; Transbay Terminal
-       18014, ; 14th street
-       14649, ; Emeryville
-       14650, ; Berkeley
-       14651  ; Richmond
+       18023, ; 14th street
+       18020, ; Emeryville
+       18021, ; Berkeley
+       18022  ; Richmond
 
 ; Caltrain from San Jose to San Francisco
 ; skips Lawrence, Atherton, Hayward Park,
@@ -304,10 +304,10 @@ LINE NAME="130_SJSF3NB", LONGNAME=Caltrain_SanJose_SanFrancisco_119, ONEWAY=T, M
        -13656,  ; 22nd Street
        13655,   ; Fourth & Townsend 
        13654,    ; Transbay Terminal
-       18014, ; 14th street
-       14649, ; Emeryville
-       14650, ; Berkeley
-       14651  ; Richmond
+       18023, ; 14th street
+       18020, ; Emeryville
+       18021, ; Berkeley
+       18022  ; Richmond
 
 ; Caltrain from Tamien to San Francisco
 ; skips College Park, Santa Clara, Lawrence, Sunnyvale,
@@ -346,10 +346,10 @@ LINE NAME="130_TAMSF4NB", LONGNAME=Caltrain_Tamien_SanFrancisco_157_165_173, ONE
 	13656,  ; 22nd Street
         13655,	; Fourth & Townsend 
         13654,    ; Transbay Terminal
-    18014, ; 14th street
-    14649, ; Emeryville
-    14650, ; Berkeley
-    14651  ; Richmond
+    18023, ; 14th street
+    18020, ; Emeryville
+    18021, ; Berkeley
+    18022  ; Richmond
 
 ; Caltrain from Tamien to San Francisco
 ; skips College Park, Santa Clara, Lawrence, Sunnyvale,
@@ -388,10 +388,10 @@ LINE NAME="130_TAMSF5NB", LONGNAME=Caltrain_Tamien_SanFrancisco_161_169_177, ONE
 	13656,  ; 22nd Street
         13655,	; Fourth & Townsend  
         13654,    ; Transbay Terminal
-     18014, ; 14th street
-     14649, ; Emeryville
-     14650, ; Berkeley
-     14651  ; Richmond
+     18023, ; 14th street
+     18020, ; Emeryville
+     18021, ; Berkeley
+     18022  ; Richmond
 
 ; Caltrain from San Jose to San Francisco
 ; skips College Park, San Antonio, California Ave, 
@@ -429,10 +429,10 @@ LINE NAME="130_SJSF4NB", LONGNAME=Caltrain_SanJose_SanFrancisco_159_167_175, ONE
        13656,  ; 22nd Street
        13655,   ; Fourth & Townsend 
        13654,    ; Transbay Terminal
-       18014, ; 14th street
-       14649, ; Emeryville
-       14650, ; Berkeley
-       14651  ; Richmond
+       18023, ; 14th street
+       18020, ; Emeryville
+       18021, ; Berkeley
+       18022  ; Richmond
 
 ; Caltrain from San Jose to San Francisco
 ; skips College Park, San Antonio, California Ave, 
@@ -470,10 +470,10 @@ LINE NAME="130_SJSF5NB", LONGNAME=Caltrain_SanJose_SanFrancisco_163_171_179, ONE
        13656,  ; 22nd Street
        13655,   ; Fourth & Townsend  
        13654,    ; Transbay Terminal
-       18014, ; 14th street
-       14649, ; Emeryville
-       14650, ; Berkeley
-       14651  ; Richmond
+       18023, ; 14th street
+       18020, ; Emeryville
+       18021, ; Berkeley
+       18022  ; Richmond
 ;****************************************************************
 ;*    Southbound Trains         
 ;****************************************************************
@@ -562,10 +562,10 @@ LINE NAME="130_SFSJ2SB", LONGNAME=Caltrain_SanFrancisco_SanJose_104_112_120, ONE
      FREQ[3]=0,
      FREQ[4]=0,
      FREQ[5]=0,
-     N=14651,  ; Richmond
-       14650, ; Berkeley
-       14649, ; Emeryville
-       18014, ; 14th street
+     N=18022,  ; Richmond
+       18021, ; Berkeley
+       18020, ; Emeryville
+       18023, ; 14th street
        13654,   ; Transbay Terminal
        13655,	   ; Fourth & Townsend
        13656,	   ; 22nd Street
@@ -603,10 +603,10 @@ LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONE
      FREQ[3]=0,
      FREQ[4]=0,
      FREQ[5]=0,
-     N=14651,  ; Richmond
-       14650, ; Berkeley
-       14649, ; Emeryville
-       18014, ; 14th street
+     N=18022,  ; Richmond
+       18021, ; Berkeley
+       18020, ; Emeryville
+       18023, ; 14th street
        13654,   ; Transbay Terminal
        13655,	   ; Fourth & Townsend
        13656,	   ; 22nd Street
@@ -644,10 +644,10 @@ LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONE
      FREQ[3]=0,
      FREQ[4]=0,
      FREQ[5]=0, 
-     N=14651,  ; Richmond
-       14650, ; Berkeley
-       14649, ; Emeryville
-       18014, ; 14th street
+     N=18022,  ; Richmond
+       18021, ; Berkeley
+       18020, ; Emeryville
+       18023, ; 14th street
        13654,   ; Transbay Terminal
        13655,   ; Fourth & Townsend
        13656,   ; 22nd Street
@@ -686,10 +686,10 @@ LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONE
      FREQ[3]=0,
      FREQ[4]=0,
      FREQ[5]=0, 
-     N=14651,  ; Richmond
-       14650, ; Berkeley
-       14649, ; Emeryville
-       18014, ; 14th street
+     N=18022,  ; Richmond
+       18021, ; Berkeley
+        18020, ; Emeryville
+       18023, ; 14th street
         13654,   ; Transbay Terminal
        13655,   ; Fourth & Townsend
        13656,   ; 22nd Street
@@ -728,10 +728,10 @@ LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONE
      FREQ[3]=0,
      FREQ[4]=0,
      FREQ[5]=0, 
-     N=14651,  ; Richmond
-       14650, ; Berkeley
-       14649, ; Emeryville
-       18014, ; 14th street
+     N=18022,  ; Richmond
+       18021, ; Berkeley
+       18020, ; Emeryville
+       18023, ; 14th street
         13654,   ; Transbay Terminal
        13655,   ; Fourth & Townsend
        13656,   ; 22nd Street
@@ -770,10 +770,10 @@ LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONE
      FREQ[3]=0,
      FREQ[4]=80,
      FREQ[5]=0,
-     N=14651,  ; Richmond
-       14650, ; Berkeley
-       14649, ; Emeryville
-       18014, ; 14th street
+     N=18022,  ; Richmond
+       18021, ; Berkeley
+       18020, ; Emeryville
+       18023, ; 14th street
        13654,   ; Transbay Terminal
        13655,   ; Fourth & Townsend
        -13656,   ; 22nd Street
@@ -812,10 +812,10 @@ LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONE
      FREQ[3]=0,
      FREQ[4]=120,
      FREQ[5]=0, 
-     N=14651,  ; Richmond
-       14650, ; Berkeley
-       14649, ; Emeryville
-       18014, ; 14th street
+     N=18022,  ; Richmond
+       18021, ; Berkeley
+       18020, ; Emeryville
+       18023, ; 14th street
        13654,   ; Transbay Terminal
        13655,   ; Fourth & Townsend
        13656,   ; 22nd Street
@@ -854,10 +854,10 @@ LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONE
      FREQ[3]=0,
      FREQ[4]=240,
      FREQ[5]=0, 
-     N=14651,  ; Richmond
-       14650, ; Berkeley
-       14649, ; Emeryville
-       18014, ; 14th street
+     N=18022,  ; Richmond
+       18021, ; Berkeley
+       18020, ; Emeryville
+       18023, ; 14th street
        13654,   ; Transbay Terminal
        13655,   ; Fourth & Townsend
        13656,   ; 22nd Street
@@ -895,10 +895,10 @@ LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONE
      FREQ[3]=0,
      FREQ[4]=80,
      FREQ[5]=0, 
-     N=14651,  ; Richmond
-       14650, ; Berkeley
-       14649, ; Emeryville
-       18014, ; 14th street
+     N=18022,  ; Richmond
+       18021, ; Berkeley
+       18020, ; Emeryville
+       18023, ; 14th street
        13654,   ; Transbay Terminal
        13655,   ; Fourth & Townsend
        -13656,   ; 22nd Street
@@ -936,10 +936,10 @@ LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONE
      FREQ[3]=0,
      FREQ[4]=80,
      FREQ[5]=0, 
-     N=14651,  ; Richmond
-       14650, ; Berkeley
-       14649, ; Emeryville
-       18014, ; 14th street
+     N=18022,  ; Richmond
+       18021, ; Berkeley
+       18020, ; Emeryville
+       18023, ; 14th street
        13654,   ; Transbay Terminal
        13655,   ; Fourth & Townsend
        13656,   ; 22nd Street
