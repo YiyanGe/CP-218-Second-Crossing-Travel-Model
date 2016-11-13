@@ -103,3 +103,32 @@
 14642	14643	320	;	Santa Clara to	Great America
 14642	14641	320	;	Santa Clara to	San Jose Diridon
 14642	14658	2063	;	Santa Clara to	Antioch
+14264	18030	639	;	Transbay Transit Center to	14th Street
+14264	14649	692	;	Transbay Transit Center to	Emeryville
+14264	14650	692	;	Transbay Transit Center to	Berkeley
+14264	14651	746	;	Transbay Transit Center to	Richmond
+14264	14652	939	;	Transbay Transit Center to	Hercules
+14264	14654	1430	;	Transbay Transit Center to	Martinez
+14264	14655	1749	;	Transbay Transit Center to	Suisun/Fairfield
+14264	14656	1749	;	Transbay Transit Center to	Farifield/Vacaville
+14264	14648	1065	;	Transbay Transit Center to	Oakland Jack London
+14264	14647	1172	;	Transbay Transit Center to	Oakland Coliseum
+14264	14646	1332	;	Transbay Transit Center to	Hayward
+14264	14644	1439	;	Transbay Transit Center to	Fremont
+14264	14643	1619	;	Transbay Transit Center to	Great America
+14264	14641	1675	;	Transbay Transit Center to	San Jose Diridon
+14264	14658	1392	;	Transbay Transit Center to	Antioch
+18030	14649	373	;	14th Street to	Emeryville
+18030	14650	373	;	14th Street to	Berkeley
+18030	14651	426	;	14th Street to	Richmond
+18030	14652	620	;	14th Street to	Hercules
+18030	14654	1110	;	14th Street to	Martinez
+18030	14655	1430	;	14th Street to	Suisun/Fairfield
+18030	14656	1430	;	14th Street to	Farifield/Vacaville
+18030	14648	746	;	14th Street to	Oakland Jack London
+18030	14647	853	;	14th Street to	Oakland Coliseum
+18030	14646	1012	;	14th Street to	Hayward
+18030	14644	1119	;	14th Street to	Fremont
+18030	14643	1299	;	14th Street to	Great America
+18030	14641	1356	;	14th Street to	San Jose Diridon
+18030	14658	1072	;	14th Street to	Antioch
