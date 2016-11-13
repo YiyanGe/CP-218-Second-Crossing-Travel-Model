@@ -433,3 +433,129 @@
 13654	13686	1014	;	Transbay Terminal to	Morgan Hill
 13654	13687	1014	;	Transbay Terminal to	San Martin
 13654	13688	1014	;	Transbay Terminal to	Gilroy
+18023	13654	339	;	14th Street to	Transbay Terminal
+18023	13655	339	;	14th Street to	Fourth/Townsend
+18023	13656	339	;	14th Street to	22nd St.
+18023	13658	339	;	14th Street to	Bayshore
+18023	13659	339	;	14th Street to	South San Francisco
+18023	13660	339	;	14th Street to	San Bruno
+18023	13661	482	;	14th Street to	Millbrae
+18023	13663	482	;	14th Street to	Burlingame
+18023	13664	482	;	14th Street to	San Mateo
+18023	13665	482	;	14th Street to	Hayward Park
+18023	13667	482	;	14th Street to	Hillsdale
+18023	13668	482	;	14th Street to	Belmont
+18023	13669	482	;	14th Street to	San Carlos
+18023	13670	482	;	14th Street to	Redwood City
+18023	13672	624	;	14th Street to	Menlo Park
+18023	13673	624	;	14th Street to	Palo Alto
+18023	13675	624	;	14th Street to	California Avenue
+18023	13676	624	;	14th Street to	San Antonio
+18023	13677	624	;	14th Street to	Mountain View
+18023	13678	624	;	14th Street to	Sunnyvale
+18023	13679	767	;	14th Street to	Lawrence
+18023	13680	767	;	14th Street to	Santa Clara
+18023	13681	767	;	14th Street to	College Park
+18023	13682	767	;	14th Street to	San Jose Diridon
+18023	13683	767	;	14th Street to	Tamien
+18023	13684	910	;	14th Street to	Capitol
+18023	13685	910	;	14th Street to	Blossom Hill
+18023	13686	1052	;	14th Street to	Morgan Hill
+18023	13687	1052	;	14th Street to	San Martin
+18023	13688	1052	;	14th Street to	Gilroy
+18020	18023	196	;	Emeryville to	14th Street
+18020	13654	339	;	Emeryville to	Transbay Terminal
+18020	13655	339	;	Emeryville to	Fourth/Townsend
+18020	13656	339	;	Emeryville to	22nd St.
+18020	13658	339	;	Emeryville to	Bayshore
+18020	13659	339	;	Emeryville to	South San Francisco
+18020	13660	339	;	Emeryville to	San Bruno
+18020	13661	482	;	Emeryville to	Millbrae
+18020	13663	482	;	Emeryville to	Burlingame
+18020	13664	482	;	Emeryville to	San Mateo
+18020	13665	482	;	Emeryville to	Hayward Park
+18020	13667	482	;	Emeryville to	Hillsdale
+18020	13668	482	;	Emeryville to	Belmont
+18020	13669	482	;	Emeryville to	San Carlos
+18020	13670	482	;	Emeryville to	Redwood City
+18020	13672	624	;	Emeryville to	Menlo Park
+18020	13673	624	;	Emeryville to	Palo Alto
+18020	13675	624	;	Emeryville to	California Avenue
+18020	13676	624	;	Emeryville to	San Antonio
+18020	13677	624	;	Emeryville to	Mountain View
+18020	13678	624	;	Emeryville to	Sunnyvale
+18020	13679	767	;	Emeryville to	Lawrence
+18020	13680	767	;	Emeryville to	Santa Clara
+18020	13681	767	;	Emeryville to	College Park
+18020	13682	767	;	Emeryville to	San Jose Diridon
+18020	13683	767	;	Emeryville to	Tamien
+18020	13684	910	;	Emeryville to	Capitol
+18020	13685	910	;	Emeryville to	Blossom Hill
+18020	13686	1052	;	Emeryville to	Morgan Hill
+18020	13687	1052	;	Emeryville to	San Martin
+18020	13688	1052	;	Emeryville to	Gilroy
+18021	18020	196	;	Berkeley to	Emeryville
+18021	18023	196	;	Berkeley to	14th Street
+18021	13654	339	;	Berkeley to	Transbay Terminal
+18021	13655	339	;	Berkeley to	Fourth/Townsend
+18021	13656	339	;	Berkeley to	22nd St.
+18021	13658	339	;	Berkeley to	Bayshore
+18021	13659	339	;	Berkeley to	South San Francisco
+18021	13660	339	;	Berkeley to	San Bruno
+18021	13661	482	;	Berkeley to	Millbrae
+18021	13663	482	;	Berkeley to	Burlingame
+18021	13664	482	;	Berkeley to	San Mateo
+18021	13665	482	;	Berkeley to	Hayward Park
+18021	13667	482	;	Berkeley to	Hillsdale
+18021	13668	482	;	Berkeley to	Belmont
+18021	13669	482	;	Berkeley to	San Carlos
+18021	13670	482	;	Berkeley to	Redwood City
+18021	13672	624	;	Berkeley to	Menlo Park
+18021	13673	624	;	Berkeley to	Palo Alto
+18021	13675	624	;	Berkeley to	California Avenue
+18021	13676	624	;	Berkeley to	San Antonio
+18021	13677	624	;	Berkeley to	Mountain View
+18021	13678	624	;	Berkeley to	Sunnyvale
+18021	13679	767	;	Berkeley to	Lawrence
+18021	13680	767	;	Berkeley to	Santa Clara
+18021	13681	767	;	Berkeley to	College Park
+18021	13682	767	;	Berkeley to	San Jose Diridon
+18021	13683	767	;	Berkeley to	Tamien
+18021	13684	910	;	Berkeley to	Capitol
+18021	13685	910	;	Berkeley to	Blossom Hill
+18021	13686	1052	;	Berkeley to	Morgan Hill
+18021	13687	1052	;	Berkeley to	San Martin
+18021	13688	1052	;	Berkeley to	Gilroy
+18022	18021	196	;	Richmond to	Berkeley
+18022	18020	196	;	Richmond to	Emeryville
+18022	18023	196	;	Richmond to	14th Street
+18022	13654	339	;	Richmond to	Transbay Terminal
+18022	13655	339	;	Richmond to	Fourth/Townsend
+18022	13656	339	;	Richmond to	22nd St.
+18022	13658	339	;	Richmond to	Bayshore
+18022	13659	339	;	Richmond to	South San Francisco
+18022	13660	339	;	Richmond to	San Bruno
+18022	13661	482	;	Richmond to	Millbrae
+18022	13663	482	;	Richmond to	Burlingame
+18022	13664	482	;	Richmond to	San Mateo
+18022	13665	482	;	Richmond to	Hayward Park
+18022	13667	482	;	Richmond to	Hillsdale
+18022	13668	482	;	Richmond to	Belmont
+18022	13669	482	;	Richmond to	San Carlos
+18022	13670	482	;	Richmond to	Redwood City
+18022	13672	624	;	Richmond to	Menlo Park
+18022	13673	624	;	Richmond to	Palo Alto
+18022	13675	624	;	Richmond to	California Avenue
+18022	13676	624	;	Richmond to	San Antonio
+18022	13677	624	;	Richmond to	Mountain View
+18022	13678	624	;	Richmond to	Sunnyvale
+18022	13679	767	;	Richmond to	Lawrence
+18022	13680	767	;	Richmond to	Santa Clara
+18022	13681	767	;	Richmond to	College Park
+18022	13682	767	;	Richmond to	San Jose Diridon
+18022	13683	767	;	Richmond to	Tamien
+18022	13684	910	;	Richmond to	Capitol
+18022	13685	910	;	Richmond to	Blossom Hill
+18022	13686	1052	;	Richmond to	Morgan Hill
+18022	13687	1052	;	Richmond to	San Martin
+18022	13688	1052	;	Richmond to	Gilroy
