@@ -19,8 +19,8 @@ LINK NODES= 14654,14655, TIME =19.0, DIST=1640, ONEWAY=NO, MODES=131-132 ; Marti
 LINK NODES= 14655,14656, TIME =6.0, DIST=650, ONEWAY=NO, MODES=131-132 ; Suisun/Fairfield - Fairfield/Vacaville
 LINK NODES= 14654,14658, TIME =19.0, DIST=1740, ONEWAY=NO, MODES=131-132 ; Martinez - Antioch
 ;-------- Alt 5 -----------
-LINK NODES= 14649,18014, TIME =7.0, DIST=280, ONEWAY=NO, MODES=131-132; Emeryville - 14th Street
-LINK NODES= 18014,14264, TIME =17.0, DIST=800, ONEWAY=NO, MODES=131-132; 14th Street - Transbay Transit Center
+LINK NODES= 14649,18030, TIME =7.0, DIST=280, ONEWAY=NO, MODES=131-132; Emeryville - 14th Street
+LINK NODES= 18030,14264, TIME =17.0, DIST=800, ONEWAY=NO, MODES=131-132; 14th Street - Transbay Transit Center
 
 
 ; Amtrak Capitol from San Jose to Fairfield/Vacaville
@@ -121,7 +121,7 @@ LINE NAME="131_CAP4NB", LONGNAME=AMTRAK_Capitol_SanJose_to_Fairfield_Vacaville, 
      FREQ[4]=80,
      FREQ[5]=300,
      runtime=146,
-     N=14264, 18014, 14649, 14650, 14651, -14652, 14654, 14655, 14656
+     N=14264, 18030, 14649, 14650, 14651, -14652, 14654, 14655, 14656
 
 ; Amtrak Capitol from Fairfield/Vacaville to TT
 ;
@@ -132,4 +132,4 @@ LINE NAME="131_CAP4SB", LONGNAME=AMTRAK_Capitol_Fairfield_Vacaville_to_SanJose, 
     FREQ[4]=120,
     FREQ[5]=0,
     runtime=151,
-    N=14656, 14655, 14654, -14652, 14651, 14650, 14649, 18014, 14264
+    N=14656, 14655, 14654, -14652, 14651, 14650, 14649, 18030, 14264
