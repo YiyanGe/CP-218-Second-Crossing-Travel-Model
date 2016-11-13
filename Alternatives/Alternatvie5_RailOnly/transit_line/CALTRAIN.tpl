@@ -58,7 +58,7 @@ LINK NODES= 13672,13677, TIME = 9, DIST=720,  ONEWAY=NO, MODES=130 ; Menlo Park 
 LINK NODES= 13672,13670, TIME = 6, DIST=350,  ONEWAY=NO, MODES=130 ; Menlo Park - Redwood City
 
 ;-----Alt 5----------
-LINK NODES= 18014,14264, TIME =10, DIST=800, ONEWAY=NO, MODES=130; 14th Street - Transbay Transit Center
+LINK NODES= 18014,13654, TIME =10, DIST=800, ONEWAY=NO, MODES=130; 14th Street - Transbay Transit Center
 LINK NODES= 14649,18014, TIME =4, DIST=280, ONEWAY=NO, MODES=130; Emeryville - 14th Street
 LINK NODES= 14649,14650, TIME = 4.0, DIST=200, ONEWAY=NO, MODES=130 ; Emeryville - Berkeley
 LINK NODES= 14650,14651, TIME = 8.0, DIST=560, ONEWAY=NO, MODES=130 ; Berkeley - Richmond
@@ -144,7 +144,8 @@ LINE NAME="130_TAMSF1NB", LONGNAME=Caltrain_Tamien_SanFrancisco_Local, ONEWAY=T,
 ; Caltrain from Tamien to San Francisco
 ; skips College Park, Santa Clara, San Antonio, California Ave,
 ; San Carlos, Belmont, Broadway, San Bruno
-;
+; LIMITED
+
 LINE NAME="130_TAMSF2NB", LONGNAME=Caltrain_Tamien_SanFrancisco_105_113_121, ONEWAY=T, MODE=130, OWNER="6", COLOR=10, 
       FREQ[1]=0,
       FREQ[2]=80,
@@ -182,7 +183,7 @@ LINE NAME="130_TAMSF2NB", LONGNAME=Caltrain_Tamien_SanFrancisco_105_113_121, ONE
 ; Caltrain from Tamien to San Francisco
 ; skips College Park, Santa Clara, San Antonio, California Ave, Atherton,
 ; San Carlos, Belmont, San Bruno
-;
+; LIMITED
 LINE NAME="130_TAMSF3NB", LONGNAME=Caltrain_Tamien_SanFrancisco_109_117_125, ONEWAY=T, MODE=130, OWNER="6", COLOR=10, 
       FREQ[1]=0,
       FREQ[2]=80,
@@ -220,7 +221,7 @@ LINE NAME="130_TAMSF3NB", LONGNAME=Caltrain_Tamien_SanFrancisco_109_117_125, ONE
 ; Caltrain from San Jose to San Francisco
 ; skips College Park, Lawrence, Atherton, Hayward Park,
 ; Burlingame, Broadway, Bayshore, 22nd St
-;
+; LIMITED
 LINE NAME="130_SJSF2NB", LONGNAME=Caltrain_SanJose_SanFrancisco_111_115_127, ONEWAY=T, MODE=130, OWNER="6", COLOR=10, 
      FREQ[1]=0,
      FREQ[2]=80,
@@ -257,7 +258,7 @@ LINE NAME="130_SJSF2NB", LONGNAME=Caltrain_SanJose_SanFrancisco_111_115_127, ONE
 ; Caltrain from San Jose to San Francisco
 ; skips Lawrence, Atherton, Hayward Park,
 ; Burlingame, Broadway, Bayshore, 22nd St
-;
+; LIMITED
 LINE NAME="130_SJSF3NB", LONGNAME=Caltrain_SanJose_SanFrancisco_119, ONEWAY=T, MODE=130, OWNER="6", COLOR=10, 
      FREQ[1]=0,
      FREQ[2]=240,
@@ -294,7 +295,7 @@ LINE NAME="130_SJSF3NB", LONGNAME=Caltrain_SanJose_SanFrancisco_119, ONEWAY=T, M
 ; Caltrain from Tamien to San Francisco
 ; skips College Park, Santa Clara, Lawrence, Sunnyvale,
 ; Atherton, Hayward Park, San Bruno, South San Francisco
-;
+; LIMITED
 LINE NAME="130_TAMSF4NB", LONGNAME=Caltrain_Tamien_SanFrancisco_157_165_173, ONEWAY=T, MODE=130, OWNER="6", COLOR=10, 
       FREQ[1]=0,
       FREQ[2]=0,
@@ -332,7 +333,7 @@ LINE NAME="130_TAMSF4NB", LONGNAME=Caltrain_Tamien_SanFrancisco_157_165_173, ONE
 ; Caltrain from Tamien to San Francisco
 ; skips College Park, Santa Clara, Lawrence, Sunnyvale,
 ; Atherton, Hayward Park, Broadway, San Bruno, South San Francisco
-;
+; LIMITED
 LINE NAME="130_TAMSF5NB", LONGNAME=Caltrain_Tamien_SanFrancisco_161_169_177, ONEWAY=T, MODE=130, OWNER="6", COLOR=10, 
       FREQ[1]=0,
       FREQ[2]=0,
@@ -370,7 +371,7 @@ LINE NAME="130_TAMSF5NB", LONGNAME=Caltrain_Tamien_SanFrancisco_161_169_177, ONE
 ; Caltrain from San Jose to San Francisco
 ; skips College Park, San Antonio, California Ave, 
 ; Belmont, Burlingame, Broadway, Bayshore
-;
+; LIMITED
 LINE NAME="130_SJSF4NB", LONGNAME=Caltrain_SanJose_SanFrancisco_159_167_175, ONEWAY=T, MODE=130, OWNER="6", COLOR=10, 
      FREQ[1]=0,
      FREQ[2]=0,
@@ -407,7 +408,7 @@ LINE NAME="130_SJSF4NB", LONGNAME=Caltrain_SanJose_SanFrancisco_159_167_175, ONE
 ; Caltrain from San Jose to San Francisco
 ; skips College Park, San Antonio, California Ave, 
 ; Atherton, Belmont, Burlingame, Broadway, Bayshore
-;
+; LIMITED
 LINE NAME="130_SJSF5NB", LONGNAME=Caltrain_SanJose_SanFrancisco_163_171_179, ONEWAY=T, MODE=130, OWNER="6", COLOR=10, 
      FREQ[1]=0,
      FREQ[2]=0,
@@ -522,7 +523,7 @@ LINE NAME="130_SFSJ1SB", LONGNAME=Caltrain_SanFrancisco_SanJose_Local, ONEWAY=T,
 ; Caltrain from San Francisco to San Jose
 ; Skips Bayshore, South San Francisco, Broadway, Hayward Park,
 ; Atherton, Sunnyvale, Lawrence, Santa Clara, College Park
-;
+; LIMITED
 LINE NAME="130_SFSJ2SB", LONGNAME=Caltrain_SanFrancisco_SanJose_104_112_120, ONEWAY=T, MODE=130, OWNER="6", COLOR=10,
      FREQ[1]=0,
      FREQ[2]=80,
@@ -559,7 +560,7 @@ LINE NAME="130_SFSJ2SB", LONGNAME=Caltrain_SanFrancisco_SanJose_104_112_120, ONE
 ; Caltrain from San Francisco to San Jose
 ; Skips Bayshore, South San Francisco, Hayward Park,
 ; Atherton, Sunnyvale, Lawrence, Santa Clara, College Park
-;
+; LIMITED
 LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONEWAY=T, MODE=130, OWNER="6", COLOR=10,
      FREQ[1]=0,
      FREQ[2]=80,
@@ -596,7 +597,7 @@ LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONE
 ; Caltrain from San Francisco to Tamien
 ; Skips San Bruno, Broadway, Burlingame, Belmont,
 ; Atherton, California Ave, San Antonio, College Park
-;
+; LIMITED
  LINE NAME="130_SFTAM2SB", LONGNAME=Caltrain_SanFrancisco_Tamien_106_114_122, ONEWAY=T, MODE=130, OWNER="6", COLOR=10,
      FREQ[1]=0,
      FREQ[2]=80,
@@ -634,7 +635,7 @@ LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONE
 ; Caltrain from San Francisco to Tamien
 ; Skips San Bruno, Broadway, Burlingame, Belmont,
 ; California Ave, San Antonio
-;
+; LIMITED
  LINE NAME="130_SFTAM3SB", LONGNAME=Caltrain_SanFrancisco_Tamien_110, ONEWAY=T, MODE=130, OWNER="6", COLOR=10,
      FREQ[1]=0,
      FREQ[2]=240,
@@ -672,7 +673,7 @@ LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONE
 ; Caltrain from San Francisco to Tamien
 ; Skips San Bruno, Broadway, Burlingame, Belmont,
 ; California Ave, San Antonio, College Park
-;
+; LIMITED
  LINE NAME="130_SFTAM4SB", LONGNAME=Caltrain_SanFrancisco_Tamien_118_126, ONEWAY=T, MODE=130, OWNER="6", COLOR=10,
      FREQ[1]=0,
      FREQ[2]=120,
@@ -710,7 +711,7 @@ LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONE
 ; Caltrain from San Francisco to Tamien
 ; Skips 22nd St, Bayshore, Broadway, Burlingame,
 ; Hayward Park, Atherton, Lawrence, College Park
-;
+; LIMITED
  LINE NAME="130_SFTAM5SB", LONGNAME=Caltrain_SanFrancisco_Tamien_156_164_172, ONEWAY=T, MODE=130, OWNER="6", COLOR=10,
      FREQ[1]=0,
      FREQ[2]=0,
@@ -748,7 +749,7 @@ LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONE
 ; Caltrain from San Francisco to Tamien
 ; Skips San Bruno, Broadway, Belmont, San Carlos,
 ; California Ave, San Antonio, Santa Clara, College Park
-;
+; LIMITED
  LINE NAME="130_SFTAM6SB", LONGNAME=Caltrain_SanFrancisco_Tamien_158_166, ONEWAY=T, MODE=130, OWNER="6", COLOR=10,
      FREQ[1]=0,
      FREQ[2]=0,
@@ -786,7 +787,7 @@ LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONE
 ; Caltrain from San Francisco to Tamien
 ; Skips San Bruno, Broadway, Belmont, San Carlos,
 ; California Ave, San Antonio, Santa Clara, College Park
-;
+; LIMITED
  LINE NAME="130_SFSJ4SB", LONGNAME=Caltrain_SanFrancisco_SanJose_174, ONEWAY=T, MODE=130, OWNER="6", COLOR=10,
      FREQ[1]=0,
      FREQ[2]=0,
@@ -823,7 +824,7 @@ LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONE
 ; Caltrain from San Francisco to Tamien
 ; Skips 22nd St, Bayshore, Broadway, Burlingame,
 ; Hayward Park, Atherton, Lawrence, College Park
-;
+; LIMITED
  LINE NAME="130_SFSJ5SB", LONGNAME=Caltrain_SanFrancisco_SanJose_160_168_176, ONEWAY=T, MODE=130, OWNER="6", COLOR=10,
      FREQ[1]=0,
      FREQ[2]=0,
@@ -860,7 +861,7 @@ LINE NAME="130_SFSJ3SB", LONGNAME=Caltrain_SanFrancisco_SanJose_108_116_124, ONE
 ; Caltrain from San Francisco to Tamien
 ; Skips San Bruno, Belmont, San Carlos, Atherton,
 ; California Ave, San Antonio, Santa Clara, College Park
-;
+; LIMITED
  LINE NAME="130_SFTAM7SB", LONGNAME=Caltrain_SanFrancisco_Tamien_162_170_178, ONEWAY=T, MODE=130, OWNER="6", COLOR=10,
      FREQ[1]=0,
      FREQ[2]=0,
