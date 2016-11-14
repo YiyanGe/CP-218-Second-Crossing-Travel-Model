@@ -35,6 +35,8 @@
 2225  14852
 11122 14956       ; Fairfield
 11122 14856 
+; ----alt5-----
+2889  18130       ; 14th Street Station
 
 ; Caltrain
 
@@ -107,6 +109,14 @@
 3785  15751    ; Fremont
 3785  15752
 6784  16005    ; Oakdale
+;--------- alt5 -----------
+2639  18120    ;Emeryville Caltrain
+2639  18130
+2510  18121    ;Berkeley Caltrain
+2510  18131
+2329  18122    ;Richmond Caltrain
+2329  18132
+2889  18123    ;14th Street Caltrain
 
 ; SMART
 
