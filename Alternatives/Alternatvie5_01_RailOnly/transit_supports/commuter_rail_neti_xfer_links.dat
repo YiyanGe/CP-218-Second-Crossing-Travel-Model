@@ -17,6 +17,8 @@
 12170 14708 0.05      ; Vasco Road
 2225 14652 0.05      ; Hercules
 11122 14656 0.05     ; Fairfield/Vacaville
+;------alt5-------
+2889  18030 0.05     ;14th Street
 
 ; Caltrain
 
@@ -61,6 +63,11 @@
 5928 15745 0.05 ; Chilco Rd.
 3785 15750 0.05 ; Fremont
 6784 16000 0.05 ; Oakdale
+;-----alt5-----
+2639 18020 0.05 ; Emeryville
+2510 18021 0.05 ; Berkeley
+2329 18022 0.05 ; Richmond
+2889 18023 0.05 ; 14th Street
 
 ; SMART
 
