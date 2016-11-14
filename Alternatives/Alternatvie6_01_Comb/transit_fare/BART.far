@@ -1,0 +1,2016 @@
+15534   15525  129 ; Lake Merritt to Ashby
+15534   15542  626 ; Lake Merritt to SFO
+15534   15541  315 ; Lake Merritt to San Bruno
+15534   15527  276 ; Lake Merritt to Union City
+15534   15000  549 ; Lake Merritt to Oakland International Airport
+15534   15532  129 ; Lake Merritt to Coliseum/Oakland Airport
+15534   15514  231 ; Lake Merritt to Civic Center
+15534   15522  154 ; Lake Merritt to El Cerrito Plaza
+15534   15528  245 ; Lake Merritt to South Hayward
+15534   15516  252 ; Lake Merritt to 24th St Mission
+15534   15538  297 ; Lake Merritt to Dublin/ Pleasanton
+15534   15529  224 ; Lake Merritt to Hayward
+15534   14208  427 ; Lake Merritt to Santa Clara
+15534   15545  287 ; Lake Merritt to West Dublin/Pleasanton
+15534   15508  129 ; Lake Merritt to 19th St Oakland
+15534   15544  332 ; Lake Merritt to Warm Springs
+15534   15506  129 ; Lake Merritt to Rockridge
+15534   15523  129 ; Lake Merritt to Berkeley
+15534   15539  283 ; Lake Merritt to Colma
+15534   15513  231 ; Lake Merritt to Powell
+15534   15535  287 ; Lake Merritt to North Concord
+15534   15531  168 ; Lake Merritt to San Leandro
+15534   14206  413 ; Lake Merritt to Downtown San Jose
+15534   15521  171 ; Lake Merritt to El Cerrito Del Norte
+15534   15519  287 ; Lake Merritt to Daly City
+15534   15512  231 ; Lake Merritt to Montgomery
+15534   15537  224 ; Lake Merritt to Castro Valley
+15534   15549  318 ; Lake Merritt to Irvington
+15534   15540  297 ; Lake Merritt to South San Francisco
+15534   14204  402 ; Lake Merritt to Alum Rock
+15534   15509  129 ; Lake Merritt to 12th St Oakland City Center
+15534   15524  133 ; Lake Merritt to North Berkeley
+15534   15543  336 ; Lake Merritt to Millbrae
+15534   15515  245 ; Lake Merritt to 16th St Mission
+15534   15501  273 ; Lake Merritt to Concord
+15534   15520  196 ; Lake Merritt to Richmond
+15534   15530  192 ; Lake Merritt to Bay Fair
+15534   15511  231 ; Lake Merritt to Embarcadero
+15534   15510  129 ; Lake Merritt to West Oakland
+15534   15517  269 ; Lake Merritt to Glen Park
+15534   15536  322 ; Lake Merritt to Pittsburg/ Bay Point
+15534   14207  413 ; Lake Merritt to Diridon-Caltrain
+15534   15502  248 ; Lake Merritt to Pleasant Hill
+15534   15503  238 ; Lake Merritt to Walnut Creek
+15534   15505  164 ; Lake Merritt to Orinda
+15534   15504  206 ; Lake Merritt to Lafayette
+15534   14202  343 ; Lake Merritt to Milpitas
+15534   14203  353 ; Lake Merritt to Berryessa
+15534   15518  276 ; Lake Merritt to Balboa Park
+15534   15533  129 ; Lake Merritt to Fruitvale
+15534   15507  129 ; Lake Merritt to MacArthur
+15534   15526  301 ; Lake Merritt to Fremont
+15525   15542  640 ; Ashby to SFO
+15525   15541  329 ; Ashby to San Bruno
+15525   15527  290 ; Ashby to Union City
+15525   15000  584 ; Ashby to Oakland International Airport
+15525   15532  164 ; Ashby to Coliseum/Oakland Airport
+15525   15514  262 ; Ashby to Civic Center
+15525   15522  129 ; Ashby to El Cerrito Plaza
+15525   15528  259 ; Ashby to South Hayward
+15525   15516  276 ; Ashby to 24th St Mission
+15525   15538  315 ; Ashby to Dublin/ Pleasanton
+15525   15529  238 ; Ashby to Hayward
+15525   14208  444 ; Ashby to Santa Clara
+15525   15545  301 ; Ashby to West Dublin/Pleasanton
+15525   15508  129 ; Ashby to 19th St Oakland
+15525   15544  346 ; Ashby to Warm Springs
+15525   15506  129 ; Ashby to Rockridge
+15525   15523  129 ; Ashby to Berkeley
+15525   15539  297 ; Ashby to Colma
+15525   15513  262 ; Ashby to Powell
+15525   15535  287 ; Ashby to North Concord
+15525   15531  199 ; Ashby to San Leandro
+15525   14206  427 ; Ashby to Downtown San Jose
+15525   15521  129 ; Ashby to El Cerrito Del Norte
+15525   15519  301 ; Ashby to Daly City
+15525   15512  262 ; Ashby to Montgomery
+15525   15537  238 ; Ashby to Castro Valley
+15525   15549  332 ; Ashby to Irvington
+15525   15540  311 ; Ashby to South San Francisco
+15525   14204  420 ; Ashby to Alum Rock
+15525   15509  129 ; Ashby to 12th St Oakland City Center
+15525   15524  129 ; Ashby to North Berkeley
+15525   15543  350 ; Ashby to Millbrae
+15525   15515  273 ; Ashby to 16th St Mission
+15525   15501  273 ; Ashby to Concord
+15525   15520  129 ; Ashby to Richmond
+15525   15530  220 ; Ashby to Bay Fair
+15525   15511  262 ; Ashby to Embarcadero
+15525   15510  129 ; Ashby to West Oakland
+15525   15517  287 ; Ashby to Glen Park
+15525   15536  322 ; Ashby to Pittsburg/ Bay Point
+15525   14207  427 ; Ashby to Diridon-Caltrain
+15525   15502  245 ; Ashby to Pleasant Hill
+15525   15503  231 ; Ashby to Walnut Creek
+15525   15505  157 ; Ashby to Orinda
+15525   15504  199 ; Ashby to Lafayette
+15525   14202  357 ; Ashby to Milpitas
+15525   14203  367 ; Ashby to Berryessa
+15525   15518  294 ; Ashby to Balboa Park
+15525   15533  143 ; Ashby to Fruitvale
+15525   15507  129 ; Ashby to MacArthur
+15525   15526  315 ; Ashby to Fremont
+15542   15541  518 ; SFO to San Bruno
+15542   15527  766 ; SFO to Union City
+15542   15000  1077 ; SFO to Oakland International Airport
+15542   15532  658 ; SFO to Coliseum/Oakland Airport
+15542   15514  605 ; SFO to Civic Center
+15542   15522  661 ; SFO to El Cerrito Plaza
+15542   15528  731 ; SFO to South Hayward
+15542   15516  595 ; SFO to 24th St Mission
+15542   15538  787 ; SFO to Dublin/ Pleasanton
+15542   15529  713 ; SFO to Hayward
+15542   14208  927 ; SFO to Santa Clara
+15542   15545  776 ; SFO to West Dublin/Pleasanton
+15542   15508  626 ; SFO to 19th St Oakland
+15542   15544  818 ; SFO to Warm Springs
+15542   15506  640 ; SFO to Rockridge
+15542   15523  647 ; SFO to Berkeley
+15542   15539  539 ; SFO to Colma
+15542   15513  605 ; SFO to Powell
+15542   15535  780 ; SFO to North Concord
+15542   15531  675 ; SFO to San Leandro
+15542   14206  913 ; SFO to Downtown San Jose
+15542   15521  675 ; SFO to El Cerrito Del Norte
+15542   15519  553 ; SFO to Daly City
+15542   15512  605 ; SFO to Montgomery
+15542   15537  710 ; SFO to Castro Valley
+15542   15549  804 ; SFO to Irvington
+15542   15540  518 ; SFO to South San Francisco
+15542   14204  902 ; SFO to Alum Rock
+15542   15509  626 ; SFO to 12th St Oakland City Center
+15542   15524  651 ; SFO to North Berkeley
+15542   15543  297 ; SFO to Millbrae
+15542   15515  602 ; SFO to 16th St Mission
+15542   15501  766 ; SFO to Concord
+15542   15520  689 ; SFO to Richmond
+15542   15530  692 ; SFO to Bay Fair
+15542   15511  605 ; SFO to Embarcadero
+15542   15510  619 ; SFO to West Oakland
+15542   15517  577 ; SFO to Glen Park
+15542   15536  815 ; SFO to Pittsburg/ Bay Point
+15542   14207  913 ; SFO to Diridon-Caltrain
+15542   15502  738 ; SFO to Pleasant Hill
+15542   15503  727 ; SFO to Walnut Creek
+15542   15505  678 ; SFO to Orinda
+15542   15504  703 ; SFO to Lafayette
+15542   14202  829 ; SFO to Milpitas
+15542   14203  839 ; SFO to Berryessa
+15542   15518  567 ; SFO to Balboa Park
+15542   15533  644 ; SFO to Fruitvale
+15542   15507  633 ; SFO to MacArthur
+15542   15526  787 ; SFO to Fremont
+15541   15527  451 ; San Bruno to Union City
+15541   15000  766 ; San Bruno to Oakland International Airport
+15541   15532  346 ; San Bruno to Coliseum/Oakland Airport
+15541   15514  290 ; San Bruno to Civic Center
+15541   15522  350 ; San Bruno to El Cerrito Plaza
+15541   15528  420 ; San Bruno to South Hayward
+15541   15516  273 ; San Bruno to 24th St Mission
+15541   15538  476 ; San Bruno to Dublin/ Pleasanton
+15541   15529  399 ; San Bruno to Hayward
+15541   14208  619 ; San Bruno to Santa Clara
+15541   15545  462 ; San Bruno to West Dublin/Pleasanton
+15541   15508  315 ; San Bruno to 19th St Oakland
+15541   15544  507 ; San Bruno to Warm Springs
+15541   15506  329 ; San Bruno to Rockridge
+15541   15523  332 ; San Bruno to Berkeley
+15541   15539  217 ; San Bruno to Colma
+15541   15513  290 ; San Bruno to Powell
+15541   15535  469 ; San Bruno to North Concord
+15541   15531  364 ; San Bruno to San Leandro
+15541   14206  602 ; San Bruno to Downtown San Jose
+15541   15521  360 ; San Bruno to El Cerrito Del Norte
+15541   15519  217 ; San Bruno to Daly City
+15541   15512  290 ; San Bruno to Montgomery
+15541   15537  399 ; San Bruno to Castro Valley
+15541   15549  493 ; San Bruno to Irvington
+15541   15540  217 ; San Bruno to South San Francisco
+15541   14204  577 ; San Bruno to Alum Rock
+15541   15509  315 ; San Bruno to 12th St Oakland City Center
+15541   15524  339 ; San Bruno to North Berkeley
+15541   15543  217 ; San Bruno to Millbrae
+15541   15515  280 ; San Bruno to 16th St Mission
+15541   15501  455 ; San Bruno to Concord
+15541   15520  378 ; San Bruno to Richmond
+15541   15530  381 ; San Bruno to Bay Fair
+15541   15511  290 ; San Bruno to Embarcadero
+15541   15510  308 ; San Bruno to West Oakland
+15541   15517  255 ; San Bruno to Glen Park
+15541   15536  504 ; San Bruno to Pittsburg/ Bay Point
+15541   14207  602 ; San Bruno to Diridon-Caltrain
+15541   15502  427 ; San Bruno to Pleasant Hill
+15541   15503  416 ; San Bruno to Walnut Creek
+15541   15505  367 ; San Bruno to Orinda
+15541   15504  392 ; San Bruno to Lafayette
+15541   14202  518 ; San Bruno to Milpitas
+15541   14203  528 ; San Bruno to Berryessa
+15541   15518  248 ; San Bruno to Balboa Park
+15541   15533  332 ; San Bruno to Fruitvale
+15541   15507  322 ; San Bruno to MacArthur
+15541   15526  476 ; San Bruno to Fremont
+15527   15000  665 ; Union City to Oakland International Airport
+15527   15532  245 ; Union City to Coliseum/Oakland Airport
+15527   15514  392 ; Union City to Civic Center
+15527   15522  315 ; Union City to El Cerrito Plaza
+15527   15528  129 ; Union City to South Hayward
+15527   15516  402 ; Union City to 24th St Mission
+15527   15538  304 ; Union City to Dublin/ Pleasanton
+15527   15529  129 ; Union City to Hayward
+15527   14208  290 ; Union City to Santa Clara
+15527   15545  294 ; Union City to West Dublin/Pleasanton
+15527   15508  276 ; Union City to 19th St Oakland
+15527   15544  129 ; Union City to Warm Springs
+15527   15506  283 ; Union City to Rockridge
+15527   15523  297 ; Union City to Berkeley
+15527   15539  423 ; Union City to Colma
+15527   15513  392 ; Union City to Powell
+15527   15535  420 ; Union City to North Concord
+15527   15531  220 ; Union City to San Leandro
+15527   14206  273 ; Union City to Downtown San Jose
+15527   15521  325 ; Union City to El Cerrito Del Norte
+15527   15519  423 ; Union City to Daly City
+15527   15512  392 ; Union City to Montgomery
+15527   15537  224 ; Union City to Castro Valley
+15527   15549  129 ; Union City to Irvington
+15527   15540  434 ; Union City to South San Francisco
+15527   14204  266 ; Union City to Alum Rock
+15527   15509  276 ; Union City to 12th St Oakland City Center
+15527   15524  301 ; Union City to North Berkeley
+15527   15543  476 ; Union City to Millbrae
+15527   15515  399 ; Union City to 16th St Mission
+15527   15501  406 ; Union City to Concord
+15527   15520  339 ; Union City to Richmond
+15527   15530  129 ; Union City to Bay Fair
+15527   15511  392 ; Union City to Embarcadero
+15527   15510  283 ; Union City to West Oakland
+15527   15517  413 ; Union City to Glen Park
+15527   15536  455 ; Union City to Pittsburg/ Bay Point
+15527   14207  273 ; Union City to Diridon-Caltrain
+15527   15502  378 ; Union City to Pleasant Hill
+15527   15503  367 ; Union City to Walnut Creek
+15527   15505  318 ; Union City to Orinda
+15527   15504  343 ; Union City to Lafayette
+15527   14202  157 ; Union City to Milpitas
+15527   14203  182 ; Union City to Berryessa
+15527   15518  416 ; Union City to Balboa Park
+15527   15533  259 ; Union City to Fruitvale
+15527   15507  283 ; Union City to MacArthur
+15527   15526  129 ; Union City to Fremont
+18012   15534  231 ; Howard to Lake Merritt
+18012   15525  262 ; Howard to Ashby
+18012   15542  605 ; Howard to SFO
+18012   15541  290 ; Howard to San Bruno
+18012   15527  392 ; Howard to Union City
+18012   15000  703 ; Howard to Oakland International Airport
+18012   15532  283 ; Howard to Coliseum/Oakland Airport
+18012   15514  129 ; Howard to Civic Center
+18012   15522  290 ; Howard to El Cerrito Plaza
+18012   18011  129 ; Howard to 6th/Brannan
+18012   15528  360 ; Howard to South Hayward
+18012   15516  129 ; Howard to 24th St Mission
+18012   15538  416 ; Howard to Dublin/ Pleasanton
+18012   15529  339 ; Howard to Hayward
+18012   14208  546 ; Howard to Santa Clara
+18012   15545  402 ; Howard to West Dublin/Pleasanton
+18012   15508  231 ; Howard to 19th St Oakland
+18012   15544  448 ; Howard to Warm Springs
+18012   15506  262 ; Howard to Rockridge
+18012   15523  273 ; Howard to Berkeley
+18012   15539  245 ; Howard to Colma
+18012   15513  129 ; Howard to Powell
+18012   15535  406 ; Howard to North Concord
+18012   15531  304 ; Howard to San Leandro
+18012   14206  532 ; Howard to Downtown San Jose
+18012   15521  301 ; Howard to El Cerrito Del Norte
+18012   15519  220 ; Howard to Daly City
+18012   15512  129 ; Howard to Montgomery
+18012   15537  339 ; Howard to Castro Valley
+18012   15549  434 ; Howard to Irvington
+18012   15540  266 ; Howard to South San Francisco
+18012   18010  129 ; Howard to 4th/Brannan
+18012   14204  521 ; Howard to Alum Rock
+18012   15509  231 ; Howard to 12th St Oakland City Center
+18012   15524  280 ; Howard to North Berkeley
+18012   15543  315 ; Howard to Millbrae
+18012   18003  231 ; Howard to Alameda
+18012   15515  129 ; Howard to 16th St Mission
+18012   15501  395 ; Howard to Concord
+18012   15520  315 ; Howard to Richmond
+18012   15530  322 ; Howard to Bay Fair
+18012   15511  129 ; Howard to Embarcadero
+18012   15510  217 ; Howard to West Oakland
+18012   15517  129 ; Howard to Glen Park
+18012   15536  441 ; Howard to Pittsburg/ Bay Point
+18012   14207  532 ; Howard to Diridon-Caltrain
+18012   18009  129 ; Howard to Fillmore
+18012   15502  367 ; Howard to Pleasant Hill
+18012   15503  357 ; Howard to Walnut Creek
+18012   15505  308 ; Howard to Orinda
+18012   15504  332 ; Howard to Lafayette
+18012   18008  129 ; Howard to Van Ness
+18012   14202  458 ; Howard to Milpitas
+18012   14203  469 ; Howard to Berryessa
+18012   15518  133 ; Howard to Balboa Park
+18012   15533  262 ; Howard to Fruitvale
+18012   15507  245 ; Howard to MacArthur
+18012   15526  416 ; Howard to Fremont
+15000   15532  420 ; Oakland International Airport to Coliseum/Oakland Airport
+15000   15514  703 ; Oakland International Airport to Civic Center
+15000   15522  626 ; Oakland International Airport to El Cerrito Plaza
+15000   15528  623 ; Oakland International Airport to South Hayward
+15000   15516  713 ; Oakland International Airport to 24th St Mission
+15000   15538  685 ; Oakland International Airport to Dublin/ Pleasanton
+15000   15529  591 ; Oakland International Airport to Hayward
+15000   14208  811 ; Oakland International Airport to Santa Clara
+15000   15545  675 ; Oakland International Airport to West Dublin/Pleasanton
+15000   15508  549 ; Oakland International Airport to 19th St Oakland
+15000   15544  720 ; Oakland International Airport to Warm Springs
+15000   15506  574 ; Oakland International Airport to Rockridge
+15000   15523  595 ; Oakland International Airport to Berkeley
+15000   15539  734 ; Oakland International Airport to Colma
+15000   15513  703 ; Oakland International Airport to Powell
+15000   15535  731 ; Oakland International Airport to North Concord
+15000   15531  549 ; Oakland International Airport to San Leandro
+15000   14206  794 ; Oakland International Airport to Downtown San Jose
+15000   15521  637 ; Oakland International Airport to El Cerrito Del Norte
+15000   15519  738 ; Oakland International Airport to Daly City
+15000   15512  703 ; Oakland International Airport to Montgomery
+15000   15537  591 ; Oakland International Airport to Castro Valley
+15000   15549  706 ; Oakland International Airport to Irvington
+15000   15540  748 ; Oakland International Airport to South San Francisco
+15000   14204  780 ; Oakland International Airport to Alum Rock
+15000   15509  549 ; Oakland International Airport to 12th St Oakland City Center
+15000   15524  605 ; Oakland International Airport to North Berkeley
+15000   15543  787 ; Oakland International Airport to Millbrae
+15000   15515  710 ; Oakland International Airport to 16th St Mission
+15000   15501  717 ; Oakland International Airport to Concord
+15000   15520  651 ; Oakland International Airport to Richmond
+15000   15530  549 ; Oakland International Airport to Bay Fair
+15000   15511  703 ; Oakland International Airport to Embarcadero
+15000   15510  567 ; Oakland International Airport to West Oakland
+15000   15517  724 ; Oakland International Airport to Glen Park
+15000   15536  766 ; Oakland International Airport to Pittsburg/ Bay Point
+15000   14207  794 ; Oakland International Airport to Diridon-Caltrain
+15000   15502  689 ; Oakland International Airport to Pleasant Hill
+15000   15503  678 ; Oakland International Airport to Walnut Creek
+15000   15505  630 ; Oakland International Airport to Orinda
+15000   15504  654 ; Oakland International Airport to Lafayette
+15000   14202  731 ; Oakland International Airport to Milpitas
+15000   14203  741 ; Oakland International Airport to Berryessa
+15000   15518  727 ; Oakland International Airport to Balboa Park
+15000   15533  549 ; Oakland International Airport to Fruitvale
+15000   15507  570 ; Oakland International Airport to MacArthur
+15000   15526  689 ; Oakland International Airport to Fremont
+18015   15534  129 ; 11th Street to Lake Merritt
+18015   15525  129 ; 11th Street to Ashby
+18015   15542  626 ; 11th Street to SFO
+18015   15541  315 ; 11th Street to San Bruno
+18015   15527  276 ; 11th Street to Union City
+18015   18012  231 ; 11th Street to Howard
+18015   15000  549 ; 11th Street to Oakland International Airport
+18015   15532  129 ; 11th Street to Coliseum/Oakland Airport
+18015   15514  231 ; 11th Street to Civic Center
+18015   15522  154 ; 11th Street to El Cerrito Plaza
+18015   18011  231 ; 11th Street to 6th/Brannan
+18015   15528  245 ; 11th Street to South Hayward
+18015   15516  252 ; 11th Street to 24th St Mission
+18015   15538  297 ; 11th Street to Dublin/ Pleasanton
+18015   15529  224 ; 11th Street to Hayward
+18015   14208  427 ; 11th Street to Santa Clara
+18015   15545  287 ; 11th Street to West Dublin/Pleasanton
+18015   15508  129 ; 11th Street to 19th St Oakland
+18015   15544  332 ; 11th Street to Warm Springs
+18015   15506  129 ; 11th Street to Rockridge
+18015   15523  129 ; 11th Street to Berkeley
+18015   15539  283 ; 11th Street to Colma
+18015   15513  231 ; 11th Street to Powell
+18015   15535  287 ; 11th Street to North Concord
+18015   15531  168 ; 11th Street to San Leandro
+18015   14206  413 ; 11th Street to Downtown San Jose
+18015   15521  171 ; 11th Street to El Cerrito Del Norte
+18015   15519  287 ; 11th Street to Daly City
+18015   15512  231 ; 11th Street to Montgomery
+18015   15537  224 ; 11th Street to Castro Valley
+18015   15549  318 ; 11th Street to Irvington
+18015   15540  297 ; 11th Street to South San Francisco
+18015   18010  231 ; 11th Street to 4th/Brannan
+18015   14204  402 ; 11th Street to Alum Rock
+18015   15509  129 ; 11th Street to 12th St Oakland City Center
+18015   15524  133 ; 11th Street to North Berkeley
+18015   15543  336 ; 11th Street to Millbrae
+18015   18003  129 ; 11th Street to Alameda
+18015   18013  231 ; 11th Street to Hyde
+18015   15515  245 ; 11th Street to 16th St Mission
+18015   15501  273 ; 11th Street to Concord
+18015   15520  196 ; 11th Street to Richmond
+18015   15530  192 ; 11th Street to Bay Fair
+18015   15511  231 ; 11th Street to Embarcadero
+18015   15510  129 ; 11th Street to West Oakland
+18015   15517  269 ; 11th Street to Glen Park
+18015   15536  322 ; 11th Street to Pittsburg/ Bay Point
+18015   14207  413 ; 11th Street to Diridon-Caltrain
+18015   18009  245 ; 11th Street to Fillmore
+18015   15502  248 ; 11th Street to Pleasant Hill
+18015   15503  238 ; 11th Street to Walnut Creek
+18015   18014  129 ; 11th Street to 14th Street
+18015   15505  164 ; 11th Street to Orinda
+18015   15504  206 ; 11th Street to Lafayette
+18015   18008  245 ; 11th Street to Van Ness
+18015   14202  343 ; 11th Street to Milpitas
+18015   14203  353 ; 11th Street to Berryessa
+18015   15518  276 ; 11th Street to Balboa Park
+18015   15533  129 ; 11th Street to Fruitvale
+18015   15507  129 ; 11th Street to MacArthur
+18015   15526  301 ; 11th Street to Fremont
+15532   15514  283 ; Coliseum/Oakland Airport to Civic Center
+15532   15522  206 ; Coliseum/Oakland Airport to El Cerrito Plaza
+15532   15528  203 ; Coliseum/Oakland Airport to South Hayward
+15532   15516  294 ; Coliseum/Oakland Airport to 24th St Mission
+15532   15538  266 ; Coliseum/Oakland Airport to Dublin/ Pleasanton
+15532   15529  171 ; Coliseum/Oakland Airport to Hayward
+15532   14208  399 ; Coliseum/Oakland Airport to Santa Clara
+15532   15545  255 ; Coliseum/Oakland Airport to West Dublin/Pleasanton
+15532   15508  129 ; Coliseum/Oakland Airport to 19th St Oakland
+15532   15544  301 ; Coliseum/Oakland Airport to Warm Springs
+15532   15506  154 ; Coliseum/Oakland Airport to Rockridge
+15532   15523  175 ; Coliseum/Oakland Airport to Berkeley
+15532   15539  315 ; Coliseum/Oakland Airport to Colma
+15532   15513  283 ; Coliseum/Oakland Airport to Powell
+15532   15535  311 ; Coliseum/Oakland Airport to North Concord
+15532   15531  129 ; Coliseum/Oakland Airport to San Leandro
+15532   14206  385 ; Coliseum/Oakland Airport to Downtown San Jose
+15532   15521  217 ; Coliseum/Oakland Airport to El Cerrito Del Norte
+15532   15519  318 ; Coliseum/Oakland Airport to Daly City
+15532   15512  283 ; Coliseum/Oakland Airport to Montgomery
+15532   15537  171 ; Coliseum/Oakland Airport to Castro Valley
+15532   15549  287 ; Coliseum/Oakland Airport to Irvington
+15532   15540  329 ; Coliseum/Oakland Airport to South San Francisco
+15532   14204  371 ; Coliseum/Oakland Airport to Alum Rock
+15532   15509  129 ; Coliseum/Oakland Airport to 12th St Oakland City Center
+15532   15524  185 ; Coliseum/Oakland Airport to North Berkeley
+15532   15543  367 ; Coliseum/Oakland Airport to Millbrae
+15532   15515  290 ; Coliseum/Oakland Airport to 16th St Mission
+15532   15501  297 ; Coliseum/Oakland Airport to Concord
+15532   15520  231 ; Coliseum/Oakland Airport to Richmond
+15532   15530  129 ; Coliseum/Oakland Airport to Bay Fair
+15532   15511  283 ; Coliseum/Oakland Airport to Embarcadero
+15532   15510  147 ; Coliseum/Oakland Airport to West Oakland
+15532   15517  304 ; Coliseum/Oakland Airport to Glen Park
+15532   15536  346 ; Coliseum/Oakland Airport to Pittsburg/ Bay Point
+15532   14207  385 ; Coliseum/Oakland Airport to Diridon-Caltrain
+15532   15502  269 ; Coliseum/Oakland Airport to Pleasant Hill
+15532   15503  259 ; Coliseum/Oakland Airport to Walnut Creek
+15532   15505  210 ; Coliseum/Oakland Airport to Orinda
+15532   15504  234 ; Coliseum/Oakland Airport to Lafayette
+15532   14202  311 ; Coliseum/Oakland Airport to Milpitas
+15532   14203  322 ; Coliseum/Oakland Airport to Berryessa
+15532   15518  308 ; Coliseum/Oakland Airport to Balboa Park
+15532   15533  129 ; Coliseum/Oakland Airport to Fruitvale
+15532   15507  150 ; Coliseum/Oakland Airport to MacArthur
+15532   15526  269 ; Coliseum/Oakland Airport to Fremont
+15514   15522  290 ; Civic Center to El Cerrito Plaza
+15514   15528  360 ; Civic Center to South Hayward
+15514   15516  129 ; Civic Center to 24th St Mission
+15514   15538  416 ; Civic Center to Dublin/ Pleasanton
+15514   15529  339 ; Civic Center to Hayward
+15514   14208  546 ; Civic Center to Santa Clara
+15514   15545  402 ; Civic Center to West Dublin/Pleasanton
+15514   15508  231 ; Civic Center to 19th St Oakland
+15514   15544  448 ; Civic Center to Warm Springs
+15514   15506  262 ; Civic Center to Rockridge
+15514   15523  273 ; Civic Center to Berkeley
+15514   15539  245 ; Civic Center to Colma
+15514   15513  129 ; Civic Center to Powell
+15514   15535  406 ; Civic Center to North Concord
+15514   15531  304 ; Civic Center to San Leandro
+15514   14206  532 ; Civic Center to Downtown San Jose
+15514   15521  301 ; Civic Center to El Cerrito Del Norte
+15514   15519  220 ; Civic Center to Daly City
+15514   15512  129 ; Civic Center to Montgomery
+15514   15537  339 ; Civic Center to Castro Valley
+15514   15549  434 ; Civic Center to Irvington
+15514   15540  266 ; Civic Center to South San Francisco
+15514   14204  521 ; Civic Center to Alum Rock
+15514   15509  231 ; Civic Center to 12th St Oakland City Center
+15514   15524  280 ; Civic Center to North Berkeley
+15514   15543  315 ; Civic Center to Millbrae
+15514   15515  129 ; Civic Center to 16th St Mission
+15514   15501  395 ; Civic Center to Concord
+15514   15520  315 ; Civic Center to Richmond
+15514   15530  322 ; Civic Center to Bay Fair
+15514   15511  129 ; Civic Center to Embarcadero
+15514   15510  217 ; Civic Center to West Oakland
+15514   15517  129 ; Civic Center to Glen Park
+15514   15536  441 ; Civic Center to Pittsburg/ Bay Point
+15514   14207  532 ; Civic Center to Diridon-Caltrain
+15514   15502  367 ; Civic Center to Pleasant Hill
+15514   15503  357 ; Civic Center to Walnut Creek
+15514   15505  308 ; Civic Center to Orinda
+15514   15504  332 ; Civic Center to Lafayette
+15514   14202  458 ; Civic Center to Milpitas
+15514   14203  469 ; Civic Center to Berryessa
+15514   15518  133 ; Civic Center to Balboa Park
+15514   15533  262 ; Civic Center to Fruitvale
+15514   15507  245 ; Civic Center to MacArthur
+15514   15526  416 ; Civic Center to Fremont
+15522   15528  280 ; El Cerrito Plaza to South Hayward
+15522   15516  301 ; El Cerrito Plaza to 24th St Mission
+15522   15538  336 ; El Cerrito Plaza to Dublin/ Pleasanton
+15522   15529  262 ; El Cerrito Plaza to Hayward
+15522   14208  465 ; El Cerrito Plaza to Santa Clara
+15522   15545  325 ; El Cerrito Plaza to West Dublin/Pleasanton
+15522   15508  154 ; El Cerrito Plaza to 19th St Oakland
+15522   15544  367 ; El Cerrito Plaza to Warm Springs
+15522   15506  143 ; El Cerrito Plaza to Rockridge
+15522   15523  129 ; El Cerrito Plaza to Berkeley
+15522   15539  322 ; El Cerrito Plaza to Colma
+15522   15513  290 ; El Cerrito Plaza to Powell
+15522   15535  304 ; El Cerrito Plaza to North Concord
+15522   15531  224 ; El Cerrito Plaza to San Leandro
+15522   14206  451 ; El Cerrito Plaza to Downtown San Jose
+15522   15521  129 ; El Cerrito Plaza to El Cerrito Del Norte
+15522   15519  322 ; El Cerrito Plaza to Daly City
+15522   15512  290 ; El Cerrito Plaza to Montgomery
+15522   15537  259 ; El Cerrito Plaza to Castro Valley
+15522   15549  353 ; El Cerrito Plaza to Irvington
+15522   15540  332 ; El Cerrito Plaza to South San Francisco
+15522   14204  437 ; El Cerrito Plaza to Alum Rock
+15522   15509  154 ; El Cerrito Plaza to 12th St Oakland City Center
+15522   15524  129 ; El Cerrito Plaza to North Berkeley
+15522   15543  374 ; El Cerrito Plaza to Millbrae
+15522   15515  297 ; El Cerrito Plaza to 16th St Mission
+15522   15501  290 ; El Cerrito Plaza to Concord
+15522   15520  129 ; El Cerrito Plaza to Richmond
+15522   15530  241 ; El Cerrito Plaza to Bay Fair
+15522   15511  290 ; El Cerrito Plaza to Embarcadero
+15522   15510  164 ; El Cerrito Plaza to West Oakland
+15522   15517  311 ; El Cerrito Plaza to Glen Park
+15522   15536  339 ; El Cerrito Plaza to Pittsburg/ Bay Point
+15522   14207  451 ; El Cerrito Plaza to Diridon-Caltrain
+15522   15502  262 ; El Cerrito Plaza to Pleasant Hill
+15522   15503  252 ; El Cerrito Plaza to Walnut Creek
+15522   15505  199 ; El Cerrito Plaza to Orinda
+15522   15504  231 ; El Cerrito Plaza to Lafayette
+15522   14202  378 ; El Cerrito Plaza to Milpitas
+15522   14203  388 ; El Cerrito Plaza to Berryessa
+15522   15518  315 ; El Cerrito Plaza to Balboa Park
+15522   15533  185 ; El Cerrito Plaza to Fruitvale
+15522   15507  140 ; El Cerrito Plaza to MacArthur
+15522   15526  336 ; El Cerrito Plaza to Fremont
+18011   15534  231 ; 6th/Brannan to Lake Merritt
+18011   15525  262 ; 6th/Brannan to Ashby
+18011   15542  605 ; 6th/Brannan to SFO
+18011   15541  290 ; 6th/Brannan to San Bruno
+18011   15527  392 ; 6th/Brannan to Union City
+18011   15000  703 ; 6th/Brannan to Oakland International Airport
+18011   15532  283 ; 6th/Brannan to Coliseum/Oakland Airport
+18011   15514  258 ; 6th/Brannan to Civic Center
+18011   15522  290 ; 6th/Brannan to El Cerrito Plaza
+18011   15528  360 ; 6th/Brannan to South Hayward
+18011   15516  129 ; 6th/Brannan to 24th St Mission
+18011   15538  416 ; 6th/Brannan to Dublin/ Pleasanton
+18011   15529  339 ; 6th/Brannan to Hayward
+18011   14208  546 ; 6th/Brannan to Santa Clara
+18011   15545  402 ; 6th/Brannan to West Dublin/Pleasanton
+18011   15508  231 ; 6th/Brannan to 19th St Oakland
+18011   15544  448 ; 6th/Brannan to Warm Springs
+18011   15506  262 ; 6th/Brannan to Rockridge
+18011   15523  273 ; 6th/Brannan to Berkeley
+18011   15539  245 ; 6th/Brannan to Colma
+18011   15513  129 ; 6th/Brannan to Powell
+18011   15535  406 ; 6th/Brannan to North Concord
+18011   15531  304 ; 6th/Brannan to San Leandro
+18011   14206  532 ; 6th/Brannan to Downtown San Jose
+18011   15521  301 ; 6th/Brannan to El Cerrito Del Norte
+18011   15519  220 ; 6th/Brannan to Daly City
+18011   15512  129 ; 6th/Brannan to Montgomery
+18011   15537  339 ; 6th/Brannan to Castro Valley
+18011   15549  434 ; 6th/Brannan to Irvington
+18011   15540  266 ; 6th/Brannan to South San Francisco
+18011   18010  129 ; 6th/Brannan to 4th/Brannan
+18011   14204  521 ; 6th/Brannan to Alum Rock
+18011   15509  231 ; 6th/Brannan to 12th St Oakland City Center
+18011   15524  280 ; 6th/Brannan to North Berkeley
+18011   15543  315 ; 6th/Brannan to Millbrae
+18011   18003  231 ; 6th/Brannan to Alameda
+18011   15515  129 ; 6th/Brannan to 16th St Mission
+18011   15501  395 ; 6th/Brannan to Concord
+18011   15520  315 ; 6th/Brannan to Richmond
+18011   15530  322 ; 6th/Brannan to Bay Fair
+18011   15511  129 ; 6th/Brannan to Embarcadero
+18011   15510  217 ; 6th/Brannan to West Oakland
+18011   15517  129 ; 6th/Brannan to Glen Park
+18011   15536  441 ; 6th/Brannan to Pittsburg/ Bay Point
+18011   14207  532 ; 6th/Brannan to Diridon-Caltrain
+18011   18009  129 ; 6th/Brannan to Fillmore
+18011   15502  367 ; 6th/Brannan to Pleasant Hill
+18011   15503  357 ; 6th/Brannan to Walnut Creek
+18011   15505  308 ; 6th/Brannan to Orinda
+18011   15504  332 ; 6th/Brannan to Lafayette
+18011   18008  129 ; 6th/Brannan to Van Ness
+18011   14202  458 ; 6th/Brannan to Milpitas
+18011   14203  469 ; 6th/Brannan to Berryessa
+18011   15518  133 ; 6th/Brannan to Balboa Park
+18011   15533  262 ; 6th/Brannan to Fruitvale
+18011   15507  245 ; 6th/Brannan to MacArthur
+18011   15526  416 ; 6th/Brannan to Fremont
+15528   15516  367 ; South Hayward to 24th St Mission
+15528   15538  269 ; South Hayward to Dublin/ Pleasanton
+15528   15529  129 ; South Hayward to Hayward
+15528   14208  325 ; South Hayward to Santa Clara
+15528   15545  259 ; South Hayward to West Dublin/Pleasanton
+15528   15508  245 ; South Hayward to 19th St Oakland
+15528   15544  129 ; South Hayward to Warm Springs
+15528   15506  248 ; South Hayward to Rockridge
+15528   15523  266 ; South Hayward to Berkeley
+15528   15539  388 ; South Hayward to Colma
+15528   15513  360 ; South Hayward to Powell
+15528   15535  385 ; South Hayward to North Concord
+15528   15531  171 ; South Hayward to San Leandro
+15528   14206  308 ; South Hayward to Downtown San Jose
+15528   15521  294 ; South Hayward to El Cerrito Del Norte
+15528   15519  392 ; South Hayward to Daly City
+15528   15512  360 ; South Hayward to Montgomery
+15528   15537  178 ; South Hayward to Castro Valley
+15528   15549  129 ; South Hayward to Irvington
+15528   15540  402 ; South Hayward to South San Francisco
+15528   14204  301 ; South Hayward to Alum Rock
+15528   15509  245 ; South Hayward to 12th St Oakland City Center
+15528   15524  269 ; South Hayward to North Berkeley
+15528   15543  441 ; South Hayward to Millbrae
+15528   15515  364 ; South Hayward to 16th St Mission
+15528   15501  371 ; South Hayward to Concord
+15528   15520  304 ; South Hayward to Richmond
+15528   15530  129 ; South Hayward to Bay Fair
+15528   15511  360 ; South Hayward to Embarcadero
+15528   15510  252 ; South Hayward to West Oakland
+15528   15517  378 ; South Hayward to Glen Park
+15528   15536  420 ; South Hayward to Pittsburg/ Bay Point
+15528   14207  308 ; South Hayward to Diridon-Caltrain
+15528   15502  343 ; South Hayward to Pleasant Hill
+15528   15503  336 ; South Hayward to Walnut Creek
+15528   15505  283 ; South Hayward to Orinda
+15528   15504  311 ; South Hayward to Lafayette
+15528   14202  157 ; South Hayward to Milpitas
+15528   14203  182 ; South Hayward to Berryessa
+15528   15518  385 ; South Hayward to Balboa Park
+15528   15533  224 ; South Hayward to Fruitvale
+15528   15507  248 ; South Hayward to MacArthur
+15528   15526  129 ; South Hayward to Fremont
+15516   15538  423 ; 24th St Mission to Dublin/ Pleasanton
+15516   15529  350 ; 24th St Mission to Hayward
+15516   14208  556 ; 24th St Mission to Santa Clara
+15516   15545  413 ; 24th St Mission to West Dublin/Pleasanton
+15516   15508  252 ; 24th St Mission to 19th St Oakland
+15516   15544  455 ; 24th St Mission to Warm Springs
+15516   15506  280 ; 24th St Mission to Rockridge
+15516   15523  283 ; 24th St Mission to Berkeley
+15516   15539  227 ; 24th St Mission to Colma
+15516   15513  129 ; 24th St Mission to Powell
+15516   15535  416 ; 24th St Mission to North Concord
+15516   15531  315 ; 24th St Mission to San Leandro
+15516   14206  539 ; 24th St Mission to Downtown San Jose
+15516   15521  311 ; 24th St Mission to El Cerrito Del Norte
+15516   15519  206 ; 24th St Mission to Daly City
+15516   15512  129 ; 24th St Mission to Montgomery
+15516   15537  350 ; 24th St Mission to Castro Valley
+15516   15549  441 ; 24th St Mission to Irvington
+15516   15540  245 ; 24th St Mission to South San Francisco
+15516   14204  528 ; 24th St Mission to Alum Rock
+15516   15509  252 ; 24th St Mission to 12th St Oakland City Center
+15516   15524  287 ; 24th St Mission to North Berkeley
+15516   15543  308 ; 24th St Mission to Millbrae
+15516   15515  129 ; 24th St Mission to 16th St Mission
+15516   15501  402 ; 24th St Mission to Concord
+15516   15520  325 ; 24th St Mission to Richmond
+15516   15530  329 ; 24th St Mission to Bay Fair
+15516   15511  129 ; 24th St Mission to Embarcadero
+15516   15510  238 ; 24th St Mission to West Oakland
+15516   15517  129 ; 24th St Mission to Glen Park
+15516   15536  451 ; 24th St Mission to Pittsburg/ Bay Point
+15516   14207  539 ; 24th St Mission to Diridon-Caltrain
+15516   15502  374 ; 24th St Mission to Pleasant Hill
+15516   15503  364 ; 24th St Mission to Walnut Creek
+15516   15505  315 ; 24th St Mission to Orinda
+15516   15504  339 ; 24th St Mission to Lafayette
+15516   14202  465 ; 24th St Mission to Milpitas
+15516   14203  476 ; 24th St Mission to Berryessa
+15516   15518  129 ; 24th St Mission to Balboa Park
+15516   15533  280 ; 24th St Mission to Fruitvale
+15516   15507  266 ; 24th St Mission to MacArthur
+15516   15526  423 ; 24th St Mission to Fremont
+15538   15529  252 ; Dublin/ Pleasanton to Hayward
+15538   14208  458 ; Dublin/ Pleasanton to Santa Clara
+15538   15545  129 ; Dublin/ Pleasanton to West Dublin/Pleasanton
+15538   15508  297 ; Dublin/ Pleasanton to 19th St Oakland
+15538   15544  357 ; Dublin/ Pleasanton to Warm Springs
+15538   15506  304 ; Dublin/ Pleasanton to Rockridge
+15538   15523  318 ; Dublin/ Pleasanton to Berkeley
+15538   15539  444 ; Dublin/ Pleasanton to Colma
+15538   15513  416 ; Dublin/ Pleasanton to Powell
+15538   15535  441 ; Dublin/ Pleasanton to North Concord
+15538   15531  248 ; Dublin/ Pleasanton to San Leandro
+15538   14206  437 ; Dublin/ Pleasanton to Downtown San Jose
+15538   15521  346 ; Dublin/ Pleasanton to El Cerrito Del Norte
+15538   15519  448 ; Dublin/ Pleasanton to Daly City
+15538   15512  416 ; Dublin/ Pleasanton to Montgomery
+15538   15537  129 ; Dublin/ Pleasanton to Castro Valley
+15538   15549  343 ; Dublin/ Pleasanton to Irvington
+15538   15540  458 ; Dublin/ Pleasanton to South San Francisco
+15538   14204  465 ; Dublin/ Pleasanton to Alum Rock
+15538   15509  297 ; Dublin/ Pleasanton to 12th St Oakland City Center
+15538   15524  322 ; Dublin/ Pleasanton to North Berkeley
+15538   15543  497 ; Dublin/ Pleasanton to Millbrae
+15538   15515  420 ; Dublin/ Pleasanton to 16th St Mission
+15538   15501  427 ; Dublin/ Pleasanton to Concord
+15538   15520  360 ; Dublin/ Pleasanton to Richmond
+15538   15530  129 ; Dublin/ Pleasanton to Bay Fair
+15538   15511  416 ; Dublin/ Pleasanton to Embarcadero
+15538   15510  304 ; Dublin/ Pleasanton to West Oakland
+15538   15517  434 ; Dublin/ Pleasanton to Glen Park
+15538   15536  476 ; Dublin/ Pleasanton to Pittsburg/ Bay Point
+15538   14207  441 ; Dublin/ Pleasanton to Diridon-Caltrain
+15538   15502  399 ; Dublin/ Pleasanton to Pleasant Hill
+15538   15503  388 ; Dublin/ Pleasanton to Walnut Creek
+15538   15505  339 ; Dublin/ Pleasanton to Orinda
+15538   15504  364 ; Dublin/ Pleasanton to Lafayette
+15538   14202  367 ; Dublin/ Pleasanton to Milpitas
+15538   14203  378 ; Dublin/ Pleasanton to Berryessa
+15538   15518  437 ; Dublin/ Pleasanton to Balboa Park
+15538   15533  280 ; Dublin/ Pleasanton to Fruitvale
+15538   15507  304 ; Dublin/ Pleasanton to MacArthur
+15538   15526  325 ; Dublin/ Pleasanton to Fremont
+15529   14208  343 ; Hayward to Santa Clara
+15529   15545  241 ; Hayward to West Dublin/Pleasanton
+15529   15508  224 ; Hayward to 19th St Oakland
+15529   15544  129 ; Hayward to Warm Springs
+15529   15506  231 ; Hayward to Rockridge
+15529   15523  245 ; Hayward to Berkeley
+15529   15539  371 ; Hayward to Colma
+15529   15513  339 ; Hayward to Powell
+15529   15535  364 ; Hayward to North Concord
+15529   15531  129 ; Hayward to San Leandro
+15529   14206  325 ; Hayward to Downtown San Jose
+15529   15521  273 ; Hayward to El Cerrito Del Norte
+15529   15519  371 ; Hayward to Daly City
+15529   15512  339 ; Hayward to Montgomery
+15529   15537  129 ; Hayward to Castro Valley
+15529   15549  129 ; Hayward to Irvington
+15529   15540  381 ; Hayward to South San Francisco
+15529   14204  318 ; Hayward to Alum Rock
+15529   15509  224 ; Hayward to 12th St Oakland City Center
+15529   15524  248 ; Hayward to North Berkeley
+15529   15543  423 ; Hayward to Millbrae
+15529   15515  346 ; Hayward to 16th St Mission
+15529   15501  353 ; Hayward to Concord
+15529   15520  287 ; Hayward to Richmond
+15529   15530  129 ; Hayward to Bay Fair
+15529   15511  339 ; Hayward to Embarcadero
+15529   15510  231 ; Hayward to West Oakland
+15529   15517  357 ; Hayward to Glen Park
+15529   15536  399 ; Hayward to Pittsburg/ Bay Point
+15529   14207  329 ; Hayward to Diridon-Caltrain
+15529   15502  325 ; Hayward to Pleasant Hill
+15529   15503  315 ; Hayward to Walnut Creek
+15529   15505  262 ; Hayward to Orinda
+15529   15504  290 ; Hayward to Lafayette
+15529   14202  157 ; Hayward to Milpitas
+15529   14203  182 ; Hayward to Berryessa
+15529   15518  364 ; Hayward to Balboa Park
+15529   15533  192 ; Hayward to Fruitvale
+15529   15507  231 ; Hayward to MacArthur
+15529   15526  129 ; Hayward to Fremont
+14208   15545  448 ; Santa Clara to West Dublin/Pleasanton
+14208   15508  427 ; Santa Clara to 19th St Oakland
+14208   15544  241 ; Santa Clara to Warm Springs
+14208   15506  434 ; Santa Clara to Rockridge
+14208   15523  451 ; Santa Clara to Berkeley
+14208   15539  588 ; Santa Clara to Colma
+14208   15513  546 ; Santa Clara to Powell
+14208   15535  584 ; Santa Clara to North Concord
+14208   15531  381 ; Santa Clara to San Leandro
+14208   14206  129 ; Santa Clara to Downtown San Jose
+14208   15521  476 ; Santa Clara to El Cerrito Del Norte
+14208   15519  591 ; Santa Clara to Daly City
+14208   15512  546 ; Santa Clara to Montgomery
+14208   15537  385 ; Santa Clara to Castro Valley
+14208   15549  129 ; Santa Clara to Irvington
+14208   15540  602 ; Santa Clara to South San Francisco
+14208   14204  129 ; Santa Clara to Alum Rock
+14208   15509  427 ; Santa Clara to 12th St Oakland City Center
+14208   15524  455 ; Santa Clara to North Berkeley
+14208   15543  644 ; Santa Clara to Millbrae
+14208   15515  553 ; Santa Clara to 16th St Mission
+14208   15501  560 ; Santa Clara to Concord
+14208   15520  490 ; Santa Clara to Richmond
+14208   15530  364 ; Santa Clara to Bay Fair
+14208   15511  546 ; Santa Clara to Embarcadero
+14208   15510  434 ; Santa Clara to West Oakland
+14208   15517  577 ; Santa Clara to Glen Park
+14208   15536  605 ; Santa Clara to Pittsburg/ Bay Point
+14208   14207  129 ; Santa Clara to Diridon-Caltrain
+14208   15502  532 ; Santa Clara to Pleasant Hill
+14208   15503  521 ; Santa Clara to Walnut Creek
+14208   15505  469 ; Santa Clara to Orinda
+14208   15504  497 ; Santa Clara to Lafayette
+14208   14202  129 ; Santa Clara to Milpitas
+14208   14203  129 ; Santa Clara to Berryessa
+14208   15518  581 ; Santa Clara to Balboa Park
+14208   15533  413 ; Santa Clara to Fruitvale
+14208   15507  434 ; Santa Clara to MacArthur
+14208   15526  269 ; Santa Clara to Fremont
+15545   15508  287 ; West Dublin/Pleasanton to 19th St Oakland
+15545   15544  346 ; West Dublin/Pleasanton to Warm Springs
+15545   15506  294 ; West Dublin/Pleasanton to Rockridge
+15545   15523  308 ; West Dublin/Pleasanton to Berkeley
+15545   15539  434 ; West Dublin/Pleasanton to Colma
+15545   15513  402 ; West Dublin/Pleasanton to Powell
+15545   15535  430 ; West Dublin/Pleasanton to North Concord
+15545   15531  238 ; West Dublin/Pleasanton to San Leandro
+15545   14206  430 ; West Dublin/Pleasanton to Downtown San Jose
+15545   15521  336 ; West Dublin/Pleasanton to El Cerrito Del Norte
+15545   15519  434 ; West Dublin/Pleasanton to Daly City
+15545   15512  402 ; West Dublin/Pleasanton to Montgomery
+15545   15537  129 ; West Dublin/Pleasanton to Castro Valley
+15545   15549  332 ; West Dublin/Pleasanton to Irvington
+15545   15540  444 ; West Dublin/Pleasanton to South San Francisco
+15545   14204  420 ; West Dublin/Pleasanton to Alum Rock
+15545   15509  287 ; West Dublin/Pleasanton to 12th St Oakland City Center
+15545   15524  311 ; West Dublin/Pleasanton to North Berkeley
+15545   15543  486 ; West Dublin/Pleasanton to Millbrae
+15545   15515  409 ; West Dublin/Pleasanton to 16th St Mission
+15545   15501  416 ; West Dublin/Pleasanton to Concord
+15545   15520  350 ; West Dublin/Pleasanton to Richmond
+15545   15530  129 ; West Dublin/Pleasanton to Bay Fair
+15545   15511  402 ; West Dublin/Pleasanton to Embarcadero
+15545   15510  294 ; West Dublin/Pleasanton to West Oakland
+15545   15517  423 ; West Dublin/Pleasanton to Glen Park
+15545   15536  465 ; West Dublin/Pleasanton to Pittsburg/ Bay Point
+15545   14207  430 ; West Dublin/Pleasanton to Diridon-Caltrain
+15545   15502  388 ; West Dublin/Pleasanton to Pleasant Hill
+15545   15503  378 ; West Dublin/Pleasanton to Walnut Creek
+15545   15505  329 ; West Dublin/Pleasanton to Orinda
+15545   15504  353 ; West Dublin/Pleasanton to Lafayette
+15545   14202  357 ; West Dublin/Pleasanton to Milpitas
+15545   14203  367 ; West Dublin/Pleasanton to Berryessa
+15545   15518  427 ; West Dublin/Pleasanton to Balboa Park
+15545   15533  269 ; West Dublin/Pleasanton to Fruitvale
+15545   15507  294 ; West Dublin/Pleasanton to MacArthur
+15545   15526  315 ; West Dublin/Pleasanton to Fremont
+15508   15544  332 ; 19th St Oakland to Warm Springs
+15508   15506  129 ; 19th St Oakland to Rockridge
+15508   15523  129 ; 19th St Oakland to Berkeley
+15508   15539  283 ; 19th St Oakland to Colma
+15508   15513  231 ; 19th St Oakland to Powell
+15508   15535  287 ; 19th St Oakland to North Concord
+15508   15531  168 ; 19th St Oakland to San Leandro
+15508   14206  413 ; 19th St Oakland to Downtown San Jose
+15508   15521  171 ; 19th St Oakland to El Cerrito Del Norte
+15508   15519  287 ; 19th St Oakland to Daly City
+15508   15512  231 ; 19th St Oakland to Montgomery
+15508   15537  224 ; 19th St Oakland to Castro Valley
+15508   15549  318 ; 19th St Oakland to Irvington
+15508   15540  297 ; 19th St Oakland to South San Francisco
+15508   14204  402 ; 19th St Oakland to Alum Rock
+15508   15509  129 ; 19th St Oakland to 12th St Oakland City Center
+15508   15524  133 ; 19th St Oakland to North Berkeley
+15508   15543  336 ; 19th St Oakland to Millbrae
+15508   15515  245 ; 19th St Oakland to 16th St Mission
+15508   15501  273 ; 19th St Oakland to Concord
+15508   15520  196 ; 19th St Oakland to Richmond
+15508   15530  192 ; 19th St Oakland to Bay Fair
+15508   15511  231 ; 19th St Oakland to Embarcadero
+15508   15510  129 ; 19th St Oakland to West Oakland
+15508   15517  269 ; 19th St Oakland to Glen Park
+15508   15536  322 ; 19th St Oakland to Pittsburg/ Bay Point
+15508   14207  413 ; 19th St Oakland to Diridon-Caltrain
+15508   15502  248 ; 19th St Oakland to Pleasant Hill
+15508   15503  238 ; 19th St Oakland to Walnut Creek
+15508   15505  164 ; 19th St Oakland to Orinda
+15508   15504  206 ; 19th St Oakland to Lafayette
+15508   14202  343 ; 19th St Oakland to Milpitas
+15508   14203  353 ; 19th St Oakland to Berryessa
+15508   15518  276 ; 19th St Oakland to Balboa Park
+15508   15533  129 ; 19th St Oakland to Fruitvale
+15508   15507  129 ; 19th St Oakland to MacArthur
+15508   15526  301 ; 19th St Oakland to Fremont
+15544   15506  336 ; Warm Springs to Rockridge
+15544   15523  353 ; Warm Springs to Berkeley
+15544   15539  476 ; Warm Springs to Colma
+15544   15513  448 ; Warm Springs to Powell
+15544   15535  472 ; Warm Springs to North Concord
+15544   15531  280 ; Warm Springs to San Leandro
+15544   14206  224 ; Warm Springs to Downtown San Jose
+15544   15521  381 ; Warm Springs to El Cerrito Del Norte
+15544   15519  479 ; Warm Springs to Daly City
+15544   15512  448 ; Warm Springs to Montgomery
+15544   15537  283 ; Warm Springs to Castro Valley
+15544   15549  129 ; Warm Springs to Irvington
+15544   15540  490 ; Warm Springs to South San Francisco
+15544   14204  129 ; Warm Springs to Alum Rock
+15544   15509  332 ; Warm Springs to 12th St Oakland City Center
+15544   15524  353 ; Warm Springs to North Berkeley
+15544   15543  528 ; Warm Springs to Millbrae
+15544   15515  451 ; Warm Springs to 16th St Mission
+15544   15501  458 ; Warm Springs to Concord
+15544   15520  392 ; Warm Springs to Richmond
+15544   15530  161 ; Warm Springs to Bay Fair
+15544   15511  448 ; Warm Springs to Embarcadero
+15544   15510  339 ; Warm Springs to West Oakland
+15544   15517  465 ; Warm Springs to Glen Park
+15544   15536  507 ; Warm Springs to Pittsburg/ Bay Point
+15544   14207  224 ; Warm Springs to Diridon-Caltrain
+15544   15502  430 ; Warm Springs to Pleasant Hill
+15544   15503  423 ; Warm Springs to Walnut Creek
+15544   15505  371 ; Warm Springs to Orinda
+15544   15504  399 ; Warm Springs to Lafayette
+15544   14202  129 ; Warm Springs to Milpitas
+15544   14203  129 ; Warm Springs to Berryessa
+15544   15518  472 ; Warm Springs to Balboa Park
+15544   15533  315 ; Warm Springs to Fruitvale
+15544   15507  336 ; Warm Springs to MacArthur
+15544   15526  129 ; Warm Springs to Fremont
+15506   15523  129 ; Rockridge to Berkeley
+15506   15539  301 ; Rockridge to Colma
+15506   15513  262 ; Rockridge to Powell
+15506   15535  276 ; Rockridge to North Concord
+15506   15531  185 ; Rockridge to San Leandro
+15506   14206  416 ; Rockridge to Downtown San Jose
+15506   15521  161 ; Rockridge to El Cerrito Del Norte
+15506   15519  301 ; Rockridge to Daly City
+15506   15512  262 ; Rockridge to Montgomery
+15506   15537  231 ; Rockridge to Castro Valley
+15506   15549  322 ; Rockridge to Irvington
+15506   15540  311 ; Rockridge to South San Francisco
+15506   14204  409 ; Rockridge to Alum Rock
+15506   15509  129 ; Rockridge to 12th St Oakland City Center
+15506   15524  129 ; Rockridge to North Berkeley
+15506   15543  350 ; Rockridge to Millbrae
+15506   15515  273 ; Rockridge to 16th St Mission
+15506   15501  262 ; Rockridge to Concord
+15506   15520  185 ; Rockridge to Richmond
+15506   15530  210 ; Rockridge to Bay Fair
+15506   15511  262 ; Rockridge to Embarcadero
+15506   15510  129 ; Rockridge to West Oakland
+15506   15517  287 ; Rockridge to Glen Park
+15506   15536  311 ; Rockridge to Pittsburg/ Bay Point
+15506   14207  416 ; Rockridge to Diridon-Caltrain
+15506   15502  234 ; Rockridge to Pleasant Hill
+15506   15503  217 ; Rockridge to Walnut Creek
+15506   15505  129 ; Rockridge to Orinda
+15506   15504  182 ; Rockridge to Lafayette
+15506   14202  346 ; Rockridge to Milpitas
+15506   14203  357 ; Rockridge to Berryessa
+15506   15518  294 ; Rockridge to Balboa Park
+15506   15533  133 ; Rockridge to Fruitvale
+15506   15507  129 ; Rockridge to MacArthur
+15506   15526  304 ; Rockridge to Fremont
+15523   15539  304 ; Berkeley to Colma
+15523   15513  273 ; Berkeley to Powell
+15523   15535  287 ; Berkeley to North Concord
+15523   15531  210 ; Berkeley to San Leandro
+15523   14206  430 ; Berkeley to Downtown San Jose
+15523   15521  129 ; Berkeley to El Cerrito Del Norte
+15523   15519  308 ; Berkeley to Daly City
+15523   15512  273 ; Berkeley to Montgomery
+15523   15537  245 ; Berkeley to Castro Valley
+15523   15549  339 ; Berkeley to Irvington
+15523   15540  318 ; Berkeley to South San Francisco
+15523   14204  423 ; Berkeley to Alum Rock
+15523   15509  129 ; Berkeley to 12th St Oakland City Center
+15523   15524  129 ; Berkeley to North Berkeley
+15523   15543  357 ; Berkeley to Millbrae
+15523   15515  280 ; Berkeley to 16th St Mission
+15523   15501  273 ; Berkeley to Concord
+15523   15520  129 ; Berkeley to Richmond
+15523   15530  227 ; Berkeley to Bay Fair
+15523   15511  273 ; Berkeley to Embarcadero
+15523   15510  136 ; Berkeley to West Oakland
+15523   15517  294 ; Berkeley to Glen Park
+15523   15536  322 ; Berkeley to Pittsburg/ Bay Point
+15523   14207  430 ; Berkeley to Diridon-Caltrain
+15523   15502  248 ; Berkeley to Pleasant Hill
+15523   15503  238 ; Berkeley to Walnut Creek
+15523   15505  168 ; Berkeley to Orinda
+15523   15504  210 ; Berkeley to Lafayette
+15523   14202  364 ; Berkeley to Milpitas
+15523   14203  374 ; Berkeley to Berryessa
+15523   15518  297 ; Berkeley to Balboa Park
+15523   15533  154 ; Berkeley to Fruitvale
+15523   15507  129 ; Berkeley to MacArthur
+15523   15526  322 ; Berkeley to Fremont
+15539   15513  245 ; Colma to Powell
+15539   15535  437 ; Colma to North Concord
+15539   15531  336 ; Colma to San Leandro
+15539   14206  560 ; Colma to Downtown San Jose
+15539   15521  332 ; Colma to El Cerrito Del Norte
+15539   15519  217 ; Colma to Daly City
+15539   15512  245 ; Colma to Montgomery
+15539   15537  371 ; Colma to Castro Valley
+15539   15549  462 ; Colma to Irvington
+15539   15540  217 ; Colma to South San Francisco
+15539   14204  549 ; Colma to Alum Rock
+15539   15509  283 ; Colma to 12th St Oakland City Center
+15539   15524  308 ; Colma to North Berkeley
+15539   15543  252 ; Colma to Millbrae
+15539   15515  234 ; Colma to 16th St Mission
+15539   15501  423 ; Colma to Concord
+15539   15520  346 ; Colma to Richmond
+15539   15530  350 ; Colma to Bay Fair
+15539   15511  245 ; Colma to Embarcadero
+15539   15510  276 ; Colma to West Oakland
+15539   15517  217 ; Colma to Glen Park
+15539   15536  472 ; Colma to Pittsburg/ Bay Point
+15539   14207  560 ; Colma to Diridon-Caltrain
+15539   15502  395 ; Colma to Pleasant Hill
+15539   15503  385 ; Colma to Walnut Creek
+15539   15505  336 ; Colma to Orinda
+15539   15504  360 ; Colma to Lafayette
+15539   14202  486 ; Colma to Milpitas
+15539   14203  497 ; Colma to Berryessa
+15539   15518  217 ; Colma to Balboa Park
+15539   15533  301 ; Colma to Fruitvale
+15539   15507  290 ; Colma to MacArthur
+15539   15526  444 ; Colma to Fremont
+15513   15535  406 ; Powell to North Concord
+15513   15531  304 ; Powell to San Leandro
+15513   14206  532 ; Powell to Downtown San Jose
+15513   15521  301 ; Powell to El Cerrito Del Norte
+15513   15519  220 ; Powell to Daly City
+15513   15512  129 ; Powell to Montgomery
+15513   15537  339 ; Powell to Castro Valley
+15513   15549  434 ; Powell to Irvington
+15513   15540  266 ; Powell to South San Francisco
+15513   14204  521 ; Powell to Alum Rock
+15513   15509  231 ; Powell to 12th St Oakland City Center
+15513   15524  280 ; Powell to North Berkeley
+15513   15543  315 ; Powell to Millbrae
+15513   15515  129 ; Powell to 16th St Mission
+15513   15501  395 ; Powell to Concord
+15513   15520  315 ; Powell to Richmond
+15513   15530  322 ; Powell to Bay Fair
+15513   15511  129 ; Powell to Embarcadero
+15513   15510  217 ; Powell to West Oakland
+15513   15517  129 ; Powell to Glen Park
+15513   15536  441 ; Powell to Pittsburg/ Bay Point
+15513   14207  532 ; Powell to Diridon-Caltrain
+15513   15502  367 ; Powell to Pleasant Hill
+15513   15503  357 ; Powell to Walnut Creek
+15513   15505  308 ; Powell to Orinda
+15513   15504  332 ; Powell to Lafayette
+15513   14202  458 ; Powell to Milpitas
+15513   14203  469 ; Powell to Berryessa
+15513   15518  133 ; Powell to Balboa Park
+15513   15533  262 ; Powell to Fruitvale
+15513   15507  245 ; Powell to MacArthur
+15513   15526  416 ; Powell to Fremont
+15535   15531  332 ; North Concord to San Leandro
+15535   14206  567 ; North Concord to Downtown San Jose
+15535   15521  315 ; North Concord to El Cerrito Del Norte
+15535   15519  441 ; North Concord to Daly City
+15535   15512  406 ; North Concord to Montgomery
+15535   15537  367 ; North Concord to Castro Valley
+15535   15549  458 ; North Concord to Irvington
+15535   15540  451 ; North Concord to South San Francisco
+15535   14204  546 ; North Concord to Alum Rock
+15535   15509  287 ; North Concord to 12th St Oakland City Center
+15535   15524  294 ; North Concord to North Berkeley
+15535   15543  490 ; North Concord to Millbrae
+15535   15515  413 ; North Concord to 16th St Mission
+15535   15501  129 ; North Concord to Concord
+15535   15520  329 ; North Concord to Richmond
+15535   15530  346 ; North Concord to Bay Fair
+15535   15511  406 ; North Concord to Embarcadero
+15535   15510  297 ; North Concord to West Oakland
+15535   15517  427 ; North Concord to Glen Park
+15535   15536  129 ; North Concord to Pittsburg/ Bay Point
+15535   14207  567 ; North Concord to Diridon-Caltrain
+15535   15502  129 ; North Concord to Pleasant Hill
+15535   15503  129 ; North Concord to Walnut Creek
+15535   15505  238 ; North Concord to Orinda
+15535   15504  206 ; North Concord to Lafayette
+15535   14202  483 ; North Concord to Milpitas
+15535   14203  493 ; North Concord to Berryessa
+15535   15518  430 ; North Concord to Balboa Park
+15535   15533  297 ; North Concord to Fruitvale
+15535   15507  287 ; North Concord to MacArthur
+15535   15526  441 ; North Concord to Fremont
+15531   14206  364 ; San Leandro to Downtown San Jose
+15531   15521  238 ; San Leandro to El Cerrito Del Norte
+15531   15519  336 ; San Leandro to Daly City
+15531   15512  304 ; San Leandro to Montgomery
+15531   15537  129 ; San Leandro to Castro Valley
+15531   15549  266 ; San Leandro to Irvington
+15531   15540  346 ; San Leandro to South San Francisco
+15531   14204  353 ; San Leandro to Alum Rock
+15531   15509  168 ; San Leandro to 12th St Oakland City Center
+15531   15524  213 ; San Leandro to North Berkeley
+15531   15543  388 ; San Leandro to Millbrae
+15531   15515  311 ; San Leandro to 16th St Mission
+15531   15501  318 ; San Leandro to Concord
+15531   15520  252 ; San Leandro to Richmond
+15531   15530  129 ; San Leandro to Bay Fair
+15531   15511  304 ; San Leandro to Embarcadero
+15531   15510  178 ; San Leandro to West Oakland
+15531   15517  325 ; San Leandro to Glen Park
+15531   15536  364 ; San Leandro to Pittsburg/ Bay Point
+15531   14207  364 ; San Leandro to Diridon-Caltrain
+15531   15502  290 ; San Leandro to Pleasant Hill
+15531   15503  280 ; San Leandro to Walnut Creek
+15531   15505  231 ; San Leandro to Orinda
+15531   15504  255 ; San Leandro to Lafayette
+15531   14202  290 ; San Leandro to Milpitas
+15531   14203  301 ; San Leandro to Berryessa
+15531   15518  329 ; San Leandro to Balboa Park
+15531   15533  129 ; San Leandro to Fruitvale
+15531   15507  182 ; San Leandro to MacArthur
+15531   15526  248 ; San Leandro to Fremont
+14206   15521  465 ; Downtown San Jose to El Cerrito Del Norte
+14206   15519  563 ; Downtown San Jose to Daly City
+14206   15512  532 ; Downtown San Jose to Montgomery
+14206   15537  367 ; Downtown San Jose to Castro Valley
+14206   15549  129 ; Downtown San Jose to Irvington
+14206   15540  584 ; Downtown San Jose to South San Francisco
+14206   14204  129 ; Downtown San Jose to Alum Rock
+14206   15509  413 ; Downtown San Jose to 12th St Oakland City Center
+14206   15524  434 ; Downtown San Jose to North Berkeley
+14206   15543  626 ; Downtown San Jose to Millbrae
+14206   15515  535 ; Downtown San Jose to 16th St Mission
+14206   15501  542 ; Downtown San Jose to Concord
+14206   15520  476 ; Downtown San Jose to Richmond
+14206   15530  350 ; Downtown San Jose to Bay Fair
+14206   15511  532 ; Downtown San Jose to Embarcadero
+14206   15510  420 ; Downtown San Jose to West Oakland
+14206   15517  549 ; Downtown San Jose to Glen Park
+14206   15536  602 ; Downtown San Jose to Pittsburg/ Bay Point
+14206   14207  129 ; Downtown San Jose to Diridon-Caltrain
+14206   15502  514 ; Downtown San Jose to Pleasant Hill
+14206   15503  504 ; Downtown San Jose to Walnut Creek
+14206   15505  455 ; Downtown San Jose to Orinda
+14206   15504  483 ; Downtown San Jose to Lafayette
+14206   14202  129 ; Downtown San Jose to Milpitas
+14206   14203  129 ; Downtown San Jose to Berryessa
+14206   15518  553 ; Downtown San Jose to Balboa Park
+14206   15533  399 ; Downtown San Jose to Fruitvale
+14206   15507  420 ; Downtown San Jose to MacArthur
+14206   15526  252 ; Downtown San Jose to Fremont
+15521   15519  332 ; El Cerrito Del Norte to Daly City
+15521   15512  301 ; El Cerrito Del Norte to Montgomery
+15521   15537  273 ; El Cerrito Del Norte to Castro Valley
+15521   15549  367 ; El Cerrito Del Norte to Irvington
+15521   15540  343 ; El Cerrito Del Norte to South San Francisco
+15521   14204  455 ; El Cerrito Del Norte to Alum Rock
+15521   15509  171 ; El Cerrito Del Norte to 12th St Oakland City Center
+15521   15524  129 ; El Cerrito Del Norte to North Berkeley
+15521   15543  385 ; El Cerrito Del Norte to Millbrae
+15521   15515  308 ; El Cerrito Del Norte to 16th St Mission
+15521   15501  301 ; El Cerrito Del Norte to Concord
+15521   15520  129 ; El Cerrito Del Norte to Richmond
+15521   15530  252 ; El Cerrito Del Norte to Bay Fair
+15521   15511  301 ; El Cerrito Del Norte to Embarcadero
+15521   15510  182 ; El Cerrito Del Norte to West Oakland
+15521   15517  322 ; El Cerrito Del Norte to Glen Park
+15521   15536  350 ; El Cerrito Del Norte to Pittsburg/ Bay Point
+15521   14207  465 ; El Cerrito Del Norte to Diridon-Caltrain
+15521   15502  273 ; El Cerrito Del Norte to Pleasant Hill
+15521   15503  266 ; El Cerrito Del Norte to Walnut Creek
+15521   15505  217 ; El Cerrito Del Norte to Orinda
+15521   15504  241 ; El Cerrito Del Norte to Lafayette
+15521   14202  392 ; El Cerrito Del Norte to Milpitas
+15521   14203  402 ; El Cerrito Del Norte to Berryessa
+15521   15518  325 ; El Cerrito Del Norte to Balboa Park
+15521   15533  203 ; El Cerrito Del Norte to Fruitvale
+15521   15507  157 ; El Cerrito Del Norte to MacArthur
+15521   15526  350 ; El Cerrito Del Norte to Fremont
+15519   15512  220 ; Daly City to Montgomery
+15519   15537  371 ; Daly City to Castro Valley
+15519   15549  465 ; Daly City to Irvington
+15519   15540  217 ; Daly City to South San Francisco
+15519   14204  553 ; Daly City to Alum Rock
+15519   15509  287 ; Daly City to 12th St Oakland City Center
+15519   15524  311 ; Daly City to North Berkeley
+15519   15543  266 ; Daly City to Millbrae
+15519   15515  206 ; Daly City to 16th St Mission
+15519   15501  427 ; Daly City to Concord
+15519   15520  350 ; Daly City to Richmond
+15519   15530  353 ; Daly City to Bay Fair
+15519   15511  220 ; Daly City to Embarcadero
+15519   15510  280 ; Daly City to West Oakland
+15519   15517  206 ; Daly City to Glen Park
+15519   15536  476 ; Daly City to Pittsburg/ Bay Point
+15519   14207  563 ; Daly City to Diridon-Caltrain
+15519   15502  399 ; Daly City to Pleasant Hill
+15519   15503  388 ; Daly City to Walnut Creek
+15519   15505  339 ; Daly City to Orinda
+15519   15504  364 ; Daly City to Lafayette
+15519   14202  490 ; Daly City to Milpitas
+15519   14203  500 ; Daly City to Berryessa
+15519   15518  206 ; Daly City to Balboa Park
+15519   15533  304 ; Daly City to Fruitvale
+15519   15507  294 ; Daly City to MacArthur
+15519   15526  448 ; Daly City to Fremont
+18017   15534  129 ; Howard Terminal to Lake Merritt
+18017   15525  129 ; Howard Terminal to Ashby
+18017   15542  626 ; Howard Terminal to SFO
+18017   15541  315 ; Howard Terminal to San Bruno
+18017   15527  276 ; Howard Terminal to Union City
+18017   18012  231 ; Howard Terminal to Howard
+18017   15000  549 ; Howard Terminal to Oakland International Airport
+18017   18015  129 ; Howard Terminal to 11th Street
+18017   15532  129 ; Howard Terminal to Coliseum/Oakland Airport
+18017   15514  231 ; Howard Terminal to Civic Center
+18017   15522  154 ; Howard Terminal to El Cerrito Plaza
+18017   18011  231 ; Howard Terminal to 6th/Brannan
+18017   15528  245 ; Howard Terminal to South Hayward
+18017   15516  252 ; Howard Terminal to 24th St Mission
+18017   15538  297 ; Howard Terminal to Dublin/ Pleasanton
+18017   15529  224 ; Howard Terminal to Hayward
+18017   14208  427 ; Howard Terminal to Santa Clara
+18017   15545  287 ; Howard Terminal to West Dublin/Pleasanton
+18017   15508  129 ; Howard Terminal to 19th St Oakland
+18017   15544  332 ; Howard Terminal to Warm Springs
+18017   15506  129 ; Howard Terminal to Rockridge
+18017   15523  129 ; Howard Terminal to Berkeley
+18017   15539  283 ; Howard Terminal to Colma
+18017   15513  231 ; Howard Terminal to Powell
+18017   15535  287 ; Howard Terminal to North Concord
+18017   15531  168 ; Howard Terminal to San Leandro
+18017   14206  413 ; Howard Terminal to Downtown San Jose
+18017   15521  171 ; Howard Terminal to El Cerrito Del Norte
+18017   15519  287 ; Howard Terminal to Daly City
+18017   15512  231 ; Howard Terminal to Montgomery
+18017   15537  224 ; Howard Terminal to Castro Valley
+18017   15549  318 ; Howard Terminal to Irvington
+18017   15540  297 ; Howard Terminal to South San Francisco
+18017   18010  231 ; Howard Terminal to 4th/Brannan
+18017   14204  402 ; Howard Terminal to Alum Rock
+18017   15509  129 ; Howard Terminal to 12th St Oakland City Center
+18017   15524  133 ; Howard Terminal to North Berkeley
+18017   18016  129 ; Howard Terminal to Eastlake
+18017   15543  336 ; Howard Terminal to Millbrae
+18017   18003  129 ; Howard Terminal to Alameda
+18017   18013  231 ; Howard Terminal to Hyde
+18017   15515  245 ; Howard Terminal to 16th St Mission
+18017   15501  273 ; Howard Terminal to Concord
+18017   15520  196 ; Howard Terminal to Richmond
+18017   15530  192 ; Howard Terminal to Bay Fair
+18017   15511  231 ; Howard Terminal to Embarcadero
+18017   15510  258 ; Howard Terminal to West Oakland
+18017   15517  269 ; Howard Terminal to Glen Park
+18017   15536  322 ; Howard Terminal to Pittsburg/ Bay Point
+18017   14207  413 ; Howard Terminal to Diridon-Caltrain
+18017   18009  245 ; Howard Terminal to Fillmore
+18017   15502  248 ; Howard Terminal to Pleasant Hill
+18017   15503  238 ; Howard Terminal to Walnut Creek
+18017   18014  129 ; Howard Terminal to 14th Street
+18017   15505  164 ; Howard Terminal to Orinda
+18017   15504  206 ; Howard Terminal to Lafayette
+18017   18008  245 ; Howard Terminal to Van Ness
+18017   14202  343 ; Howard Terminal to Milpitas
+18017   14203  353 ; Howard Terminal to Berryessa
+18017   15518  276 ; Howard Terminal to Balboa Park
+18017   15533  129 ; Howard Terminal to Fruitvale
+18017   15507  129 ; Howard Terminal to MacArthur
+18017   15526  301 ; Howard Terminal to Fremont
+15512   15537  339 ; Montgomery to Castro Valley
+15512   15549  434 ; Montgomery to Irvington
+15512   15540  266 ; Montgomery to South San Francisco
+15512   14204  521 ; Montgomery to Alum Rock
+15512   15509  231 ; Montgomery to 12th St Oakland City Center
+15512   15524  280 ; Montgomery to North Berkeley
+15512   15543  315 ; Montgomery to Millbrae
+15512   15515  129 ; Montgomery to 16th St Mission
+15512   15501  395 ; Montgomery to Concord
+15512   15520  315 ; Montgomery to Richmond
+15512   15530  322 ; Montgomery to Bay Fair
+15512   15511  129 ; Montgomery to Embarcadero
+15512   15510  217 ; Montgomery to West Oakland
+15512   15517  129 ; Montgomery to Glen Park
+15512   15536  441 ; Montgomery to Pittsburg/ Bay Point
+15512   14207  532 ; Montgomery to Diridon-Caltrain
+15512   15502  367 ; Montgomery to Pleasant Hill
+15512   15503  357 ; Montgomery to Walnut Creek
+15512   15505  308 ; Montgomery to Orinda
+15512   15504  332 ; Montgomery to Lafayette
+15512   14202  458 ; Montgomery to Milpitas
+15512   14203  469 ; Montgomery to Berryessa
+15512   15518  133 ; Montgomery to Balboa Park
+15512   15533  262 ; Montgomery to Fruitvale
+15512   15507  245 ; Montgomery to MacArthur
+15512   15526  416 ; Montgomery to Fremont
+15537   15549  269 ; Castro Valley to Irvington
+15537   15540  381 ; Castro Valley to South San Francisco
+15537   14204  357 ; Castro Valley to Alum Rock
+15537   15509  224 ; Castro Valley to 12th St Oakland City Center
+15537   15524  248 ; Castro Valley to North Berkeley
+15537   15543  423 ; Castro Valley to Millbrae
+15537   15515  346 ; Castro Valley to 16th St Mission
+15537   15501  353 ; Castro Valley to Concord
+15537   15520  287 ; Castro Valley to Richmond
+15537   15530  129 ; Castro Valley to Bay Fair
+15537   15511  339 ; Castro Valley to Embarcadero
+15537   15510  231 ; Castro Valley to West Oakland
+15537   15517  360 ; Castro Valley to Glen Park
+15537   15536  402 ; Castro Valley to Pittsburg/ Bay Point
+15537   14207  367 ; Castro Valley to Diridon-Caltrain
+15537   15502  325 ; Castro Valley to Pleasant Hill
+15537   15503  315 ; Castro Valley to Walnut Creek
+15537   15505  266 ; Castro Valley to Orinda
+15537   15504  290 ; Castro Valley to Lafayette
+15537   14202  294 ; Castro Valley to Milpitas
+15537   14203  304 ; Castro Valley to Berryessa
+15537   15518  364 ; Castro Valley to Balboa Park
+15537   15533  192 ; Castro Valley to Fruitvale
+15537   15507  231 ; Castro Valley to MacArthur
+15537   15526  252 ; Castro Valley to Fremont
+15549   15540  476 ; Irvington to South San Francisco
+15549   14204  129 ; Irvington to Alum Rock
+15549   15509  318 ; Irvington to 12th St Oakland City Center
+15549   15524  339 ; Irvington to North Berkeley
+15549   15543  514 ; Irvington to Millbrae
+15549   15515  437 ; Irvington to 16th St Mission
+15549   15501  444 ; Irvington to Concord
+15549   15520  378 ; Irvington to Richmond
+15549   15530  147 ; Irvington to Bay Fair
+15549   15511  434 ; Irvington to Embarcadero
+15549   15510  325 ; Irvington to West Oakland
+15549   15517  451 ; Irvington to Glen Park
+15549   15536  493 ; Irvington to Pittsburg/ Bay Point
+15549   14207  129 ; Irvington to Diridon-Caltrain
+15549   15502  416 ; Irvington to Pleasant Hill
+15549   15503  409 ; Irvington to Walnut Creek
+15549   15505  357 ; Irvington to Orinda
+15549   15504  385 ; Irvington to Lafayette
+15549   14202  129 ; Irvington to Milpitas
+15549   14203  129 ; Irvington to Berryessa
+15549   15518  458 ; Irvington to Balboa Park
+15549   15533  301 ; Irvington to Fruitvale
+15549   15507  322 ; Irvington to MacArthur
+15549   15526  147 ; Irvington to Fremont
+15540   14204  574 ; South San Francisco to Alum Rock
+15540   15509  297 ; South San Francisco to 12th St Oakland City Center
+15540   15524  322 ; South San Francisco to North Berkeley
+15540   15543  217 ; South San Francisco to Millbrae
+15540   15515  252 ; South San Francisco to 16th St Mission
+15540   15501  437 ; South San Francisco to Concord
+15540   15520  360 ; South San Francisco to Richmond
+15540   15530  364 ; South San Francisco to Bay Fair
+15540   15511  266 ; South San Francisco to Embarcadero
+15540   15510  290 ; South San Francisco to West Oakland
+15540   15517  231 ; South San Francisco to Glen Park
+15540   15536  486 ; South San Francisco to Pittsburg/ Bay Point
+15540   14207  584 ; South San Francisco to Diridon-Caltrain
+15540   15502  409 ; South San Francisco to Pleasant Hill
+15540   15503  399 ; South San Francisco to Walnut Creek
+15540   15505  350 ; South San Francisco to Orinda
+15540   15504  374 ; South San Francisco to Lafayette
+15540   14202  500 ; South San Francisco to Milpitas
+15540   14203  511 ; South San Francisco to Berryessa
+15540   15518  217 ; South San Francisco to Balboa Park
+15540   15533  315 ; South San Francisco to Fruitvale
+15540   15507  304 ; South San Francisco to MacArthur
+15540   15526  458 ; South San Francisco to Fremont
+18010   15534  231 ; 4th/Brannan to Lake Merritt
+18010   15525  262 ; 4th/Brannan to Ashby
+18010   15542  605 ; 4th/Brannan to SFO
+18010   15541  290 ; 4th/Brannan to San Bruno
+18010   15527  392 ; 4th/Brannan to Union City
+18010   15000  703 ; 4th/Brannan to Oakland International Airport
+18010   15532  283 ; 4th/Brannan to Coliseum/Oakland Airport
+18010   15514  258 ; 4th/Brannan to Civic Center
+18010   15522  290 ; 4th/Brannan to El Cerrito Plaza
+18010   15528  360 ; 4th/Brannan to South Hayward
+18010   15516  129 ; 4th/Brannan to 24th St Mission
+18010   15538  416 ; 4th/Brannan to Dublin/ Pleasanton
+18010   15529  339 ; 4th/Brannan to Hayward
+18010   14208  546 ; 4th/Brannan to Santa Clara
+18010   15545  402 ; 4th/Brannan to West Dublin/Pleasanton
+18010   15508  231 ; 4th/Brannan to 19th St Oakland
+18010   15544  448 ; 4th/Brannan to Warm Springs
+18010   15506  262 ; 4th/Brannan to Rockridge
+18010   15523  273 ; 4th/Brannan to Berkeley
+18010   15539  245 ; 4th/Brannan to Colma
+18010   15513  258 ; 4th/Brannan to Powell
+18010   15535  406 ; 4th/Brannan to North Concord
+18010   15531  304 ; 4th/Brannan to San Leandro
+18010   14206  532 ; 4th/Brannan to Downtown San Jose
+18010   15521  301 ; 4th/Brannan to El Cerrito Del Norte
+18010   15519  220 ; 4th/Brannan to Daly City
+18010   15512  129 ; 4th/Brannan to Montgomery
+18010   15537  339 ; 4th/Brannan to Castro Valley
+18010   15549  434 ; 4th/Brannan to Irvington
+18010   15540  266 ; 4th/Brannan to South San Francisco
+18010   14204  521 ; 4th/Brannan to Alum Rock
+18010   15509  231 ; 4th/Brannan to 12th St Oakland City Center
+18010   15524  280 ; 4th/Brannan to North Berkeley
+18010   15543  315 ; 4th/Brannan to Millbrae
+18010   18003  231 ; 4th/Brannan to Alameda
+18010   15515  129 ; 4th/Brannan to 16th St Mission
+18010   15501  395 ; 4th/Brannan to Concord
+18010   15520  315 ; 4th/Brannan to Richmond
+18010   15530  322 ; 4th/Brannan to Bay Fair
+18010   15511  129 ; 4th/Brannan to Embarcadero
+18010   15510  217 ; 4th/Brannan to West Oakland
+18010   15517  129 ; 4th/Brannan to Glen Park
+18010   15536  441 ; 4th/Brannan to Pittsburg/ Bay Point
+18010   14207  532 ; 4th/Brannan to Diridon-Caltrain
+18010   18009  129 ; 4th/Brannan to Fillmore
+18010   15502  367 ; 4th/Brannan to Pleasant Hill
+18010   15503  357 ; 4th/Brannan to Walnut Creek
+18010   15505  308 ; 4th/Brannan to Orinda
+18010   15504  332 ; 4th/Brannan to Lafayette
+18010   18008  129 ; 4th/Brannan to Van Ness
+18010   14202  458 ; 4th/Brannan to Milpitas
+18010   14203  469 ; 4th/Brannan to Berryessa
+18010   15518  133 ; 4th/Brannan to Balboa Park
+18010   15533  262 ; 4th/Brannan to Fruitvale
+18010   15507  245 ; 4th/Brannan to MacArthur
+18010   15526  416 ; 4th/Brannan to Fremont
+14204   15509  402 ; Alum Rock to 12th St Oakland City Center
+14204   15524  427 ; Alum Rock to North Berkeley
+14204   15543  602 ; Alum Rock to Millbrae
+14204   15515  525 ; Alum Rock to 16th St Mission
+14204   15501  532 ; Alum Rock to Concord
+14204   15520  465 ; Alum Rock to Richmond
+14204   15530  336 ; Alum Rock to Bay Fair
+14204   15511  521 ; Alum Rock to Embarcadero
+14204   15510  409 ; Alum Rock to West Oakland
+14204   15517  539 ; Alum Rock to Glen Park
+14204   15536  577 ; Alum Rock to Pittsburg/ Bay Point
+14204   14207  129 ; Alum Rock to Diridon-Caltrain
+14204   15502  504 ; Alum Rock to Pleasant Hill
+14204   15503  493 ; Alum Rock to Walnut Creek
+14204   15505  444 ; Alum Rock to Orinda
+14204   15504  469 ; Alum Rock to Lafayette
+14204   14202  129 ; Alum Rock to Milpitas
+14204   14203  129 ; Alum Rock to Berryessa
+14204   15518  542 ; Alum Rock to Balboa Park
+14204   15533  385 ; Alum Rock to Fruitvale
+14204   15507  409 ; Alum Rock to MacArthur
+14204   15526  241 ; Alum Rock to Fremont
+15509   15524  133 ; 12th St Oakland City Center to North Berkeley
+15509   15543  336 ; 12th St Oakland City Center to Millbrae
+15509   15515  245 ; 12th St Oakland City Center to 16th St Mission
+15509   15501  273 ; 12th St Oakland City Center to Concord
+15509   15520  196 ; 12th St Oakland City Center to Richmond
+15509   15530  192 ; 12th St Oakland City Center to Bay Fair
+15509   15511  231 ; 12th St Oakland City Center to Embarcadero
+15509   15510  129 ; 12th St Oakland City Center to West Oakland
+15509   15517  269 ; 12th St Oakland City Center to Glen Park
+15509   15536  322 ; 12th St Oakland City Center to Pittsburg/ Bay Point
+15509   14207  413 ; 12th St Oakland City Center to Diridon-Caltrain
+15509   15502  248 ; 12th St Oakland City Center to Pleasant Hill
+15509   15503  238 ; 12th St Oakland City Center to Walnut Creek
+15509   15505  164 ; 12th St Oakland City Center to Orinda
+15509   15504  206 ; 12th St Oakland City Center to Lafayette
+15509   14202  343 ; 12th St Oakland City Center to Milpitas
+15509   14203  353 ; 12th St Oakland City Center to Berryessa
+15509   15518  276 ; 12th St Oakland City Center to Balboa Park
+15509   15533  129 ; 12th St Oakland City Center to Fruitvale
+15509   15507  129 ; 12th St Oakland City Center to MacArthur
+15509   15526  301 ; 12th St Oakland City Center to Fremont
+15524   15543  360 ; North Berkeley to Millbrae
+15524   15515  283 ; North Berkeley to 16th St Mission
+15524   15501  280 ; North Berkeley to Concord
+15524   15520  129 ; North Berkeley to Richmond
+15524   15530  227 ; North Berkeley to Bay Fair
+15524   15511  280 ; North Berkeley to Embarcadero
+15524   15510  143 ; North Berkeley to West Oakland
+15524   15517  297 ; North Berkeley to Glen Park
+15524   15536  325 ; North Berkeley to Pittsburg/ Bay Point
+15524   14207  434 ; North Berkeley to Diridon-Caltrain
+15524   15502  252 ; North Berkeley to Pleasant Hill
+15524   15503  241 ; North Berkeley to Walnut Creek
+15524   15505  178 ; North Berkeley to Orinda
+15524   15504  217 ; North Berkeley to Lafayette
+15524   14202  364 ; North Berkeley to Milpitas
+15524   14203  374 ; North Berkeley to Berryessa
+15524   15518  301 ; North Berkeley to Balboa Park
+15524   15533  164 ; North Berkeley to Fruitvale
+15524   15507  129 ; North Berkeley to MacArthur
+15524   15526  322 ; North Berkeley to Fremont
+18016   15534  129 ; Eastlake to Lake Merritt
+18016   15525  129 ; Eastlake to Ashby
+18016   15542  626 ; Eastlake to SFO
+18016   15541  315 ; Eastlake to San Bruno
+18016   15527  276 ; Eastlake to Union City
+18016   18012  231 ; Eastlake to Howard
+18016   15000  549 ; Eastlake to Oakland International Airport
+18016   18015  129 ; Eastlake to 11th Street
+18016   15532  129 ; Eastlake to Coliseum/Oakland Airport
+18016   15514  231 ; Eastlake to Civic Center
+18016   15522  154 ; Eastlake to El Cerrito Plaza
+18016   18011  231 ; Eastlake to 6th/Brannan
+18016   15528  245 ; Eastlake to South Hayward
+18016   15516  252 ; Eastlake to 24th St Mission
+18016   15538  297 ; Eastlake to Dublin/ Pleasanton
+18016   15529  224 ; Eastlake to Hayward
+18016   14208  427 ; Eastlake to Santa Clara
+18016   15545  287 ; Eastlake to West Dublin/Pleasanton
+18016   15508  129 ; Eastlake to 19th St Oakland
+18016   15544  332 ; Eastlake to Warm Springs
+18016   15506  129 ; Eastlake to Rockridge
+18016   15523  129 ; Eastlake to Berkeley
+18016   15539  283 ; Eastlake to Colma
+18016   15513  231 ; Eastlake to Powell
+18016   15535  287 ; Eastlake to North Concord
+18016   15531  168 ; Eastlake to San Leandro
+18016   14206  413 ; Eastlake to Downtown San Jose
+18016   15521  171 ; Eastlake to El Cerrito Del Norte
+18016   15519  287 ; Eastlake to Daly City
+18016   15512  231 ; Eastlake to Montgomery
+18016   15537  224 ; Eastlake to Castro Valley
+18016   15549  318 ; Eastlake to Irvington
+18016   15540  297 ; Eastlake to South San Francisco
+18016   18010  231 ; Eastlake to 4th/Brannan
+18016   14204  402 ; Eastlake to Alum Rock
+18016   15509  258 ; Eastlake to 12th St Oakland City Center
+18016   15524  133 ; Eastlake to North Berkeley
+18016   15543  336 ; Eastlake to Millbrae
+18016   18003  129 ; Eastlake to Alameda
+18016   18013  231 ; Eastlake to Hyde
+18016   15515  245 ; Eastlake to 16th St Mission
+18016   15501  273 ; Eastlake to Concord
+18016   15520  196 ; Eastlake to Richmond
+18016   15530  192 ; Eastlake to Bay Fair
+18016   15511  231 ; Eastlake to Embarcadero
+18016   15510  129 ; Eastlake to West Oakland
+18016   15517  269 ; Eastlake to Glen Park
+18016   15536  322 ; Eastlake to Pittsburg/ Bay Point
+18016   14207  413 ; Eastlake to Diridon-Caltrain
+18016   18009  245 ; Eastlake to Fillmore
+18016   15502  248 ; Eastlake to Pleasant Hill
+18016   15503  238 ; Eastlake to Walnut Creek
+18016   18014  129 ; Eastlake to 14th Street
+18016   15505  164 ; Eastlake to Orinda
+18016   15504  206 ; Eastlake to Lafayette
+18016   18008  245 ; Eastlake to Van Ness
+18016   14202  343 ; Eastlake to Milpitas
+18016   14203  353 ; Eastlake to Berryessa
+18016   15518  276 ; Eastlake to Balboa Park
+18016   15533  129 ; Eastlake to Fruitvale
+18016   15507  129 ; Eastlake to MacArthur
+18016   15526  301 ; Eastlake to Fremont
+15543   15515  311 ; Millbrae to 16th St Mission
+15543   15501  476 ; Millbrae to Concord
+15543   15520  399 ; Millbrae to Richmond
+15543   15530  402 ; Millbrae to Bay Fair
+15543   15511  315 ; Millbrae to Embarcadero
+15543   15510  329 ; Millbrae to West Oakland
+15543   15517  290 ; Millbrae to Glen Park
+15543   15536  525 ; Millbrae to Pittsburg/ Bay Point
+15543   14207  626 ; Millbrae to Diridon-Caltrain
+15543   15502  448 ; Millbrae to Pleasant Hill
+15543   15503  437 ; Millbrae to Walnut Creek
+15543   15505  388 ; Millbrae to Orinda
+15543   15504  413 ; Millbrae to Lafayette
+15543   14202  539 ; Millbrae to Milpitas
+15543   14203  549 ; Millbrae to Berryessa
+15543   15518  283 ; Millbrae to Balboa Park
+15543   15533  353 ; Millbrae to Fruitvale
+15543   15507  343 ; Millbrae to MacArthur
+15543   15526  497 ; Millbrae to Fremont
+18003   15534  129 ; Alameda to Lake Merritt
+18003   15525  129 ; Alameda to Ashby
+18003   15542  619 ; Alameda to SFO
+18003   15541  308 ; Alameda to San Bruno
+18003   15527  283 ; Alameda to Union City
+18003   15000  567 ; Alameda to Oakland International Airport
+18003   15532  147 ; Alameda to Coliseum/Oakland Airport
+18003   15514  217 ; Alameda to Civic Center
+18003   15522  164 ; Alameda to El Cerrito Plaza
+18003   15528  252 ; Alameda to South Hayward
+18003   15516  238 ; Alameda to 24th St Mission
+18003   15538  304 ; Alameda to Dublin/ Pleasanton
+18003   15529  231 ; Alameda to Hayward
+18003   14208  434 ; Alameda to Santa Clara
+18003   15545  294 ; Alameda to West Dublin/Pleasanton
+18003   15508  129 ; Alameda to 19th St Oakland
+18003   15544  339 ; Alameda to Warm Springs
+18003   15506  129 ; Alameda to Rockridge
+18003   15523  136 ; Alameda to Berkeley
+18003   15539  276 ; Alameda to Colma
+18003   15513  217 ; Alameda to Powell
+18003   15535  297 ; Alameda to North Concord
+18003   15531  178 ; Alameda to San Leandro
+18003   14206  420 ; Alameda to Downtown San Jose
+18003   15521  182 ; Alameda to El Cerrito Del Norte
+18003   15519  280 ; Alameda to Daly City
+18003   15512  217 ; Alameda to Montgomery
+18003   15537  231 ; Alameda to Castro Valley
+18003   15549  325 ; Alameda to Irvington
+18003   15540  290 ; Alameda to South San Francisco
+18003   14204  409 ; Alameda to Alum Rock
+18003   15509  258 ; Alameda to 12th St Oakland City Center
+18003   15524  143 ; Alameda to North Berkeley
+18003   15543  329 ; Alameda to Millbrae
+18003   15515  234 ; Alameda to 16th St Mission
+18003   15501  283 ; Alameda to Concord
+18003   15520  206 ; Alameda to Richmond
+18003   15530  206 ; Alameda to Bay Fair
+18003   15511  217 ; Alameda to Embarcadero
+18003   15510  129 ; Alameda to West Oakland
+18003   15517  255 ; Alameda to Glen Park
+18003   15536  332 ; Alameda to Pittsburg/ Bay Point
+18003   14207  420 ; Alameda to Diridon-Caltrain
+18003   15502  255 ; Alameda to Pleasant Hill
+18003   15503  245 ; Alameda to Walnut Creek
+18003   15505  178 ; Alameda to Orinda
+18003   15504  220 ; Alameda to Lafayette
+18003   14202  350 ; Alameda to Milpitas
+18003   14203  360 ; Alameda to Berryessa
+18003   15518  266 ; Alameda to Balboa Park
+18003   15533  129 ; Alameda to Fruitvale
+18003   15507  129 ; Alameda to MacArthur
+18003   15526  308 ; Alameda to Fremont
+18013   15534  231 ; Hyde to Lake Merritt
+18013   15525  262 ; Hyde to Ashby
+18013   15542  605 ; Hyde to SFO
+18013   15541  290 ; Hyde to San Bruno
+18013   15527  392 ; Hyde to Union City
+18013   18012  129 ; Hyde to Howard
+18013   15000  703 ; Hyde to Oakland International Airport
+18013   15532  283 ; Hyde to Coliseum/Oakland Airport
+18013   15514  129 ; Hyde to Civic Center
+18013   15522  290 ; Hyde to El Cerrito Plaza
+18013   18011  129 ; Hyde to 6th/Brannan
+18013   15528  360 ; Hyde to South Hayward
+18013   15516  129 ; Hyde to 24th St Mission
+18013   15538  416 ; Hyde to Dublin/ Pleasanton
+18013   15529  339 ; Hyde to Hayward
+18013   14208  546 ; Hyde to Santa Clara
+18013   15545  402 ; Hyde to West Dublin/Pleasanton
+18013   15508  231 ; Hyde to 19th St Oakland
+18013   15544  448 ; Hyde to Warm Springs
+18013   15506  262 ; Hyde to Rockridge
+18013   15523  273 ; Hyde to Berkeley
+18013   15539  245 ; Hyde to Colma
+18013   15513  129 ; Hyde to Powell
+18013   15535  406 ; Hyde to North Concord
+18013   15531  304 ; Hyde to San Leandro
+18013   14206  532 ; Hyde to Downtown San Jose
+18013   15521  301 ; Hyde to El Cerrito Del Norte
+18013   15519  220 ; Hyde to Daly City
+18013   15512  129 ; Hyde to Montgomery
+18013   15537  339 ; Hyde to Castro Valley
+18013   15549  434 ; Hyde to Irvington
+18013   15540  266 ; Hyde to South San Francisco
+18013   18010  129 ; Hyde to 4th/Brannan
+18013   14204  521 ; Hyde to Alum Rock
+18013   15509  231 ; Hyde to 12th St Oakland City Center
+18013   15524  280 ; Hyde to North Berkeley
+18013   15543  315 ; Hyde to Millbrae
+18013   18003  231 ; Hyde to Alameda
+18013   15515  129 ; Hyde to 16th St Mission
+18013   15501  395 ; Hyde to Concord
+18013   15520  315 ; Hyde to Richmond
+18013   15530  322 ; Hyde to Bay Fair
+18013   15511  129 ; Hyde to Embarcadero
+18013   15510  217 ; Hyde to West Oakland
+18013   15517  129 ; Hyde to Glen Park
+18013   15536  441 ; Hyde to Pittsburg/ Bay Point
+18013   14207  532 ; Hyde to Diridon-Caltrain
+18013   18009  129 ; Hyde to Fillmore
+18013   15502  367 ; Hyde to Pleasant Hill
+18013   15503  357 ; Hyde to Walnut Creek
+18013   15505  308 ; Hyde to Orinda
+18013   15504  332 ; Hyde to Lafayette
+18013   18008  129 ; Hyde to Van Ness
+18013   14202  458 ; Hyde to Milpitas
+18013   14203  469 ; Hyde to Berryessa
+18013   15518  133 ; Hyde to Balboa Park
+18013   15533  262 ; Hyde to Fruitvale
+18013   15507  245 ; Hyde to MacArthur
+18013   15526  416 ; Hyde to Fremont
+15515   15501  399 ; 16th St Mission to Concord
+15515   15520  322 ; 16th St Mission to Richmond
+15515   15530  325 ; 16th St Mission to Bay Fair
+15515   15511  129 ; 16th St Mission to Embarcadero
+15515   15510  234 ; 16th St Mission to West Oakland
+15515   15517  129 ; 16th St Mission to Glen Park
+15515   15536  448 ; 16th St Mission to Pittsburg/ Bay Point
+15515   14207  535 ; 16th St Mission to Diridon-Caltrain
+15515   15502  371 ; 16th St Mission to Pleasant Hill
+15515   15503  360 ; 16th St Mission to Walnut Creek
+15515   15505  311 ; 16th St Mission to Orinda
+15515   15504  336 ; 16th St Mission to Lafayette
+15515   14202  462 ; 16th St Mission to Milpitas
+15515   14203  472 ; 16th St Mission to Berryessa
+15515   15518  129 ; 16th St Mission to Balboa Park
+15515   15533  273 ; 16th St Mission to Fruitvale
+15515   15507  259 ; 16th St Mission to MacArthur
+15515   15526  420 ; 16th St Mission to Fremont
+15501   15520  315 ; Concord to Richmond
+15501   15530  332 ; Concord to Bay Fair
+15501   15511  395 ; Concord to Embarcadero
+15501   15510  283 ; Concord to West Oakland
+15501   15517  413 ; Concord to Glen Park
+15501   15536  129 ; Concord to Pittsburg/ Bay Point
+15501   14207  542 ; Concord to Diridon-Caltrain
+15501   15502  129 ; Concord to Pleasant Hill
+15501   15503  129 ; Concord to Walnut Creek
+15501   15505  129 ; Concord to Orinda
+15501   15504  129 ; Concord to Lafayette
+15501   14202  469 ; Concord to Milpitas
+15501   14203  479 ; Concord to Berryessa
+15501   15518  416 ; Concord to Balboa Park
+15501   15533  283 ; Concord to Fruitvale
+15501   15507  273 ; Concord to MacArthur
+15501   15526  427 ; Concord to Fremont
+15520   15530  266 ; Richmond to Bay Fair
+15520   15511  315 ; Richmond to Embarcadero
+15520   15510  206 ; Richmond to West Oakland
+15520   15517  336 ; Richmond to Glen Park
+15520   15536  364 ; Richmond to Pittsburg/ Bay Point
+15520   14207  476 ; Richmond to Diridon-Caltrain
+15520   15502  290 ; Richmond to Pleasant Hill
+15520   15503  276 ; Richmond to Walnut Creek
+15520   15505  227 ; Richmond to Orinda
+15520   15504  255 ; Richmond to Lafayette
+15520   14202  402 ; Richmond to Milpitas
+15520   14203  413 ; Richmond to Berryessa
+15520   15518  339 ; Richmond to Balboa Park
+15520   15533  217 ; Richmond to Fruitvale
+15520   15507  182 ; Richmond to MacArthur
+15520   15526  360 ; Richmond to Fremont
+15530   15511  322 ; Bay Fair to Embarcadero
+15530   15510  206 ; Bay Fair to West Oakland
+15530   15517  339 ; Bay Fair to Glen Park
+15530   15536  381 ; Bay Fair to Pittsburg/ Bay Point
+15530   14207  350 ; Bay Fair to Diridon-Caltrain
+15530   15502  304 ; Bay Fair to Pleasant Hill
+15530   15503  294 ; Bay Fair to Walnut Creek
+15530   15505  245 ; Bay Fair to Orinda
+15530   15504  273 ; Bay Fair to Lafayette
+15530   14202  171 ; Bay Fair to Milpitas
+15530   14203  182 ; Bay Fair to Berryessa
+15530   15518  343 ; Bay Fair to Balboa Park
+15530   15533  164 ; Bay Fair to Fruitvale
+15530   15507  206 ; Bay Fair to MacArthur
+15530   15526  129 ; Bay Fair to Fremont
+15511   15510  217 ; Embarcadero to West Oakland
+15511   15517  129 ; Embarcadero to Glen Park
+15511   15536  441 ; Embarcadero to Pittsburg/ Bay Point
+15511   14207  532 ; Embarcadero to Diridon-Caltrain
+15511   15502  367 ; Embarcadero to Pleasant Hill
+15511   15503  357 ; Embarcadero to Walnut Creek
+15511   15505  308 ; Embarcadero to Orinda
+15511   15504  332 ; Embarcadero to Lafayette
+15511   14202  458 ; Embarcadero to Milpitas
+15511   14203  469 ; Embarcadero to Berryessa
+15511   15518  133 ; Embarcadero to Balboa Park
+15511   15533  262 ; Embarcadero to Fruitvale
+15511   15507  245 ; Embarcadero to MacArthur
+15511   15526  416 ; Embarcadero to Fremont
+15510   15517  255 ; West Oakland to Glen Park
+15510   15536  332 ; West Oakland to Pittsburg/ Bay Point
+15510   14207  420 ; West Oakland to Diridon-Caltrain
+15510   15502  255 ; West Oakland to Pleasant Hill
+15510   15503  245 ; West Oakland to Walnut Creek
+15510   15505  178 ; West Oakland to Orinda
+15510   15504  220 ; West Oakland to Lafayette
+15510   14202  350 ; West Oakland to Milpitas
+15510   14203  360 ; West Oakland to Berryessa
+15510   15518  266 ; West Oakland to Balboa Park
+15510   15533  129 ; West Oakland to Fruitvale
+15510   15507  129 ; West Oakland to MacArthur
+15510   15526  308 ; West Oakland to Fremont
+15517   15536  462 ; Glen Park to Pittsburg/ Bay Point
+15517   14207  549 ; Glen Park to Diridon-Caltrain
+15517   15502  385 ; Glen Park to Pleasant Hill
+15517   15503  374 ; Glen Park to Walnut Creek
+15517   15505  325 ; Glen Park to Orinda
+15517   15504  350 ; Glen Park to Lafayette
+15517   14202  476 ; Glen Park to Milpitas
+15517   14203  486 ; Glen Park to Berryessa
+15517   15518  129 ; Glen Park to Balboa Park
+15517   15533  290 ; Glen Park to Fruitvale
+15517   15507  280 ; Glen Park to MacArthur
+15517   15526  434 ; Glen Park to Fremont
+15536   14207  602 ; Pittsburg/ Bay Point to Diridon-Caltrain
+15536   15502  129 ; Pittsburg/ Bay Point to Pleasant Hill
+15536   15503  129 ; Pittsburg/ Bay Point to Walnut Creek
+15536   15505  273 ; Pittsburg/ Bay Point to Orinda
+15536   15504  248 ; Pittsburg/ Bay Point to Lafayette
+15536   14202  518 ; Pittsburg/ Bay Point to Milpitas
+15536   14203  528 ; Pittsburg/ Bay Point to Berryessa
+15536   15518  465 ; Pittsburg/ Bay Point to Balboa Park
+15536   15533  332 ; Pittsburg/ Bay Point to Fruitvale
+15536   15507  322 ; Pittsburg/ Bay Point to MacArthur
+15536   15526  476 ; Pittsburg/ Bay Point to Fremont
+14207   15502  514 ; Diridon-Caltrain to Pleasant Hill
+14207   15503  504 ; Diridon-Caltrain to Walnut Creek
+14207   15505  455 ; Diridon-Caltrain to Orinda
+14207   15504  483 ; Diridon-Caltrain to Lafayette
+14207   14202  129 ; Diridon-Caltrain to Milpitas
+14207   14203  129 ; Diridon-Caltrain to Berryessa
+14207   15518  553 ; Diridon-Caltrain to Balboa Park
+14207   15533  399 ; Diridon-Caltrain to Fruitvale
+14207   15507  420 ; Diridon-Caltrain to MacArthur
+14207   15526  245 ; Diridon-Caltrain to Fremont
+18009   15534  245 ; Fillmore to Lake Merritt
+18009   15525  273 ; Fillmore to Ashby
+18009   15542  602 ; Fillmore to SFO
+18009   15541  280 ; Fillmore to San Bruno
+18009   15527  399 ; Fillmore to Union City
+18009   15000  710 ; Fillmore to Oakland International Airport
+18009   15532  290 ; Fillmore to Coliseum/Oakland Airport
+18009   15514  258 ; Fillmore to Civic Center
+18009   15522  297 ; Fillmore to El Cerrito Plaza
+18009   15528  364 ; Fillmore to South Hayward
+18009   15516  129 ; Fillmore to 24th St Mission
+18009   15538  420 ; Fillmore to Dublin/ Pleasanton
+18009   15529  346 ; Fillmore to Hayward
+18009   14208  553 ; Fillmore to Santa Clara
+18009   15545  409 ; Fillmore to West Dublin/Pleasanton
+18009   15508  245 ; Fillmore to 19th St Oakland
+18009   15544  451 ; Fillmore to Warm Springs
+18009   15506  273 ; Fillmore to Rockridge
+18009   15523  280 ; Fillmore to Berkeley
+18009   15539  234 ; Fillmore to Colma
+18009   15513  129 ; Fillmore to Powell
+18009   15535  413 ; Fillmore to North Concord
+18009   15531  311 ; Fillmore to San Leandro
+18009   14206  535 ; Fillmore to Downtown San Jose
+18009   15521  308 ; Fillmore to El Cerrito Del Norte
+18009   15519  206 ; Fillmore to Daly City
+18009   15512  129 ; Fillmore to Montgomery
+18009   15537  346 ; Fillmore to Castro Valley
+18009   15549  437 ; Fillmore to Irvington
+18009   15540  252 ; Fillmore to South San Francisco
+18009   14204  525 ; Fillmore to Alum Rock
+18009   15509  245 ; Fillmore to 12th St Oakland City Center
+18009   15524  283 ; Fillmore to North Berkeley
+18009   15543  311 ; Fillmore to Millbrae
+18009   18003  231 ; Fillmore to Alameda
+18009   15515  129 ; Fillmore to 16th St Mission
+18009   15501  399 ; Fillmore to Concord
+18009   15520  322 ; Fillmore to Richmond
+18009   15530  325 ; Fillmore to Bay Fair
+18009   15511  129 ; Fillmore to Embarcadero
+18009   15510  234 ; Fillmore to West Oakland
+18009   15517  129 ; Fillmore to Glen Park
+18009   15536  448 ; Fillmore to Pittsburg/ Bay Point
+18009   14207  535 ; Fillmore to Diridon-Caltrain
+18009   15502  371 ; Fillmore to Pleasant Hill
+18009   15503  360 ; Fillmore to Walnut Creek
+18009   15505  311 ; Fillmore to Orinda
+18009   15504  336 ; Fillmore to Lafayette
+18009   18008  129 ; Fillmore to Van Ness
+18009   14202  462 ; Fillmore to Milpitas
+18009   14203  472 ; Fillmore to Berryessa
+18009   15518  129 ; Fillmore to Balboa Park
+18009   15533  273 ; Fillmore to Fruitvale
+18009   15507  259 ; Fillmore to MacArthur
+18009   15526  420 ; Fillmore to Fremont
+15502   15503  129 ; Pleasant Hill to Walnut Creek
+15502   15505  129 ; Pleasant Hill to Orinda
+15502   15504  129 ; Pleasant Hill to Lafayette
+15502   14202  441 ; Pleasant Hill to Milpitas
+15502   14203  451 ; Pleasant Hill to Berryessa
+15502   15518  388 ; Pleasant Hill to Balboa Park
+15502   15533  255 ; Pleasant Hill to Fruitvale
+15502   15507  245 ; Pleasant Hill to MacArthur
+15502   15526  399 ; Pleasant Hill to Fremont
+15503   15505  129 ; Walnut Creek to Orinda
+15503   15504  129 ; Walnut Creek to Lafayette
+15503   14202  434 ; Walnut Creek to Milpitas
+15503   14203  444 ; Walnut Creek to Berryessa
+15503   15518  381 ; Walnut Creek to Balboa Park
+15503   15533  248 ; Walnut Creek to Fruitvale
+15503   15507  231 ; Walnut Creek to MacArthur
+15503   15526  392 ; Walnut Creek to Fremont
+18014   15534  129 ; 14th Street to Lake Merritt
+18014   15525  129 ; 14th Street to Ashby
+18014   15542  626 ; 14th Street to SFO
+18014   15541  315 ; 14th Street to San Bruno
+18014   15527  276 ; 14th Street to Union City
+18014   18012  231 ; 14th Street to Howard
+18014   15000  549 ; 14th Street to Oakland International Airport
+18014   15532  129 ; 14th Street to Coliseum/Oakland Airport
+18014   15514  231 ; 14th Street to Civic Center
+18014   15522  154 ; 14th Street to El Cerrito Plaza
+18014   18011  231 ; 14th Street to 6th/Brannan
+18014   15528  245 ; 14th Street to South Hayward
+18014   15516  252 ; 14th Street to 24th St Mission
+18014   15538  297 ; 14th Street to Dublin/ Pleasanton
+18014   15529  224 ; 14th Street to Hayward
+18014   14208  427 ; 14th Street to Santa Clara
+18014   15545  287 ; 14th Street to West Dublin/Pleasanton
+18014   15508  129 ; 14th Street to 19th St Oakland
+18014   15544  332 ; 14th Street to Warm Springs
+18014   15506  129 ; 14th Street to Rockridge
+18014   15523  129 ; 14th Street to Berkeley
+18014   15539  283 ; 14th Street to Colma
+18014   15513  231 ; 14th Street to Powell
+18014   15535  287 ; 14th Street to North Concord
+18014   15531  168 ; 14th Street to San Leandro
+18014   14206  413 ; 14th Street to Downtown San Jose
+18014   15521  171 ; 14th Street to El Cerrito Del Norte
+18014   15519  287 ; 14th Street to Daly City
+18014   15512  231 ; 14th Street to Montgomery
+18014   15537  224 ; 14th Street to Castro Valley
+18014   15549  318 ; 14th Street to Irvington
+18014   15540  297 ; 14th Street to South San Francisco
+18014   18010  231 ; 14th Street to 4th/Brannan
+18014   14204  402 ; 14th Street to Alum Rock
+18014   15509  258 ; 14th Street to 12th St Oakland City Center
+18014   15524  133 ; 14th Street to North Berkeley
+18014   15543  336 ; 14th Street to Millbrae
+18014   18003  129 ; 14th Street to Alameda
+18014   18013  231 ; 14th Street to Hyde
+18014   15515  245 ; 14th Street to 16th St Mission
+18014   15501  273 ; 14th Street to Concord
+18014   15520  196 ; 14th Street to Richmond
+18014   15530  192 ; 14th Street to Bay Fair
+18014   15511  231 ; 14th Street to Embarcadero
+18014   15510  258 ; 14th Street to West Oakland
+18014   15517  269 ; 14th Street to Glen Park
+18014   15536  322 ; 14th Street to Pittsburg/ Bay Point
+18014   14207  413 ; 14th Street to Diridon-Caltrain
+18014   18009  245 ; 14th Street to Fillmore
+18014   15502  248 ; 14th Street to Pleasant Hill
+18014   15503  238 ; 14th Street to Walnut Creek
+18014   15505  164 ; 14th Street to Orinda
+18014   15504  206 ; 14th Street to Lafayette
+18014   18008  245 ; 14th Street to Van Ness
+18014   14202  343 ; 14th Street to Milpitas
+18014   14203  353 ; 14th Street to Berryessa
+18014   15518  276 ; 14th Street to Balboa Park
+18014   15533  129 ; 14th Street to Fruitvale
+18014   15507  129 ; 14th Street to MacArthur
+18014   15526  301 ; 14th Street to Fremont
+15505   15504  129 ; Orinda to Lafayette
+15505   14202  381 ; Orinda to Milpitas
+15505   14203  392 ; Orinda to Berryessa
+15505   15518  329 ; Orinda to Balboa Park
+15505   15533  185 ; Orinda to Fruitvale
+15505   15507  129 ; Orinda to MacArthur
+15505   15526  339 ; Orinda to Fremont
+15504   14202  409 ; Lafayette to Milpitas
+15504   14203  420 ; Lafayette to Berryessa
+15504   15518  357 ; Lafayette to Balboa Park
+15504   15533  224 ; Lafayette to Fruitvale
+15504   15507  196 ; Lafayette to MacArthur
+15504   15526  367 ; Lafayette to Fremont
+18008   15534  245 ; Van Ness to Lake Merritt
+18008   15525  273 ; Van Ness to Ashby
+18008   15542  602 ; Van Ness to SFO
+18008   15541  280 ; Van Ness to San Bruno
+18008   15527  399 ; Van Ness to Union City
+18008   15000  710 ; Van Ness to Oakland International Airport
+18008   15532  290 ; Van Ness to Coliseum/Oakland Airport
+18008   15514  258 ; Van Ness to Civic Center
+18008   15522  297 ; Van Ness to El Cerrito Plaza
+18008   15528  364 ; Van Ness to South Hayward
+18008   15516  129 ; Van Ness to 24th St Mission
+18008   15538  420 ; Van Ness to Dublin/ Pleasanton
+18008   15529  346 ; Van Ness to Hayward
+18008   14208  553 ; Van Ness to Santa Clara
+18008   15545  409 ; Van Ness to West Dublin/Pleasanton
+18008   15508  245 ; Van Ness to 19th St Oakland
+18008   15544  451 ; Van Ness to Warm Springs
+18008   15506  273 ; Van Ness to Rockridge
+18008   15523  280 ; Van Ness to Berkeley
+18008   15539  234 ; Van Ness to Colma
+18008   15513  129 ; Van Ness to Powell
+18008   15535  413 ; Van Ness to North Concord
+18008   15531  311 ; Van Ness to San Leandro
+18008   14206  535 ; Van Ness to Downtown San Jose
+18008   15521  308 ; Van Ness to El Cerrito Del Norte
+18008   15519  206 ; Van Ness to Daly City
+18008   15512  129 ; Van Ness to Montgomery
+18008   15537  346 ; Van Ness to Castro Valley
+18008   15549  437 ; Van Ness to Irvington
+18008   15540  252 ; Van Ness to South San Francisco
+18008   14204  525 ; Van Ness to Alum Rock
+18008   15509  245 ; Van Ness to 12th St Oakland City Center
+18008   15524  283 ; Van Ness to North Berkeley
+18008   15543  311 ; Van Ness to Millbrae
+18008   18003  231 ; Van Ness to Alameda
+18008   15515  129 ; Van Ness to 16th St Mission
+18008   15501  399 ; Van Ness to Concord
+18008   15520  322 ; Van Ness to Richmond
+18008   15530  325 ; Van Ness to Bay Fair
+18008   15511  129 ; Van Ness to Embarcadero
+18008   15510  234 ; Van Ness to West Oakland
+18008   15517  129 ; Van Ness to Glen Park
+18008   15536  448 ; Van Ness to Pittsburg/ Bay Point
+18008   14207  535 ; Van Ness to Diridon-Caltrain
+18008   15502  371 ; Van Ness to Pleasant Hill
+18008   15503  360 ; Van Ness to Walnut Creek
+18008   15505  311 ; Van Ness to Orinda
+18008   15504  336 ; Van Ness to Lafayette
+18008   14202  462 ; Van Ness to Milpitas
+18008   14203  472 ; Van Ness to Berryessa
+18008   15518  129 ; Van Ness to Balboa Park
+18008   15533  273 ; Van Ness to Fruitvale
+18008   15507  259 ; Van Ness to MacArthur
+18008   15526  420 ; Van Ness to Fremont
+14202   14203  129 ; Milpitas to Berryessa
+14202   15518  483 ; Milpitas to Balboa Park
+14202   15533  325 ; Milpitas to Fruitvale
+14202   15507  346 ; Milpitas to MacArthur
+14202   15526  157 ; Milpitas to Fremont
+14203   15518  493 ; Berryessa to Balboa Park
+14203   15533  336 ; Berryessa to Fruitvale
+14203   15507  357 ; Berryessa to MacArthur
+14203   15526  182 ; Berryessa to Fremont
+15518   15533  297 ; Balboa Park to Fruitvale
+15518   15507  283 ; Balboa Park to MacArthur
+15518   15526  441 ; Balboa Park to Fremont
+15533   15507  129 ; Fruitvale to MacArthur
+15533   15526  283 ; Fruitvale to Fremont
+15507   15526  304 ; MacArthur to Fremont
