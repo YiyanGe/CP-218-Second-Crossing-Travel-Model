@@ -66,6 +66,10 @@ ZONEACCESS link=14964-14708 mode=5
 ;ALA/SJQ County Lines (Central Valley)- for VTA use
 ;ZONEACCESS link=14929-14529 mode=5
 
+; ----- alt5 ------
+; 14th street
+ZONEACCESS link=18130-18030 mode=5
+
 /*
 Caltrain
 Use ZONEACCESS control to create mode 5 walk access walk funnel links
@@ -188,6 +192,19 @@ ZONEACCESS link=15752-15750 mode=5
 
 ; Oakdale Caltrain 
 ZONEACCESS link=16005-16000 mode=5
+
+;-----alt5------
+; Emeryville
+ZONEACCESS link= 18120-18020 mode=5
+
+; Berkeley
+ZONEACCESS link= 18121-18021 mode=5
+
+;Richmond
+ZONEACCESS link= 18122-18022 mode=5
+
+;14 Street
+ZONEACCESS link= 18123-18023 mode=5
 
 ;  SMART.ZAC
 ;
