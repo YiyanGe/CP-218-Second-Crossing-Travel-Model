@@ -29,7 +29,7 @@ LINE NAME="131_CAP1NB", LONGNAME=AMTRAK_Capitol_SanJose_to_Fairfield_Vacaville, 
      FREQ[1]=0,
      FREQ[2]=120,
      FREQ[3]=300,
-     FREQ[4]=80,
+     FREQ[4]=300,
      FREQ[5]=300,
      runtime=146, 
      N=14641, 14642, 14643, 14644, 14646, 14647, 14648, 14649, 14650, 14651, -14652, 14654, 14655, 14656
@@ -38,7 +38,7 @@ LINE NAME="131_CAP1NB", LONGNAME=AMTRAK_Capitol_SanJose_to_Fairfield_Vacaville, 
 ;
 LINE NAME="131_CAP1SB", LONGNAME=AMTRAK_Capitol_Fairfield_Vacaville_to_SanJose, ONEWAY=T, MODE=131, OWNER="6", COLOR=10, 
      FREQ[1]=0,
-     FREQ[2]=80,
+     FREQ[2]=12O,
      FREQ[3]=120,
      FREQ[4]=120,
      FREQ[5]=0,
@@ -60,7 +60,7 @@ LINE NAME="131_CAP2NB", LONGNAME=AMTRAK_Capitol_Coliseum_to_Fairfield_Vacaville,
 ;
 LINE NAME="131_CAP2SB", LONGNAME=AMTRAK_Capitol_Fairfield_Vacaville_to_Coliseum, ONEWAY=T, MODE=131, OWNER="6", COLOR=10, 
      FREQ[1]=0,
-     FREQ[2]=120,
+     FREQ[2]=300,
      FREQ[3]=300,
      FREQ[4]=300,
      FREQ[5]=0,
@@ -114,22 +114,22 @@ LINE NAME="132_SJQSB", LONGNAME=AMTRAK_SanJoaquin_Antioch_to_JLS, ONEWAY=T, MODE
 ;-----------Alt 5--------------
 ; Amtrak Capitol from TT to Fairfield/Vacaville
 ;
-LINE NAME="131_CAP4NB", LONGNAME=AMTRAK_Capitol_SanJose_to_Fairfield_Vacaville, ONEWAY=T, MODE=131, OWNER="6", COLOR=10,
+LINE NAME="131_CAP4NB", LONGNAME=AMTRAK_Capitol_TT_to_Fairfield_Vacaville, ONEWAY=T, MODE=131, OWNER="6", COLOR=10,
      FREQ[1]=0,
-     FREQ[2]=120,
+     FREQ[2]=300,
      FREQ[3]=300,
-     FREQ[4]=80,
-     FREQ[5]=300,
+     FREQ[4]=120,
+     FREQ[5]=0,
      runtime=146,
      N=14264, 18030, 14649, 14650, 14651, -14652, 14654, 14655, 14656
 
 ; Amtrak Capitol from Fairfield/Vacaville to TT
 ;
-LINE NAME="131_CAP4SB", LONGNAME=AMTRAK_Capitol_Fairfield_Vacaville_to_SanJose, ONEWAY=T, MODE=131, OWNER="6", COLOR=10,
+LINE NAME="131_CAP4SB", LONGNAME=AMTRAK_Capitol_Fairfield_Vacaville_to_TT, ONEWAY=T, MODE=131, OWNER="6", COLOR=10,
     FREQ[1]=0,
-    FREQ[2]=80,
-    FREQ[3]=120,
-    FREQ[4]=120,
+    FREQ[2]=120,
+    FREQ[3]=300,
+    FREQ[4]=300,
     FREQ[5]=0,
     runtime=151,
     N=14656, 14655, 14654, -14652, 14651, 14650, 14649, 18030, 14264
