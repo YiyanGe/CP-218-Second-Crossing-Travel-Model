@@ -1,5 +1,5 @@
 18013   15536  441 ; Hyde to Pittsburg/ Bay Point
-18013   15539  245 ; Hyde to Colma
+18013   15539  234 ; Hyde to Colma
 18013   18008  129 ; Hyde to Van Ness
 18013   15544  448 ; Hyde to Warm Springs
 18013   15520  315 ; Hyde to Richmond
@@ -18,8 +18,8 @@
 18013   15512  129 ; Hyde to Montgomery
 18013   15528  360 ; Hyde to South Hayward
 18013   15515  129 ; Hyde to 16th St Mission
-18013   15541  290 ; Hyde to San Bruno
-18013   15519  220 ; Hyde to Daly City
+18013   15541  280 ; Hyde to San Bruno
+18013   15519  206 ; Hyde to Daly City
 18013   15535  406 ; Hyde to North Concord
 18013   14202  458 ; Hyde to Milpitas
 18013   15534  231 ; Hyde to Lake Merritt
@@ -34,7 +34,7 @@
 18013   15516  129 ; Hyde to 24th St Mission
 18013   15529  339 ; Hyde to Hayward
 18013   15522  290 ; Hyde to El Cerrito Plaza
-18013   15518  133 ; Hyde to Balboa Park
+18013   15518  129 ; Hyde to Balboa Park
 18013   15549  434 ; Hyde to Irvington
 18013   15000  703 ; Hyde to Oakland International Airport
 18013   15524  280 ; Hyde to North Berkeley
@@ -56,9 +56,9 @@
 18013   15511  129 ; Hyde to Embarcadero
 18013   15505  308 ; Hyde to Orinda
 18013   15532  283 ; Hyde to Coliseum/Oakland Airport
-18013   15540  266 ; Hyde to South San Francisco
+18013   15540  252 ; Hyde to South San Francisco
 18013   18012  129 ; Hyde to Howard
-18013   15542  605 ; Hyde to SFO
+18013   15542  602 ; Hyde to SFO
 15536   15539  472 ; Pittsburg/ Bay Point to Colma
 15536   15544  507 ; Pittsburg/ Bay Point to Warm Springs
 15536   15520  364 ; Pittsburg/ Bay Point to Richmond
@@ -191,7 +191,7 @@
 18008   14207  535 ; Van Ness to Diridon-Caltrain
 18008   15510  234 ; Van Ness to West Oakland
 18008   14203  472 ; Van Ness to Berryessa
-18008   15514  258 ; Van Ness to Civic Center
+18008   15514  129 ; Van Ness to Civic Center
 18008   18009  129 ; Van Ness to Fillmore
 18008   15523  280 ; Van Ness to Berkeley
 18008   15516  129 ; Van Ness to 24th St Mission
@@ -654,7 +654,7 @@
 15507   15540  304 ; MacArthur to South San Francisco
 15507   15542  633 ; MacArthur to SFO
 18010   15536  441 ; 4th/Brannan to Pittsburg/ Bay Point
-18010   15539  245 ; 4th/Brannan to Colma
+18010   15539  234 ; 4th/Brannan to Colma
 18010   15544  448 ; 4th/Brannan to Warm Springs
 18010   15520  315 ; 4th/Brannan to Richmond
 18010   15537  339 ; 4th/Brannan to Castro Valley
@@ -670,8 +670,8 @@
 18010   15512  129 ; 4th/Brannan to Montgomery
 18010   15528  360 ; 4th/Brannan to South Hayward
 18010   15515  129 ; 4th/Brannan to 16th St Mission
-18010   15541  290 ; 4th/Brannan to San Bruno
-18010   15519  220 ; 4th/Brannan to Daly City
+18010   15541  280 ; 4th/Brannan to San Bruno
+18010   15519  206 ; 4th/Brannan to Daly City
 18010   15535  406 ; 4th/Brannan to North Concord
 18010   14202  458 ; 4th/Brannan to Milpitas
 18010   15534  231 ; 4th/Brannan to Lake Merritt
@@ -680,13 +680,13 @@
 18010   14207  532 ; 4th/Brannan to Diridon-Caltrain
 18010   15510  217 ; 4th/Brannan to West Oakland
 18010   14203  469 ; 4th/Brannan to Berryessa
-18010   15514  258 ; 4th/Brannan to Civic Center
+18010   15514  129 ; 4th/Brannan to Civic Center
 18010   18009  129 ; 4th/Brannan to Fillmore
 18010   15523  273 ; 4th/Brannan to Berkeley
 18010   15516  129 ; 4th/Brannan to 24th St Mission
 18010   15529  339 ; 4th/Brannan to Hayward
 18010   15522  290 ; 4th/Brannan to El Cerrito Plaza
-18010   15518  133 ; 4th/Brannan to Balboa Park
+18010   15518  129 ; 4th/Brannan to Balboa Park
 18010   15549  434 ; 4th/Brannan to Irvington
 18010   15000  703 ; 4th/Brannan to Oakland International Airport
 18010   15524  280 ; 4th/Brannan to North Berkeley
@@ -703,14 +703,14 @@
 18010   15517  129 ; 4th/Brannan to Glen Park
 18010   15533  262 ; 4th/Brannan to Fruitvale
 18010   14206  532 ; 4th/Brannan to Downtown San Jose
-18010   15513  258 ; 4th/Brannan to Powell
+18010   15513  129 ; 4th/Brannan to Powell
 18010   15545  402 ; 4th/Brannan to West Dublin/Pleasanton
 18010   15511  129 ; 4th/Brannan to Embarcadero
 18010   15505  308 ; 4th/Brannan to Orinda
 18010   15532  283 ; 4th/Brannan to Coliseum/Oakland Airport
-18010   15540  266 ; 4th/Brannan to South San Francisco
+18010   15540  252 ; 4th/Brannan to South San Francisco
 18010   18012  129 ; 4th/Brannan to Howard
-18010   15542  605 ; 4th/Brannan to SFO
+18010   15542  602 ; 4th/Brannan to SFO
 18001   15536  322 ; 15th/Franklin to Pittsburg/ Bay Point
 18001   15539  283 ; 15th/Franklin to Colma
 18001   15544  332 ; 15th/Franklin to Warm Springs
@@ -1372,7 +1372,7 @@
 18009   14207  535 ; Fillmore to Diridon-Caltrain
 18009   15510  234 ; Fillmore to West Oakland
 18009   14203  472 ; Fillmore to Berryessa
-18009   15514  258 ; Fillmore to Civic Center
+18009   15514  129 ; Fillmore to Civic Center
 18009   15523  280 ; Fillmore to Berkeley
 18009   15516  129 ; Fillmore to 24th St Mission
 18009   15529  346 ; Fillmore to Hayward
@@ -1678,7 +1678,7 @@
 15531   15540  346 ; San Leandro to South San Francisco
 15531   15542  675 ; San Leandro to SFO
 18011   15536  441 ; 6th/Brannan to Pittsburg/ Bay Point
-18011   15539  245 ; 6th/Brannan to Colma
+18011   15539  234 ; 6th/Brannan to Colma
 18011   15544  448 ; 6th/Brannan to Warm Springs
 18011   15520  315 ; 6th/Brannan to Richmond
 18011   15537  339 ; 6th/Brannan to Castro Valley
@@ -1693,8 +1693,8 @@
 18011   15512  129 ; 6th/Brannan to Montgomery
 18011   15528  360 ; 6th/Brannan to South Hayward
 18011   15515  129 ; 6th/Brannan to 16th St Mission
-18011   15541  290 ; 6th/Brannan to San Bruno
-18011   15519  220 ; 6th/Brannan to Daly City
+18011   15541  280 ; 6th/Brannan to San Bruno
+18011   15519  206 ; 6th/Brannan to Daly City
 18011   15535  406 ; 6th/Brannan to North Concord
 18011   14202  458 ; 6th/Brannan to Milpitas
 18011   15534  231 ; 6th/Brannan to Lake Merritt
@@ -1703,12 +1703,12 @@
 18011   14207  532 ; 6th/Brannan to Diridon-Caltrain
 18011   15510  217 ; 6th/Brannan to West Oakland
 18011   14203  469 ; 6th/Brannan to Berryessa
-18011   15514  258 ; 6th/Brannan to Civic Center
+18011   15514  129 ; 6th/Brannan to Civic Center
 18011   15523  273 ; 6th/Brannan to Berkeley
 18011   15516  129 ; 6th/Brannan to 24th St Mission
 18011   15529  339 ; 6th/Brannan to Hayward
 18011   15522  290 ; 6th/Brannan to El Cerrito Plaza
-18011   15518  133 ; 6th/Brannan to Balboa Park
+18011   15518  129 ; 6th/Brannan to Balboa Park
 18011   15549  434 ; 6th/Brannan to Irvington
 18011   15000  703 ; 6th/Brannan to Oakland International Airport
 18011   15524  280 ; 6th/Brannan to North Berkeley
@@ -1728,9 +1728,9 @@
 18011   15511  129 ; 6th/Brannan to Embarcadero
 18011   15505  308 ; 6th/Brannan to Orinda
 18011   15532  283 ; 6th/Brannan to Coliseum/Oakland Airport
-18011   15540  266 ; 6th/Brannan to South San Francisco
+18011   15540  252 ; 6th/Brannan to South San Francisco
 18011   18012  129 ; 6th/Brannan to Howard
-18011   15542  605 ; 6th/Brannan to SFO
+18011   15542  602 ; 6th/Brannan to SFO
 15543   15504  413 ; Millbrae to Lafayette
 15543   15526  497 ; Millbrae to Fremont
 15543   15521  385 ; Millbrae to El Cerrito Del Norte
@@ -1837,7 +1837,7 @@
 15532   15542  658 ; Coliseum/Oakland Airport to SFO
 15540   15542  518 ; South San Francisco to SFO
 18012   15536  441 ; Howard to Pittsburg/ Bay Point
-18012   15539  245 ; Howard to Colma
+18012   15539  234 ; Howard to Colma
 18012   15544  448 ; Howard to Warm Springs
 18012   15520  315 ; Howard to Richmond
 18012   15537  339 ; Howard to Castro Valley
@@ -1852,8 +1852,8 @@
 18012   15512  129 ; Howard to Montgomery
 18012   15528  360 ; Howard to South Hayward
 18012   15515  129 ; Howard to 16th St Mission
-18012   15541  290 ; Howard to San Bruno
-18012   15519  220 ; Howard to Daly City
+18012   15541  280 ; Howard to San Bruno
+18012   15519  206 ; Howard to Daly City
 18012   15535  406 ; Howard to North Concord
 18012   14202  458 ; Howard to Milpitas
 18012   15534  231 ; Howard to Lake Merritt
@@ -1867,7 +1867,7 @@
 18012   15516  129 ; Howard to 24th St Mission
 18012   15529  339 ; Howard to Hayward
 18012   15522  290 ; Howard to El Cerrito Plaza
-18012   15518  133 ; Howard to Balboa Park
+18012   15518  129 ; Howard to Balboa Park
 18012   15549  434 ; Howard to Irvington
 18012   15000  703 ; Howard to Oakland International Airport
 18012   15524  280 ; Howard to North Berkeley
@@ -1887,5 +1887,5 @@
 18012   15511  129 ; Howard to Embarcadero
 18012   15505  308 ; Howard to Orinda
 18012   15532  283 ; Howard to Coliseum/Oakland Airport
-18012   15540  266 ; Howard to South San Francisco
-18012   15542  605 ; Howard to SFO
+18012   15540  252 ; Howard to South San Francisco
+18012   15542  602 ; Howard to SFO
