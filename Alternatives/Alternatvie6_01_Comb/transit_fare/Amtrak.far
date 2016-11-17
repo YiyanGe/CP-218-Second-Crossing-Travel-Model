@@ -48,21 +48,21 @@
 14648	14651	533	;	Jack London Square to	Richmond
 14648	14654	746	;	Jack London Square to	Martinez
 14648	14655	983	;	Jack London Square to	Suisun City
-14648	14658	699	;	Jack London Square to	Antioch
+14648	14658	1199	;	Jack London Square to	Antioch
 14649	14650	399	;	Emeryville To 	Berkeley
 14649	14651	480	;	Emeryville To 	Richmond
 14649	14654	692	;	Emeryville To 	Martinez
 14649	14655	926	;	Emeryville To 	Suisun City
-14649	14658	699	;	Emeryville To 	Antioch
+14649	14658	1164	;	Emeryville To 	Antioch
 14650	14651	480	;	Berkeley to	Richmond
 14650	14654	692	;	Berkeley to	Martinez
 14650	14655	926	;	Berkeley to	Suisun City
-14650	14658	1364	;	Berkeley to	Antioch
+14650	14658	1164	;	Berkeley to	Antioch
 14651	14654	639	;	Richmond to	Martinez
 14651	14655	853	;	Richmond to	Suisun City
-14651	14658	630	;	Richmond to	Antioch
+14651	14658	1030	;	Richmond to	Antioch
 14654	14655	639	;	Martinez to	Suisun City
-14654	14658	455	;	Martinez to	Antioch
+14654	14658	855	;	Martinez to	Antioch
 14655	14658	1224	;	Suisun City to	Antioch
 14655	14652	769	;	Suisun/Fairfield  to	Hercules
 14654	14652	399	;	Martinez to	Hercules
@@ -78,7 +78,7 @@
 14652	14658	560	;	Hercules to	Antioch
 14656	14655	453	;	Farifield/Vacaville to	Suisun/Fairfield
 14656	14654	803	;	Farifield/Vacaville to	Martinez
-14656	14652	19	;	Farifield/Vacaville to	Hercules
+14656	14652	819	;	Farifield/Vacaville to	Hercules
 14656	14651	936	;	Farifield/Vacaville to	Richmond
 14656	14650	983	;	Farifield/Vacaville to	Berkeley
 14656	14649	983	;	Farifield/Vacaville to	Emeryville
@@ -92,7 +92,7 @@
 14642	14656	1652	;	Santa Clara to	Farifield/Vacaville
 14642	14655	1652	;	Santa Clara to	Suisun/Fairfield  to
 14642	14654	1332	;	Santa Clara to	Martinez to
-14642	14652	842	;	Santa Clara to	Hercules
+14642	14652	1142	;	Santa Clara to	Hercules
 14642	14651	1036	;	Santa Clara to	Richmond
 14642	14650	983	;	Santa Clara to	Berkeley
 14642	14649	983	;	Santa Clara to	Emeryville
@@ -108,27 +108,27 @@
 14264	14650	692	;	Transbay Transit Center to	Berkeley
 14264	14651	746	;	Transbay Transit Center to	Richmond
 14264	14652	939	;	Transbay Transit Center to	Hercules
-14264	14654	1430	;	Transbay Transit Center to	Martinez
-14264	14655	1749	;	Transbay Transit Center to	Suisun/Fairfield
-14264	14656	1749	;	Transbay Transit Center to	Farifield/Vacaville
+14264	14654	1330	;	Transbay Transit Center to	Martinez
+14264	14655	1549	;	Transbay Transit Center to	Suisun/Fairfield
+14264	14656	1549	;	Transbay Transit Center to	Farifield/Vacaville
 14264	14648	1065	;	Transbay Transit Center to	Oakland Jack London
 14264	14647	1172	;	Transbay Transit Center to	Oakland Coliseum
 14264	14646	1332	;	Transbay Transit Center to	Hayward
 14264	14644	1439	;	Transbay Transit Center to	Fremont
 14264	14643	1619	;	Transbay Transit Center to	Great America
 14264	14641	1675	;	Transbay Transit Center to	San Jose Diridon
-14264	14658	1392	;	Transbay Transit Center to	Antioch
+14264	14658	1692	;	Transbay Transit Center to	Antioch
 18030	14649	373	;	14th Street to	Emeryville
 18030	14650	373	;	14th Street to	Berkeley
 18030	14651	426	;	14th Street to	Richmond
 18030	14652	620	;	14th Street to	Hercules
-18030	14654	1110	;	14th Street to	Martinez
-18030	14655	1430	;	14th Street to	Suisun/Fairfield
-18030	14656	1430	;	14th Street to	Farifield/Vacaville
+18030	14654	710	;	14th Street to	Martinez
+18030	14655	1130	;	14th Street to	Suisun/Fairfield
+18030	14656	1130	;	14th Street to	Farifield/Vacaville
 18030	14648	746	;	14th Street to	Oakland Jack London
 18030	14647	853	;	14th Street to	Oakland Coliseum
 18030	14646	1012	;	14th Street to	Hayward
 18030	14644	1119	;	14th Street to	Fremont
 18030	14643	1299	;	14th Street to	Great America
 18030	14641	1356	;	14th Street to	San Jose Diridon
-18030	14658	1072	;	14th Street to	Antioch
+18030	14658	1272	;	14th Street to	Antioch
