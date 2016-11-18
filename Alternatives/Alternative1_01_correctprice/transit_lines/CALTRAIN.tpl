@@ -70,7 +70,6 @@ LINE NAME="130_SJSF1NB", LONGNAME=Caltrain_SanJose_SanFrancisco_Local, ONEWAY=T,
      FREQ[3]=60,
      FREQ[4]=240,
      FREQ[5]=240,
-     runtime=91, 
      N=13682,	; San Jose Diridon
        -13681,	; College Park
        13680,	; Santa Clara
@@ -106,7 +105,6 @@ LINE NAME="130_TAMSF1NB", LONGNAME=Caltrain_Tamien_SanFrancisco_Local, ONEWAY=T,
       FREQ[3]=60,
       FREQ[4]=240,
       FREQ[5]=160,
-      runtime=98, 
       N=13683,	; Tamien
         13682,	; San Jose Diridon
         -13681,	; College Park
@@ -484,7 +482,6 @@ LINE NAME="130_SFSJ1SB", LONGNAME=Caltrain_SanFrancisco_SanJose_Local, ONEWAY=T,
      FREQ[3]=60,
      FREQ[4]=240,
      FREQ[5]=160,
-     runtime=98, 
      N=13654,   ; Transbay Terminal
        13655,   ; Fourth & Townsend
        13656,   ; 22nd Street
@@ -983,8 +980,7 @@ LINE NAME="130_EXP6NB", LONGNAME=Caltrain_BabyBullet_SanJose_SanFrancisco_315_31
      FREQ[2]=0,
      FREQ[3]=0,
      FREQ[4]=80,
-     FREQ[5]=0,
-     runtime=57, 
+     FREQ[5]=0, 
      N=13682,      ; San Jose
      13677,        ; Mountain View
      13673,        ; Palo Alto
@@ -1006,8 +1002,7 @@ LINE NAME="130_EXP1SB", LONGNAME=Caltrain_BabyBullet_SanFrancisco_SanJose_300_30
      FREQ[2]=80,
      FREQ[3]=0,
      FREQ[4]=0,
-     FREQ[5]=0, 
-     runtime=59, 
+     FREQ[5]=0,
      N=13654,   ; Transbay Terminal
      13655,	 ; Fourth & Townsend
      13656,	; 22nd Street  
