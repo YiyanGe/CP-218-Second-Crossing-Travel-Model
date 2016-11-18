@@ -18,9 +18,6 @@ LINK NODES= 14652,14654, TIME =18.0, DIST=890, ONEWAY=NO, MODES=131-132 ; Hercul
 LINK NODES= 14654,14655, TIME =19.0, DIST=1640, ONEWAY=NO, MODES=131-132 ; Martinez - Suisun/Fairfield
 LINK NODES= 14655,14656, TIME =6.0, DIST=650, ONEWAY=NO, MODES=131-132 ; Suisun/Fairfield - Fairfield/Vacaville
 LINK NODES= 14654,14658, TIME =19.0, DIST=1740, ONEWAY=NO, MODES=131-132 ; Martinez - Antioch
-;-------- Alt 5 -----------
-LINK NODES= 14649,18030, TIME =7.0, DIST=280, ONEWAY=NO, MODES=131-132; Emeryville - 14th Street
-LINK NODES= 18030,14264, TIME =17.0, DIST=800, ONEWAY=NO, MODES=131-132; 14th Street - Transbay Transit Center
 
 
 ; Amtrak Capitol from San Jose to Fairfield/Vacaville
@@ -47,19 +44,19 @@ LINE NAME="131_CAP1SB", LONGNAME=AMTRAK_Capitol_Fairfield_Vacaville_to_SanJose, 
 ;
 LINE NAME="131_CAP2NB", LONGNAME=AMTRAK_Capitol_Coliseum_to_Fairfield_Vacaville, ONEWAY=T, MODE=131, OWNER="6", COLOR=10, 
      FREQ[1]=0,
-     FREQ[2]=0,
+     FREQ[2]=300,
      FREQ[3]=0,
      FREQ[4]=0,
-     FREQ[5]=0,
+     FREQ[5]=300,
      N=14647, 14648, 14649, 14650, 14651, -14652, 14654, 14655, 14656 
 
 ; Amtrak Capitol from Fairfield/Vacaville to Coliseum
 ;
 LINE NAME="131_CAP2SB", LONGNAME=AMTRAK_Capitol_Fairfield_Vacaville_to_Coliseum, ONEWAY=T, MODE=131, OWNER="6", COLOR=10, 
      FREQ[1]=0,
-     FREQ[2]=0,
-     FREQ[3]=0,
-     FREQ[4]=0,
+     FREQ[2]=120,
+     FREQ[3]=300,
+     FREQ[4]=300,
      FREQ[5]=0,
      N=14656, 14655, 14654, -14652, 14651, 14650, 14649, 14648, 14647
 
@@ -68,9 +65,9 @@ LINE NAME="131_CAP2SB", LONGNAME=AMTRAK_Capitol_Fairfield_Vacaville_to_Coliseum,
 LINE NAME="131_CAP3NB", LONGNAME=AMTRAK_Capitol_JLS_to_Fairfield_Vacaville, ONEWAY=T, MODE=131, OWNER="6", COLOR=10, 
      FREQ[1]=00,
      FREQ[2]=120,
-     FREQ[3]=0,
-     FREQ[4]=240,
-     FREQ[5]=300,
+     FREQ[3]=300,
+     FREQ[4]=80,
+     FREQ[5]=0,
      N=14648, 14649, 14650, 14651, -14652, 14654, 14655, 14656
 
 ; Amtrak Capitol from Fairfield/Vacaville to Jack London Square
@@ -103,24 +100,3 @@ LINE NAME="132_SJQSB", LONGNAME=AMTRAK_SanJoaquin_Antioch_to_JLS, ONEWAY=T, MODE
      FREQ[4]=120,
      FREQ[5]=300,
      N=14658, 14654, -14652, 14651, 14650, 14649, 14648
-
-;-----------Alt 5--------------
-; Amtrak Capitol from TT to Fairfield/Vacaville
-;
-LINE NAME="131_CAP4NB", LONGNAME=AMTRAK_Capitol_TT_to_Fairfield_Vacaville, ONEWAY=T, MODE=131, OWNER="6", COLOR=10,
-     FREQ[1]=0,
-     FREQ[2]=300,
-     FREQ[3]=300,
-     FREQ[4]=120,
-     FREQ[5]=0,
-     N=14264, 18030, 14649, 14650, 14651, -14652, 14654, 14655, 14656
-
-; Amtrak Capitol from Fairfield/Vacaville to TT
-;
-LINE NAME="131_CAP4SB", LONGNAME=AMTRAK_Capitol_Fairfield_Vacaville_to_TT, ONEWAY=T, MODE=131, OWNER="6", COLOR=10,
-    FREQ[1]=0,
-    FREQ[2]=120,
-    FREQ[3]=300,
-    FREQ[4]=300,
-    FREQ[5]=0,
-    N=14656, 14655, 14654, -14652, 14651, 14650, 14649, 18030, 14264

@@ -901,13 +901,10 @@ LINE NAME="130_EXP1NB", LONGNAME=Caltrain_BabyBullet_SanJose_SanFrancisco_301, O
      13667,        ; Hillsdale
      13661,        ; Millbrae
      13655,         ; Fourth & Townsend
-     13654,    ; Transbay Terminal
-     18023, ; 14th street
-     18020, ; Emeryville
-     18021, ; Berkeley
-     18022  ; Richmond
+     13654    ; Transbay Terminal
 
- LINE NAME="130_EXP2NB", LONGNAME=Caltrain_BabyBullet_Tamien_SanFrancisco_303_311, ONEWAY=T, MODE=130, OWNER="6", COLOR=10,
+     
+ LINE NAME="130_EXP2NB", LONGNAME=Caltrain_BabyBullet_Tamien_SanFrancisco_303_311, ONEWAY=T, MODE=130, OWNER="6", COLOR=10, 
      FREQ[1]=0,
      FREQ[2]=120,
      FREQ[3]=0,
@@ -920,13 +917,9 @@ LINE NAME="130_EXP1NB", LONGNAME=Caltrain_BabyBullet_SanJose_SanFrancisco_301, O
      13664,        ; San Mateo 
      13661,        ; Millbrae
      13655,         ; Fourth & Townsend
-     13654,    ; Transbay Terminal
-     18023, ; 14th street
-     18020, ; Emeryville
-     18021, ; Berkeley
-     18022  ; Richmond
+     13654    ; Transbay Terminal
 
-LINE NAME="130_EXP3NB", LONGNAME=Caltrain_BabyBullet_SanJose_SanFrancisco_305_309, ONEWAY=T, MODE=130, OWNER="6", COLOR=10,
+LINE NAME="130_EXP3NB", LONGNAME=Caltrain_BabyBullet_SanJose_SanFrancisco_305_309, ONEWAY=T, MODE=130, OWNER="6", COLOR=10, 
      FREQ[1]=0,
      FREQ[2]=120,
      FREQ[3]=0,
@@ -944,13 +937,9 @@ LINE NAME="130_EXP3NB", LONGNAME=Caltrain_BabyBullet_SanJose_SanFrancisco_305_30
        13667,      ; Hillsdale
        13661,      ; Millbrae
        13655,       ; Fourth & Townsend
-       13654,    ; Transbay Terminal
-       18023, ; 14th street
-       18020, ; Emeryville
-       18021, ; Berkeley
-       18022  ; Richmond
+       13654    ; Transbay Terminal
 
-LINE NAME="130_EXP4NB", LONGNAME=Caltrain_BabyBullet_SanJose_SanFrancisco_307, ONEWAY=T, MODE=130, OWNER="6", COLOR=10,
+LINE NAME="130_EXP4NB", LONGNAME=Caltrain_BabyBullet_SanJose_SanFrancisco_307, ONEWAY=T, MODE=130, OWNER="6", COLOR=10, 
      FREQ[1]=0,
      FREQ[2]=240,
      FREQ[3]=0,
@@ -969,13 +958,9 @@ LINE NAME="130_EXP4NB", LONGNAME=Caltrain_BabyBullet_SanJose_SanFrancisco_307, O
        13664,      ; San Mateo 
        13661,      ; Millbrae
        13655,       ; Fourth & Townsend
-       13654,    ; Transbay Terminal
-       18023, ; 14th street
-       18020, ; Emeryville
-       18021, ; Berkeley
-       18022  ; Richmond
+       13654    ; Transbay Terminal
 
-LINE NAME="130_EXP5NB", LONGNAME=Caltrain_BabyBullet_SanJose_SanFrancisco_313_317_321, ONEWAY=T, MODE=130, OWNER="6", COLOR=10,
+LINE NAME="130_EXP5NB", LONGNAME=Caltrain_BabyBullet_SanJose_SanFrancisco_313_317_321, ONEWAY=T, MODE=130, OWNER="6", COLOR=10, 
      FREQ[1]=0,
      FREQ[2]=0,
      FREQ[3]=0,
@@ -988,18 +973,14 @@ LINE NAME="130_EXP5NB", LONGNAME=Caltrain_BabyBullet_SanJose_SanFrancisco_313_31
      13661,        ; Millbrae
      13656,        ; 22nd Street
      13655,         ; Fourth & Townsend   
-     13654,    ; Transbay Terminal
-     18023, ; 14th street
-     18020, ; Emeryville
-     18021, ; Berkeley
-     18022  ; Richmond
+     13654    ; Transbay Terminal
 
-LINE NAME="130_EXP6NB", LONGNAME=Caltrain_BabyBullet_SanJose_SanFrancisco_315_319_323, ONEWAY=T, MODE=130, OWNER="6", COLOR=10,
+LINE NAME="130_EXP6NB", LONGNAME=Caltrain_BabyBullet_SanJose_SanFrancisco_315_319_323, ONEWAY=T, MODE=130, OWNER="6", COLOR=10, 
      FREQ[1]=0,
      FREQ[2]=0,
      FREQ[3]=0,
      FREQ[4]=80,
-     FREQ[5]=0,
+     FREQ[5]=0, 
      N=13682,      ; San Jose
      13677,        ; Mountain View
      13673,        ; Palo Alto
@@ -1007,13 +988,10 @@ LINE NAME="130_EXP6NB", LONGNAME=Caltrain_BabyBullet_SanJose_SanFrancisco_315_31
      13661,        ; Millbrae
      13656,        ; 22nd Street
      13655,         ; Fourth & Townsend
-     13654,    ; Transbay Terminal
-     18023, ; 14th street
-     18020, ; Emeryville
-     18021, ; Berkeley
-     18022  ; Richmond
+     13654    ; Transbay Terminal
 
 
+     
 ;***************************************************************************
 ;  Express Service Southbound
 ;***************************************************************************
@@ -1024,12 +1002,8 @@ LINE NAME="130_EXP1SB", LONGNAME=Caltrain_BabyBullet_SanFrancisco_SanJose_300_30
      FREQ[2]=80,
      FREQ[3]=0,
      FREQ[4]=0,
-     FREQ[5]=0, 
-     N=18022,  ; Richmond
-     18021, ; Berkeley
-     18020, ; Emeryville
-     18023, ; 14th street
-     13654,   ; Transbay Terminal
+     FREQ[5]=0,
+     N=13654,   ; Transbay Terminal
      13655,	 ; Fourth & Townsend
      13656,	; 22nd Street  
      13661, 	; Millbrae 
@@ -1045,11 +1019,7 @@ LINE NAME="130_EXP2SB", LONGNAME=Caltrain_BabyBullet_SanFrancisco_SanJose_302_30
      FREQ[3]=0,
      FREQ[4]=0,
      FREQ[5]=0,  
-     N=18022,  ; Richmond
-       18021, ; Berkeley
-       18020, ; Emeryville
-       18023, ; 14th street
-       13654,   ; Transbay Terminal
+     N=13654,   ; Transbay Terminal
      13655,	; Fourth & Townsend 
      13656,	; 22nd Street  
      13661,	; Millbrae 
@@ -1065,11 +1035,7 @@ LINE NAME="130_EXP3SB", LONGNAME=Caltrain_BabyBullet_SanFrancisco_Tamien_312, ON
      FREQ[3]=0,
      FREQ[4]=240,
      FREQ[5]=0, 
-     N= 18022,  ; Richmond
-        18021, ; Berkeley
-        18020, ; Emeryville
-       18023, ; 14th street
-     13654,   ; Transbay Terminal
+     N=13654,   ; Transbay Terminal
      13655,	; Fourth & Townsend 
      13661,	; Millbrae 
      13664,	; San Mateo 
@@ -1085,13 +1051,8 @@ LINE NAME="130_EXP4SB", LONGNAME=Caltrain_BabyBullet_SanFrancisco_SanJose_318_32
      FREQ[3]=0,
      FREQ[4]=120,
      FREQ[5]=0,  
-     N=18022,  ; Richmond
-       18021, ; Berkeley
-       18020, ; Emeryville
-       18023, ; 14th street
-       13654,   ; Transbay Terminal
-      13655,	; Fourth & Townsend
-     13661,	; Millbrae
+     N=13655,	; Fourth & Townsend 
+     13661,	; Millbrae 
      13667,	; Hillsdale 
      13673, 	; Palo Alto 
      13677,	; Mountain View 
@@ -1104,12 +1065,8 @@ LINE NAME="130_EXP5SB", LONGNAME=Caltrain_BabyBullet_SanFrancisco_Tamien_316_320
      FREQ[3]=0,
      FREQ[4]=120,
      FREQ[5]=0, 
-     N=18022,  ; Richmond
-       18021, ; Berkeley
-       18020, ; Emeryville
-       18023, ; 14th street
-     13654,   ; Transbay Terminal
-     13655,	; Fourth & Townsend
+     N=13654,   ; Transbay Terminal
+     13655,	; Fourth & Townsend 
      13661,	; Millbrae 
      13664,	; San Mateo 
      13670,	; Redwood City 
@@ -1130,12 +1087,8 @@ LINE NAME="130_EXP6SB", LONGNAME=Caltrain_BabyBullet_SanFrancisco_SanJose_314, O
      FREQ[3]=0,
      FREQ[4]=240,
      FREQ[5]=0,  
-     N=18022,  ; Richmond
-       18021, ; Berkeley
-       18020, ; Emeryville
-       18023, ; 14th street
-        13654,   ; Transbay Terminal
-     13655,	; Fourth & Townsend
+     N=13654,   ; Transbay Terminal
+     13655,	; Fourth & Townsend 
      13661,	; Millbrae 
      13667,	; Hillsdale 
      13673, 	; Palo Alto 
