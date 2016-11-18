@@ -184,3 +184,6 @@ ZONEACCESS link=14241-14231 mode=5
 
 ; E-BART Mokelumne Trail Station
 ZONEACCESS link=14237-14236 mode=5
+;---------alt 5 ----------
+; 14th Station for BART
+ZONEACCESS link=18114-18014 mode=5
