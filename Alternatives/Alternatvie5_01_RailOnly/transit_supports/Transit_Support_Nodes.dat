@@ -249,3 +249,5 @@
 18132  557103 4198969 ; Richmond Caltrain Station PNR node
 18023  563632 4184634 ; 14th Street Station (for Caltrain)
 18123  563682 4184684 ; 14th Street Station (for Caltrain) access node
+18014  563630 4184632 ; 14th Street Station (for BART)
+18114  563680 4184682 ; 14th Street access node (for BART)
