@@ -1,6 +1,6 @@
 ,node_from,node_to,fare,name_from,name_to,key,output
 0,18013.0,15536.0,441,Hyde,Pittsburg/ Bay Point,1553618013,18013   15536  441 ; Hyde to Pittsburg/ Bay Point
-1,18013.0,15539.0,245,Hyde,Colma,1553918013,18013   15539  245 ; Hyde to Colma
+1,18013.0,15539.0,234,Hyde,Colma,1553918013,18013   15539  234 ; Hyde to Colma
 2,18013.0,18008.0,129,Hyde,Van Ness,1800818013,18013   18008  129 ; Hyde to Van Ness
 3,18013.0,15544.0,448,Hyde,Warm Springs,1554418013,18013   15544  448 ; Hyde to Warm Springs
 4,18013.0,15520.0,315,Hyde,Richmond,1552018013,18013   15520  315 ; Hyde to Richmond
@@ -17,8 +17,8 @@
 15,18013.0,15512.0,129,Hyde,Montgomery,1551218013,18013   15512  129 ; Hyde to Montgomery
 16,18013.0,15528.0,360,Hyde,South Hayward,1552818013,18013   15528  360 ; Hyde to South Hayward
 17,18013.0,15515.0,129,Hyde,16th St Mission,1551518013,18013   15515  129 ; Hyde to 16th St Mission
-18,18013.0,15541.0,290,Hyde,San Bruno,1554118013,18013   15541  290 ; Hyde to San Bruno
-19,18013.0,15519.0,220,Hyde,Daly City,1551918013,18013   15519  220 ; Hyde to Daly City
+18,18013.0,15541.0,280,Hyde,San Bruno,1554118013,18013   15541  280 ; Hyde to San Bruno
+19,18013.0,15519.0,206,Hyde,Daly City,1551918013,18013   15519  206 ; Hyde to Daly City
 20,18013.0,15535.0,406,Hyde,North Concord,1553518013,18013   15535  406 ; Hyde to North Concord
 21,18013.0,14202.0,458,Hyde,Milpitas,1420218013,18013   14202  458 ; Hyde to Milpitas
 22,18013.0,15534.0,231,Hyde,Lake Merritt,1553418013,18013   15534  231 ; Hyde to Lake Merritt
@@ -33,7 +33,7 @@
 31,18013.0,15516.0,129,Hyde,24th St Mission,1551618013,18013   15516  129 ; Hyde to 24th St Mission
 32,18013.0,15529.0,339,Hyde,Hayward,1552918013,18013   15529  339 ; Hyde to Hayward
 33,18013.0,15522.0,290,Hyde,El Cerrito Plaza,1552218013,18013   15522  290 ; Hyde to El Cerrito Plaza
-34,18013.0,15518.0,133,Hyde,Balboa Park,1551818013,18013   15518  133 ; Hyde to Balboa Park
+34,18013.0,15518.0,129,Hyde,Balboa Park,1551818013,18013   15518  129 ; Hyde to Balboa Park
 35,18013.0,15549.0,434,Hyde,Irvington,1554918013,18013   15549  434 ; Hyde to Irvington
 36,18013.0,15000.0,703,Hyde,Oakland International Airport,1500018013,18013   15000  703 ; Hyde to Oakland International Airport
 37,18013.0,15524.0,280,Hyde,North Berkeley,1552418013,18013   15524  280 ; Hyde to North Berkeley
@@ -55,9 +55,9 @@
 53,18013.0,15511.0,129,Hyde,Embarcadero,1551118013,18013   15511  129 ; Hyde to Embarcadero
 54,18013.0,15505.0,308,Hyde,Orinda,1550518013,18013   15505  308 ; Hyde to Orinda
 55,18013.0,15532.0,283,Hyde,Coliseum/Oakland Airport,1553218013,18013   15532  283 ; Hyde to Coliseum/Oakland Airport
-56,18013.0,15540.0,266,Hyde,South San Francisco,1554018013,18013   15540  266 ; Hyde to South San Francisco
+56,18013.0,15540.0,252,Hyde,South San Francisco,1554018013,18013   15540  252 ; Hyde to South San Francisco
 57,18013.0,18012.0,129,Hyde,Howard,1801218013,18013   18012  129 ; Hyde to Howard
-58,18013.0,15542.0,605,Hyde,SFO,1554218013,18013   15542  605 ; Hyde to SFO
+58,18013.0,15542.0,602,Hyde,SFO,1554218013,18013   15542  602 ; Hyde to SFO
 59,15536.0,15539.0,472,Pittsburg/ Bay Point,Colma,1553615539,15536   15539  472 ; Pittsburg/ Bay Point to Colma
 60,15536.0,15544.0,507,Pittsburg/ Bay Point,Warm Springs,1553615544,15536   15544  507 ; Pittsburg/ Bay Point to Warm Springs
 61,15536.0,15520.0,364,Pittsburg/ Bay Point,Richmond,1552015536,15536   15520  364 ; Pittsburg/ Bay Point to Richmond
@@ -310,7 +310,7 @@
 308,18008.0,14207.0,535,Van Ness,Diridon-Caltrain,1420718008,18008   14207  535 ; Van Ness to Diridon-Caltrain
 309,18008.0,15510.0,234,Van Ness,West Oakland,1551018008,18008   15510  234 ; Van Ness to West Oakland
 310,18008.0,14203.0,472,Van Ness,Berryessa,1420318008,18008   14203  472 ; Van Ness to Berryessa
-311,18008.0,15514.0,258,Van Ness,Civic Center,1551418008,18008   15514  258 ; Van Ness to Civic Center
+311,18008.0,15514.0,129,Van Ness,Civic Center,1551418008,18008   15514  129 ; Van Ness to Civic Center
 312,18008.0,15523.0,280,Van Ness,Berkeley,1552318008,18008   15523  280 ; Van Ness to Berkeley
 313,18008.0,15516.0,129,Van Ness,24th St Mission,1551618008,18008   15516  129 ; Van Ness to 24th St Mission
 314,18008.0,15529.0,346,Van Ness,Hayward,1552918008,18008   15529  346 ; Van Ness to Hayward
@@ -624,7 +624,7 @@
 622,14204.0,15540.0,574,Alum Rock,South San Francisco,1420415540,14204   15540  574 ; Alum Rock to South San Francisco
 623,14204.0,15542.0,902,Alum Rock,SFO,1420415542,14204   15542  902 ; Alum Rock to SFO
 624,18010.0,15536.0,441,4th/Brannan,Pittsburg/ Bay Point,1553618010,18010   15536  441 ; 4th/Brannan to Pittsburg/ Bay Point
-625,18010.0,15539.0,245,4th/Brannan,Colma,1553918010,18010   15539  245 ; 4th/Brannan to Colma
+625,18010.0,15539.0,234,4th/Brannan,Colma,1553918010,18010   15539  234 ; 4th/Brannan to Colma
 626,18010.0,18008.0,129,4th/Brannan,Van Ness,1800818010,18010   18008  129 ; 4th/Brannan to Van Ness
 627,18010.0,15544.0,448,4th/Brannan,Warm Springs,1554418010,18010   15544  448 ; 4th/Brannan to Warm Springs
 628,18010.0,15520.0,315,4th/Brannan,Richmond,1552018010,18010   15520  315 ; 4th/Brannan to Richmond
@@ -640,8 +640,8 @@
 638,18010.0,15512.0,129,4th/Brannan,Montgomery,1551218010,18010   15512  129 ; 4th/Brannan to Montgomery
 639,18010.0,15528.0,360,4th/Brannan,South Hayward,1552818010,18010   15528  360 ; 4th/Brannan to South Hayward
 640,18010.0,15515.0,129,4th/Brannan,16th St Mission,1551518010,18010   15515  129 ; 4th/Brannan to 16th St Mission
-641,18010.0,15541.0,290,4th/Brannan,San Bruno,1554118010,18010   15541  290 ; 4th/Brannan to San Bruno
-642,18010.0,15519.0,220,4th/Brannan,Daly City,1551918010,18010   15519  220 ; 4th/Brannan to Daly City
+641,18010.0,15541.0,280,4th/Brannan,San Bruno,1554118010,18010   15541  280 ; 4th/Brannan to San Bruno
+642,18010.0,15519.0,206,4th/Brannan,Daly City,1551918010,18010   15519  206 ; 4th/Brannan to Daly City
 643,18010.0,15535.0,406,4th/Brannan,North Concord,1553518010,18010   15535  406 ; 4th/Brannan to North Concord
 644,18010.0,14202.0,458,4th/Brannan,Milpitas,1420218010,18010   14202  458 ; 4th/Brannan to Milpitas
 645,18010.0,15534.0,231,4th/Brannan,Lake Merritt,1553418010,18010   15534  231 ; 4th/Brannan to Lake Merritt
@@ -650,13 +650,13 @@
 648,18010.0,14207.0,532,4th/Brannan,Diridon-Caltrain,1420718010,18010   14207  532 ; 4th/Brannan to Diridon-Caltrain
 649,18010.0,15510.0,217,4th/Brannan,West Oakland,1551018010,18010   15510  217 ; 4th/Brannan to West Oakland
 650,18010.0,14203.0,469,4th/Brannan,Berryessa,1420318010,18010   14203  469 ; 4th/Brannan to Berryessa
-651,18010.0,15514.0,258,4th/Brannan,Civic Center,1551418010,18010   15514  258 ; 4th/Brannan to Civic Center
+651,18010.0,15514.0,129,4th/Brannan,Civic Center,1551418010,18010   15514  129 ; 4th/Brannan to Civic Center
 652,18010.0,18009.0,129,4th/Brannan,Fillmore,1800918010,18010   18009  129 ; 4th/Brannan to Fillmore
 653,18010.0,15523.0,273,4th/Brannan,Berkeley,1552318010,18010   15523  273 ; 4th/Brannan to Berkeley
 654,18010.0,15516.0,129,4th/Brannan,24th St Mission,1551618010,18010   15516  129 ; 4th/Brannan to 24th St Mission
 655,18010.0,15529.0,339,4th/Brannan,Hayward,1552918010,18010   15529  339 ; 4th/Brannan to Hayward
 656,18010.0,15522.0,290,4th/Brannan,El Cerrito Plaza,1552218010,18010   15522  290 ; 4th/Brannan to El Cerrito Plaza
-657,18010.0,15518.0,133,4th/Brannan,Balboa Park,1551818010,18010   15518  133 ; 4th/Brannan to Balboa Park
+657,18010.0,15518.0,129,4th/Brannan,Balboa Park,1551818010,18010   15518  129 ; 4th/Brannan to Balboa Park
 658,18010.0,15549.0,434,4th/Brannan,Irvington,1554918010,18010   15549  434 ; 4th/Brannan to Irvington
 659,18010.0,15000.0,703,4th/Brannan,Oakland International Airport,1500018010,18010   15000  703 ; 4th/Brannan to Oakland International Airport
 660,18010.0,15524.0,280,4th/Brannan,North Berkeley,1552418010,18010   15524  280 ; 4th/Brannan to North Berkeley
@@ -672,13 +672,13 @@
 670,18010.0,15517.0,129,4th/Brannan,Glen Park,1551718010,18010   15517  129 ; 4th/Brannan to Glen Park
 671,18010.0,15533.0,262,4th/Brannan,Fruitvale,1553318010,18010   15533  262 ; 4th/Brannan to Fruitvale
 672,18010.0,14206.0,532,4th/Brannan,Downtown San Jose,1420618010,18010   14206  532 ; 4th/Brannan to Downtown San Jose
-673,18010.0,15513.0,258,4th/Brannan,Powell,1551318010,18010   15513  258 ; 4th/Brannan to Powell
+673,18010.0,15513.0,129,4th/Brannan,Powell,1551318010,18010   15513  129 ; 4th/Brannan to Powell
 674,18010.0,15545.0,402,4th/Brannan,West Dublin/Pleasanton,1554518010,18010   15545  402 ; 4th/Brannan to West Dublin/Pleasanton
 675,18010.0,15511.0,129,4th/Brannan,Embarcadero,1551118010,18010   15511  129 ; 4th/Brannan to Embarcadero
 676,18010.0,15505.0,308,4th/Brannan,Orinda,1550518010,18010   15505  308 ; 4th/Brannan to Orinda
 677,18010.0,15532.0,283,4th/Brannan,Coliseum/Oakland Airport,1553218010,18010   15532  283 ; 4th/Brannan to Coliseum/Oakland Airport
-678,18010.0,15540.0,266,4th/Brannan,South San Francisco,1554018010,18010   15540  266 ; 4th/Brannan to South San Francisco
-679,18010.0,15542.0,605,4th/Brannan,SFO,1554218010,18010   15542  605 ; 4th/Brannan to SFO
+678,18010.0,15540.0,252,4th/Brannan,South San Francisco,1554018010,18010   15540  252 ; 4th/Brannan to South San Francisco
+679,18010.0,15542.0,602,4th/Brannan,SFO,1554218010,18010   15542  602 ; 4th/Brannan to SFO
 680,18017.0,18013.0,231,Howard Terminal,Hyde,1801318017,18017   18013  231 ; Howard Terminal to Hyde
 681,18017.0,15536.0,322,Howard Terminal,Pittsburg/ Bay Point,1553618017,18017   15536  322 ; Howard Terminal to Pittsburg/ Bay Point
 682,18017.0,18015.0,129,Howard Terminal,11th Street,1801518017,18017   18015  129 ; Howard Terminal to 11th Street
@@ -1494,7 +1494,7 @@
 1492,18009.0,14207.0,535,Fillmore,Diridon-Caltrain,1420718009,18009   14207  535 ; Fillmore to Diridon-Caltrain
 1493,18009.0,15510.0,234,Fillmore,West Oakland,1551018009,18009   15510  234 ; Fillmore to West Oakland
 1494,18009.0,14203.0,472,Fillmore,Berryessa,1420318009,18009   14203  472 ; Fillmore to Berryessa
-1495,18009.0,15514.0,258,Fillmore,Civic Center,1551418009,18009   15514  258 ; Fillmore to Civic Center
+1495,18009.0,15514.0,129,Fillmore,Civic Center,1551418009,18009   15514  129 ; Fillmore to Civic Center
 1496,18009.0,15523.0,280,Fillmore,Berkeley,1552318009,18009   15523  280 ; Fillmore to Berkeley
 1497,18009.0,15516.0,129,Fillmore,24th St Mission,1551618009,18009   15516  129 ; Fillmore to 24th St Mission
 1498,18009.0,15529.0,346,Fillmore,Hayward,1552918009,18009   15529  346 ; Fillmore to Hayward
@@ -1796,7 +1796,7 @@
 1794,15531.0,15540.0,346,San Leandro,South San Francisco,1553115540,15531   15540  346 ; San Leandro to South San Francisco
 1795,15531.0,15542.0,675,San Leandro,SFO,1553115542,15531   15542  675 ; San Leandro to SFO
 1796,18011.0,15536.0,441,6th/Brannan,Pittsburg/ Bay Point,1553618011,18011   15536  441 ; 6th/Brannan to Pittsburg/ Bay Point
-1797,18011.0,15539.0,245,6th/Brannan,Colma,1553918011,18011   15539  245 ; 6th/Brannan to Colma
+1797,18011.0,15539.0,234,6th/Brannan,Colma,1553918011,18011   15539  234 ; 6th/Brannan to Colma
 1798,18011.0,18008.0,129,6th/Brannan,Van Ness,1800818011,18011   18008  129 ; 6th/Brannan to Van Ness
 1799,18011.0,15544.0,448,6th/Brannan,Warm Springs,1554418011,18011   15544  448 ; 6th/Brannan to Warm Springs
 1800,18011.0,15520.0,315,6th/Brannan,Richmond,1552018011,18011   15520  315 ; 6th/Brannan to Richmond
@@ -1813,8 +1813,8 @@
 1811,18011.0,15512.0,129,6th/Brannan,Montgomery,1551218011,18011   15512  129 ; 6th/Brannan to Montgomery
 1812,18011.0,15528.0,360,6th/Brannan,South Hayward,1552818011,18011   15528  360 ; 6th/Brannan to South Hayward
 1813,18011.0,15515.0,129,6th/Brannan,16th St Mission,1551518011,18011   15515  129 ; 6th/Brannan to 16th St Mission
-1814,18011.0,15541.0,290,6th/Brannan,San Bruno,1554118011,18011   15541  290 ; 6th/Brannan to San Bruno
-1815,18011.0,15519.0,220,6th/Brannan,Daly City,1551918011,18011   15519  220 ; 6th/Brannan to Daly City
+1814,18011.0,15541.0,280,6th/Brannan,San Bruno,1554118011,18011   15541  280 ; 6th/Brannan to San Bruno
+1815,18011.0,15519.0,206,6th/Brannan,Daly City,1551918011,18011   15519  206 ; 6th/Brannan to Daly City
 1816,18011.0,15535.0,406,6th/Brannan,North Concord,1553518011,18011   15535  406 ; 6th/Brannan to North Concord
 1817,18011.0,14202.0,458,6th/Brannan,Milpitas,1420218011,18011   14202  458 ; 6th/Brannan to Milpitas
 1818,18011.0,15534.0,231,6th/Brannan,Lake Merritt,1553418011,18011   15534  231 ; 6th/Brannan to Lake Merritt
@@ -1823,13 +1823,13 @@
 1821,18011.0,14207.0,532,6th/Brannan,Diridon-Caltrain,1420718011,18011   14207  532 ; 6th/Brannan to Diridon-Caltrain
 1822,18011.0,15510.0,217,6th/Brannan,West Oakland,1551018011,18011   15510  217 ; 6th/Brannan to West Oakland
 1823,18011.0,14203.0,469,6th/Brannan,Berryessa,1420318011,18011   14203  469 ; 6th/Brannan to Berryessa
-1824,18011.0,15514.0,258,6th/Brannan,Civic Center,1551418011,18011   15514  258 ; 6th/Brannan to Civic Center
+1824,18011.0,15514.0,129,6th/Brannan,Civic Center,1551418011,18011   15514  129 ; 6th/Brannan to Civic Center
 1825,18011.0,18009.0,129,6th/Brannan,Fillmore,1800918011,18011   18009  129 ; 6th/Brannan to Fillmore
 1826,18011.0,15523.0,273,6th/Brannan,Berkeley,1552318011,18011   15523  273 ; 6th/Brannan to Berkeley
 1827,18011.0,15516.0,129,6th/Brannan,24th St Mission,1551618011,18011   15516  129 ; 6th/Brannan to 24th St Mission
 1828,18011.0,15529.0,339,6th/Brannan,Hayward,1552918011,18011   15529  339 ; 6th/Brannan to Hayward
 1829,18011.0,15522.0,290,6th/Brannan,El Cerrito Plaza,1552218011,18011   15522  290 ; 6th/Brannan to El Cerrito Plaza
-1830,18011.0,15518.0,133,6th/Brannan,Balboa Park,1551818011,18011   15518  133 ; 6th/Brannan to Balboa Park
+1830,18011.0,15518.0,129,6th/Brannan,Balboa Park,1551818011,18011   15518  129 ; 6th/Brannan to Balboa Park
 1831,18011.0,15549.0,434,6th/Brannan,Irvington,1554918011,18011   15549  434 ; 6th/Brannan to Irvington
 1832,18011.0,15000.0,703,6th/Brannan,Oakland International Airport,1500018011,18011   15000  703 ; 6th/Brannan to Oakland International Airport
 1833,18011.0,15524.0,280,6th/Brannan,North Berkeley,1552418011,18011   15524  280 ; 6th/Brannan to North Berkeley
@@ -1850,8 +1850,8 @@
 1848,18011.0,15511.0,129,6th/Brannan,Embarcadero,1551118011,18011   15511  129 ; 6th/Brannan to Embarcadero
 1849,18011.0,15505.0,308,6th/Brannan,Orinda,1550518011,18011   15505  308 ; 6th/Brannan to Orinda
 1850,18011.0,15532.0,283,6th/Brannan,Coliseum/Oakland Airport,1553218011,18011   15532  283 ; 6th/Brannan to Coliseum/Oakland Airport
-1851,18011.0,15540.0,266,6th/Brannan,South San Francisco,1554018011,18011   15540  266 ; 6th/Brannan to South San Francisco
-1852,18011.0,15542.0,605,6th/Brannan,SFO,1554218011,18011   15542  605 ; 6th/Brannan to SFO
+1851,18011.0,15540.0,252,6th/Brannan,South San Francisco,1554018011,18011   15540  252 ; 6th/Brannan to South San Francisco
+1852,18011.0,15542.0,602,6th/Brannan,SFO,1554218011,18011   15542  602 ; 6th/Brannan to SFO
 1853,15543.0,15504.0,413,Millbrae,Lafayette,1550415543,15543   15504  413 ; Millbrae to Lafayette
 1854,15543.0,15526.0,497,Millbrae,Fremont,1552615543,15543   15526  497 ; Millbrae to Fremont
 1855,15543.0,15521.0,385,Millbrae,El Cerrito Del Norte,1552115543,15543   15521  385 ; Millbrae to El Cerrito Del Norte
@@ -1958,7 +1958,7 @@
 1956,15532.0,15542.0,658,Coliseum/Oakland Airport,SFO,1553215542,15532   15542  658 ; Coliseum/Oakland Airport to SFO
 1957,15540.0,15542.0,518,South San Francisco,SFO,1554015542,15540   15542  518 ; South San Francisco to SFO
 1958,18012.0,15536.0,441,Howard,Pittsburg/ Bay Point,1553618012,18012   15536  441 ; Howard to Pittsburg/ Bay Point
-1959,18012.0,15539.0,245,Howard,Colma,1553918012,18012   15539  245 ; Howard to Colma
+1959,18012.0,15539.0,234,Howard,Colma,1553918012,18012   15539  234 ; Howard to Colma
 1960,18012.0,18008.0,129,Howard,Van Ness,1800818012,18012   18008  129 ; Howard to Van Ness
 1961,18012.0,15544.0,448,Howard,Warm Springs,1554418012,18012   15544  448 ; Howard to Warm Springs
 1962,18012.0,15520.0,315,Howard,Richmond,1552018012,18012   15520  315 ; Howard to Richmond
@@ -1975,8 +1975,8 @@
 1973,18012.0,15512.0,129,Howard,Montgomery,1551218012,18012   15512  129 ; Howard to Montgomery
 1974,18012.0,15528.0,360,Howard,South Hayward,1552818012,18012   15528  360 ; Howard to South Hayward
 1975,18012.0,15515.0,129,Howard,16th St Mission,1551518012,18012   15515  129 ; Howard to 16th St Mission
-1976,18012.0,15541.0,290,Howard,San Bruno,1554118012,18012   15541  290 ; Howard to San Bruno
-1977,18012.0,15519.0,220,Howard,Daly City,1551918012,18012   15519  220 ; Howard to Daly City
+1976,18012.0,15541.0,280,Howard,San Bruno,1554118012,18012   15541  280 ; Howard to San Bruno
+1977,18012.0,15519.0,206,Howard,Daly City,1551918012,18012   15519  206 ; Howard to Daly City
 1978,18012.0,15535.0,406,Howard,North Concord,1553518012,18012   15535  406 ; Howard to North Concord
 1979,18012.0,14202.0,458,Howard,Milpitas,1420218012,18012   14202  458 ; Howard to Milpitas
 1980,18012.0,15534.0,231,Howard,Lake Merritt,1553418012,18012   15534  231 ; Howard to Lake Merritt
@@ -1991,7 +1991,7 @@
 1989,18012.0,15516.0,129,Howard,24th St Mission,1551618012,18012   15516  129 ; Howard to 24th St Mission
 1990,18012.0,15529.0,339,Howard,Hayward,1552918012,18012   15529  339 ; Howard to Hayward
 1991,18012.0,15522.0,290,Howard,El Cerrito Plaza,1552218012,18012   15522  290 ; Howard to El Cerrito Plaza
-1992,18012.0,15518.0,133,Howard,Balboa Park,1551818012,18012   15518  133 ; Howard to Balboa Park
+1992,18012.0,15518.0,129,Howard,Balboa Park,1551818012,18012   15518  129 ; Howard to Balboa Park
 1993,18012.0,15549.0,434,Howard,Irvington,1554918012,18012   15549  434 ; Howard to Irvington
 1994,18012.0,15000.0,703,Howard,Oakland International Airport,1500018012,18012   15000  703 ; Howard to Oakland International Airport
 1995,18012.0,15524.0,280,Howard,North Berkeley,1552418012,18012   15524  280 ; Howard to North Berkeley
@@ -2013,5 +2013,5 @@
 2011,18012.0,15511.0,129,Howard,Embarcadero,1551118012,18012   15511  129 ; Howard to Embarcadero
 2012,18012.0,15505.0,308,Howard,Orinda,1550518012,18012   15505  308 ; Howard to Orinda
 2013,18012.0,15532.0,283,Howard,Coliseum/Oakland Airport,1553218012,18012   15532  283 ; Howard to Coliseum/Oakland Airport
-2014,18012.0,15540.0,266,Howard,South San Francisco,1554018012,18012   15540  266 ; Howard to South San Francisco
-2015,18012.0,15542.0,605,Howard,SFO,1554218012,18012   15542  605 ; Howard to SFO
+2014,18012.0,15540.0,252,Howard,South San Francisco,1554018012,18012   15540  252 ; Howard to South San Francisco
+2015,18012.0,15542.0,602,Howard,SFO,1554218012,18012   15542  602 ; Howard to SFO

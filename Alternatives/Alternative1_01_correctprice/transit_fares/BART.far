@@ -109,10 +109,10 @@
 18008   15527  399 ; Van Ness to Union City
 18008   15509  245 ; Van Ness to 12th St Oakland City Center
 18008   14204  525 ; Van Ness to Alum Rock
-18008   18002  245 ; Van Ness to Jack London Square
+18008   18002  231 ; Van Ness to Jack London Square
 18008   15502  371 ; Van Ness to Pleasant Hill
 18008   15507  259 ; Van Ness to MacArthur
-18008   18001  245 ; Van Ness to 15th/Franklin
+18008   18001  231 ; Van Ness to 15th/Franklin
 18008   14208  553 ; Van Ness to Santa Clara
 18008   15506  273 ; Van Ness to Rockridge
 18008   15503  360 ; Van Ness to Walnut Creek
@@ -129,7 +129,7 @@
 18008   14207  535 ; Van Ness to Diridon-Caltrain
 18008   15510  234 ; Van Ness to West Oakland
 18008   14203  472 ; Van Ness to Berryessa
-18008   15514  258 ; Van Ness to Civic Center
+18008   15514  129 ; Van Ness to Civic Center
 18008   15523  280 ; Van Ness to Berkeley
 18008   15516  129 ; Van Ness to 24th St Mission
 18008   15529  346 ; Van Ness to Hayward
@@ -139,7 +139,7 @@
 18008   15000  710 ; Van Ness to Oakland International Airport
 18008   15524  283 ; Van Ness to North Berkeley
 18008   15508  245 ; Van Ness to 19th St Oakland
-18008   18003  234 ; Van Ness to Alameda
+18008   18003  231 ; Van Ness to Alameda
 18008   15538  420 ; Van Ness to Dublin/ Pleasanton
 18008   15531  311 ; Van Ness to San Leandro
 18008   15543  311 ; Van Ness to Millbrae
@@ -584,7 +584,7 @@
 15507   15540  304 ; MacArthur to South San Francisco
 15507   15542  633 ; MacArthur to SFO
 18004   15536  441 ; Mission Rock to Pittsburg/ Bay Point
-18004   15539  245 ; Mission Rock to Colma
+18004   15539  234 ; Mission Rock to Colma
 18004   18008  129 ; Mission Rock to Van Ness
 18004   15544  448 ; Mission Rock to Warm Springs
 18004   15520  315 ; Mission Rock to Richmond
@@ -602,8 +602,8 @@
 18004   15512  129 ; Mission Rock to Montgomery
 18004   15528  360 ; Mission Rock to South Hayward
 18004   15515  129 ; Mission Rock to 16th St Mission
-18004   15541  290 ; Mission Rock to San Bruno
-18004   15519  220 ; Mission Rock to Daly City
+18004   15541  280 ; Mission Rock to San Bruno
+18004   15519  206 ; Mission Rock to Daly City
 18004   15535  406 ; Mission Rock to North Concord
 18004   14202  458 ; Mission Rock to Milpitas
 18004   15534  231 ; Mission Rock to Lake Merritt
@@ -618,12 +618,12 @@
 18004   15516  129 ; Mission Rock to 24th St Mission
 18004   15529  339 ; Mission Rock to Hayward
 18004   15522  290 ; Mission Rock to El Cerrito Plaza
-18004   15518  133 ; Mission Rock to Balboa Park
+18004   15518  129 ; Mission Rock to Balboa Park
 18004   15549  434 ; Mission Rock to Irvington
 18004   15000  703 ; Mission Rock to Oakland International Airport
 18004   15524  280 ; Mission Rock to North Berkeley
 18004   15508  231 ; Mission Rock to 19th St Oakland
-18004   18003  217 ; Mission Rock to Alameda
+18004   18003  231 ; Mission Rock to Alameda
 18004   15538  416 ; Mission Rock to Dublin/ Pleasanton
 18004   15531  304 ; Mission Rock to San Leandro
 18004   15543  315 ; Mission Rock to Millbrae
@@ -639,8 +639,8 @@
 18004   15511  129 ; Mission Rock to Embarcadero
 18004   15505  308 ; Mission Rock to Orinda
 18004   15532  283 ; Mission Rock to Coliseum/Oakland Airport
-18004   15540  266 ; Mission Rock to South San Francisco
-18004   15542  605 ; Mission Rock to SFO
+18004   15540  252 ; Mission Rock to South San Francisco
+18004   15542  602 ; Mission Rock to SFO
 18001   15536  322 ; 15th/Franklin to Pittsburg/ Bay Point
 18001   15539  283 ; 15th/Franklin to Colma
 18001   15544  332 ; 15th/Franklin to Warm Springs
@@ -1281,10 +1281,10 @@
 18009   15527  399 ; Fillmore to Union City
 18009   15509  245 ; Fillmore to 12th St Oakland City Center
 18009   14204  525 ; Fillmore to Alum Rock
-18009   18002  245 ; Fillmore to Jack London Square
+18009   18002  231 ; Fillmore to Jack London Square
 18009   15502  371 ; Fillmore to Pleasant Hill
 18009   15507  259 ; Fillmore to MacArthur
-18009   18001  245 ; Fillmore to 15th/Franklin
+18009   18001  231 ; Fillmore to 15th/Franklin
 18009   14208  553 ; Fillmore to Santa Clara
 18009   15506  273 ; Fillmore to Rockridge
 18009   15503  360 ; Fillmore to Walnut Creek
@@ -1301,7 +1301,7 @@
 18009   14207  535 ; Fillmore to Diridon-Caltrain
 18009   15510  234 ; Fillmore to West Oakland
 18009   14203  472 ; Fillmore to Berryessa
-18009   15514  258 ; Fillmore to Civic Center
+18009   15514  129 ; Fillmore to Civic Center
 18009   15523  280 ; Fillmore to Berkeley
 18009   15516  129 ; Fillmore to 24th St Mission
 18009   15529  346 ; Fillmore to Hayward
@@ -1311,7 +1311,7 @@
 18009   15000  710 ; Fillmore to Oakland International Airport
 18009   15524  283 ; Fillmore to North Berkeley
 18009   15508  245 ; Fillmore to 19th St Oakland
-18009   18003  234 ; Fillmore to Alameda
+18009   18003  231 ; Fillmore to Alameda
 18009   15538  420 ; Fillmore to Dublin/ Pleasanton
 18009   15531  311 ; Fillmore to San Leandro
 18009   15543  311 ; Fillmore to Millbrae
@@ -1484,7 +1484,7 @@
 15000   15540  748 ; Oakland International Airport to South San Francisco
 15000   15542  1077 ; Oakland International Airport to SFO
 18007   15536  441 ; Union Square to Pittsburg/ Bay Point
-18007   15539  245 ; Union Square to Colma
+18007   15539  234 ; Union Square to Colma
 18007   18008  129 ; Union Square to Van Ness
 18007   15544  448 ; Union Square to Warm Springs
 18007   15520  315 ; Union Square to Richmond
@@ -1503,8 +1503,8 @@
 18007   15512  129 ; Union Square to Montgomery
 18007   15528  360 ; Union Square to South Hayward
 18007   15515  129 ; Union Square to 16th St Mission
-18007   15541  290 ; Union Square to San Bruno
-18007   15519  220 ; Union Square to Daly City
+18007   15541  280 ; Union Square to San Bruno
+18007   15519  206 ; Union Square to Daly City
 18007   15535  406 ; Union Square to North Concord
 18007   14202  458 ; Union Square to Milpitas
 18007   15534  231 ; Union Square to Lake Merritt
@@ -1519,13 +1519,13 @@
 18007   15516  129 ; Union Square to 24th St Mission
 18007   15529  339 ; Union Square to Hayward
 18007   15522  290 ; Union Square to El Cerrito Plaza
-18007   15518  133 ; Union Square to Balboa Park
+18007   15518  129 ; Union Square to Balboa Park
 18007   15549  434 ; Union Square to Irvington
 18007   15000  703 ; Union Square to Oakland International Airport
 18007   15524  280 ; Union Square to North Berkeley
 18007   18006  129 ; Union Square to 3rd and Mission
 18007   15508  231 ; Union Square to 19th St Oakland
-18007   18003  217 ; Union Square to Alameda
+18007   18003  231 ; Union Square to Alameda
 18007   15538  416 ; Union Square to Dublin/ Pleasanton
 18007   15531  304 ; Union Square to San Leandro
 18007   15543  315 ; Union Square to Millbrae
@@ -1542,8 +1542,8 @@
 18007   15505  308 ; Union Square to Orinda
 18007   18005  129 ; Union Square to Ballpark
 18007   15532  283 ; Union Square to Coliseum/Oakland Airport
-18007   15540  266 ; Union Square to South San Francisco
-18007   15542  605 ; Union Square to SFO
+18007   15540  252 ; Union Square to South San Francisco
+18007   15542  602 ; Union Square to SFO
 15524   15508  133 ; North Berkeley to 19th St Oakland
 15524   15538  322 ; North Berkeley to Dublin/ Pleasanton
 15524   15531  213 ; North Berkeley to San Leandro
@@ -1563,7 +1563,7 @@
 15524   15540  322 ; North Berkeley to South San Francisco
 15524   15542  651 ; North Berkeley to SFO
 18006   15536  441 ; 3rd and Mission to Pittsburg/ Bay Point
-18006   15539  245 ; 3rd and Mission to Colma
+18006   15539  234 ; 3rd and Mission to Colma
 18006   18008  129 ; 3rd and Mission to Van Ness
 18006   15544  448 ; 3rd and Mission to Warm Springs
 18006   15520  315 ; 3rd and Mission to Richmond
@@ -1582,8 +1582,8 @@
 18006   15512  129 ; 3rd and Mission to Montgomery
 18006   15528  360 ; 3rd and Mission to South Hayward
 18006   15515  129 ; 3rd and Mission to 16th St Mission
-18006   15541  290 ; 3rd and Mission to San Bruno
-18006   15519  220 ; 3rd and Mission to Daly City
+18006   15541  280 ; 3rd and Mission to San Bruno
+18006   15519  206 ; 3rd and Mission to Daly City
 18006   15535  406 ; 3rd and Mission to North Concord
 18006   14202  458 ; 3rd and Mission to Milpitas
 18006   15534  231 ; 3rd and Mission to Lake Merritt
@@ -1598,12 +1598,12 @@
 18006   15516  129 ; 3rd and Mission to 24th St Mission
 18006   15529  339 ; 3rd and Mission to Hayward
 18006   15522  290 ; 3rd and Mission to El Cerrito Plaza
-18006   15518  133 ; 3rd and Mission to Balboa Park
+18006   15518  129 ; 3rd and Mission to Balboa Park
 18006   15549  434 ; 3rd and Mission to Irvington
 18006   15000  703 ; 3rd and Mission to Oakland International Airport
 18006   15524  280 ; 3rd and Mission to North Berkeley
 18006   15508  231 ; 3rd and Mission to 19th St Oakland
-18006   18003  217 ; 3rd and Mission to Alameda
+18006   18003  231 ; 3rd and Mission to Alameda
 18006   15538  416 ; 3rd and Mission to Dublin/ Pleasanton
 18006   15531  304 ; 3rd and Mission to San Leandro
 18006   15543  315 ; 3rd and Mission to Millbrae
@@ -1620,8 +1620,8 @@
 18006   15505  308 ; 3rd and Mission to Orinda
 18006   18005  129 ; 3rd and Mission to Ballpark
 18006   15532  283 ; 3rd and Mission to Coliseum/Oakland Airport
-18006   15540  266 ; 3rd and Mission to South San Francisco
-18006   15542  605 ; 3rd and Mission to SFO
+18006   15540  252 ; 3rd and Mission to South San Francisco
+18006   15542  602 ; 3rd and Mission to SFO
 15508   15538  297 ; 19th St Oakland to Dublin/ Pleasanton
 15508   15531  168 ; 19th St Oakland to San Leandro
 15508   15543  336 ; 19th St Oakland to Millbrae
@@ -1828,7 +1828,7 @@
 15505   15540  350 ; Orinda to South San Francisco
 15505   15542  678 ; Orinda to SFO
 18005   15536  441 ; Ballpark  to Pittsburg/ Bay Point
-18005   15539  245 ; Ballpark  to Colma
+18005   15539  234 ; Ballpark  to Colma
 18005   18008  129 ; Ballpark  to Van Ness
 18005   15544  448 ; Ballpark  to Warm Springs
 18005   15520  315 ; Ballpark  to Richmond
@@ -1847,8 +1847,8 @@
 18005   15512  129 ; Ballpark  to Montgomery
 18005   15528  360 ; Ballpark  to South Hayward
 18005   15515  129 ; Ballpark  to 16th St Mission
-18005   15541  290 ; Ballpark  to San Bruno
-18005   15519  220 ; Ballpark  to Daly City
+18005   15541  280 ; Ballpark  to San Bruno
+18005   15519  206 ; Ballpark  to Daly City
 18005   15535  406 ; Ballpark  to North Concord
 18005   14202  458 ; Ballpark  to Milpitas
 18005   15534  231 ; Ballpark  to Lake Merritt
@@ -1863,12 +1863,12 @@
 18005   15516  129 ; Ballpark  to 24th St Mission
 18005   15529  339 ; Ballpark  to Hayward
 18005   15522  290 ; Ballpark  to El Cerrito Plaza
-18005   15518  133 ; Ballpark  to Balboa Park
+18005   15518  129 ; Ballpark  to Balboa Park
 18005   15549  434 ; Ballpark  to Irvington
 18005   15000  703 ; Ballpark  to Oakland International Airport
 18005   15524  280 ; Ballpark  to North Berkeley
 18005   15508  231 ; Ballpark  to 19th St Oakland
-18005   18003  217 ; Ballpark  to Alameda
+18005   18003  231 ; Ballpark  to Alameda
 18005   15538  416 ; Ballpark  to Dublin/ Pleasanton
 18005   15531  304 ; Ballpark  to San Leandro
 18005   15543  315 ; Ballpark  to Millbrae
@@ -1884,8 +1884,8 @@
 18005   15511  129 ; Ballpark  to Embarcadero
 18005   15505  308 ; Ballpark  to Orinda
 18005   15532  283 ; Ballpark  to Coliseum/Oakland Airport
-18005   15540  266 ; Ballpark  to South San Francisco
-18005   15542  605 ; Ballpark  to SFO
+18005   15540  252 ; Ballpark  to South San Francisco
+18005   15542  602 ; Ballpark  to SFO
 15532   15540  329 ; Coliseum/Oakland Airport to South San Francisco
 15532   15542  658 ; Coliseum/Oakland Airport to SFO
 15540   15542  518 ; South San Francisco to SFO

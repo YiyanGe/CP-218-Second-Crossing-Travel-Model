@@ -173,7 +173,6 @@
 18008   18002  231 ; Van Ness to Jack London Square
 18008   15502  371 ; Van Ness to Pleasant Hill
 18008   15507  259 ; Van Ness to MacArthur
-18008   18010  129 ; Van Ness to 4th/Brannan
 18008   18001  231 ; Van Ness to 15th/Franklin
 18008   14208  553 ; Van Ness to Santa Clara
 18008   15506  273 ; Van Ness to Rockridge
@@ -192,7 +191,6 @@
 18008   15510  234 ; Van Ness to West Oakland
 18008   14203  472 ; Van Ness to Berryessa
 18008   15514  129 ; Van Ness to Civic Center
-18008   18009  129 ; Van Ness to Fillmore
 18008   15523  280 ; Van Ness to Berkeley
 18008   15516  129 ; Van Ness to 24th St Mission
 18008   15529  346 ; Van Ness to Hayward
@@ -205,7 +203,6 @@
 18008   18003  231 ; Van Ness to Alameda
 18008   15538  420 ; Van Ness to Dublin/ Pleasanton
 18008   15531  311 ; Van Ness to San Leandro
-18008   18011  129 ; Van Ness to 6th/Brannan
 18008   15543  311 ; Van Ness to Millbrae
 18008   15504  336 ; Van Ness to Lafayette
 18008   15526  420 ; Van Ness to Fremont
@@ -220,7 +217,6 @@
 18008   15505  311 ; Van Ness to Orinda
 18008   15532  290 ; Van Ness to Coliseum/Oakland Airport
 18008   15540  252 ; Van Ness to South San Francisco
-18008   18012  129 ; Van Ness to Howard
 18008   15542  602 ; Van Ness to SFO
 15544   15520  392 ; Warm Springs to Richmond
 15544   15537  283 ; Warm Springs to Castro Valley
@@ -517,7 +513,6 @@
 18002   14204  402 ; Jack London Square to Alum Rock
 18002   15502  248 ; Jack London Square to Pleasant Hill
 18002   15507  129 ; Jack London Square to MacArthur
-18002   18010  231 ; Jack London Square to 4th/Brannan
 18002   18001  129 ; Jack London Square to 15th/Franklin
 18002   14208  427 ; Jack London Square to Santa Clara
 18002   15506  129 ; Jack London Square to Rockridge
@@ -536,7 +531,6 @@
 18002   15510  129 ; Jack London Square to West Oakland
 18002   14203  353 ; Jack London Square to Berryessa
 18002   15514  231 ; Jack London Square to Civic Center
-18002   18009  245 ; Jack London Square to Fillmore
 18002   15523  129 ; Jack London Square to Berkeley
 18002   15516  252 ; Jack London Square to 24th St Mission
 18002   15529  224 ; Jack London Square to Hayward
@@ -546,10 +540,8 @@
 18002   15000  549 ; Jack London Square to Oakland International Airport
 18002   15524  133 ; Jack London Square to North Berkeley
 18002   15508  129 ; Jack London Square to 19th St Oakland
-18002   18003  129 ; Jack London Square to Alameda
 18002   15538  297 ; Jack London Square to Dublin/ Pleasanton
 18002   15531  168 ; Jack London Square to San Leandro
-18002   18011  231 ; Jack London Square to 6th/Brannan
 18002   15543  336 ; Jack London Square to Millbrae
 18002   15504  206 ; Jack London Square to Lafayette
 18002   15526  301 ; Jack London Square to Fremont
@@ -564,7 +556,6 @@
 18002   15505  164 ; Jack London Square to Orinda
 18002   15532  129 ; Jack London Square to Coliseum/Oakland Airport
 18002   15540  297 ; Jack London Square to South San Francisco
-18002   18012  231 ; Jack London Square to Howard
 18002   15542  626 ; Jack London Square to SFO
 15502   15507  245 ; Pleasant Hill to MacArthur
 15502   14208  532 ; Pleasant Hill to Santa Clara
@@ -655,12 +646,14 @@
 15507   15542  633 ; MacArthur to SFO
 18010   15536  441 ; 4th/Brannan to Pittsburg/ Bay Point
 18010   15539  234 ; 4th/Brannan to Colma
+18010   18008  129 ; 4th/Brannan to Van Ness
 18010   15544  448 ; 4th/Brannan to Warm Springs
 18010   15520  315 ; 4th/Brannan to Richmond
 18010   15537  339 ; 4th/Brannan to Castro Valley
 18010   15527  392 ; 4th/Brannan to Union City
 18010   15509  231 ; 4th/Brannan to 12th St Oakland City Center
 18010   14204  521 ; 4th/Brannan to Alum Rock
+18010   18002  231 ; 4th/Brannan to Jack London Square
 18010   15502  367 ; 4th/Brannan to Pleasant Hill
 18010   15507  245 ; 4th/Brannan to MacArthur
 18010   18001  231 ; 4th/Brannan to 15th/Franklin
@@ -694,7 +687,6 @@
 18010   18003  231 ; 4th/Brannan to Alameda
 18010   15538  416 ; 4th/Brannan to Dublin/ Pleasanton
 18010   15531  304 ; 4th/Brannan to San Leandro
-18010   18011  129 ; 4th/Brannan to 6th/Brannan
 18010   15543  315 ; 4th/Brannan to Millbrae
 18010   15504  332 ; 4th/Brannan to Lafayette
 18010   15526  416 ; 4th/Brannan to Fremont
@@ -709,7 +701,6 @@
 18010   15505  308 ; 4th/Brannan to Orinda
 18010   15532  283 ; 4th/Brannan to Coliseum/Oakland Airport
 18010   15540  252 ; 4th/Brannan to South San Francisco
-18010   18012  129 ; 4th/Brannan to Howard
 18010   15542  602 ; 4th/Brannan to SFO
 18001   15536  322 ; 15th/Franklin to Pittsburg/ Bay Point
 18001   15539  283 ; 15th/Franklin to Colma
@@ -738,7 +729,6 @@
 18001   15510  129 ; 15th/Franklin to West Oakland
 18001   14203  353 ; 15th/Franklin to Berryessa
 18001   15514  231 ; 15th/Franklin to Civic Center
-18001   18009  245 ; 15th/Franklin to Fillmore
 18001   15523  129 ; 15th/Franklin to Berkeley
 18001   15516  252 ; 15th/Franklin to 24th St Mission
 18001   15529  224 ; 15th/Franklin to Hayward
@@ -748,10 +738,8 @@
 18001   15000  549 ; 15th/Franklin to Oakland International Airport
 18001   15524  133 ; 15th/Franklin to North Berkeley
 18001   15508  129 ; 15th/Franklin to 19th St Oakland
-18001   18003  129 ; 15th/Franklin to Alameda
 18001   15538  297 ; 15th/Franklin to Dublin/ Pleasanton
 18001   15531  168 ; 15th/Franklin to San Leandro
-18001   18011  231 ; 15th/Franklin to 6th/Brannan
 18001   15543  336 ; 15th/Franklin to Millbrae
 18001   15504  206 ; 15th/Franklin to Lafayette
 18001   15526  301 ; 15th/Franklin to Fremont
@@ -766,7 +754,6 @@
 18001   15505  164 ; 15th/Franklin to Orinda
 18001   15532  129 ; 15th/Franklin to Coliseum/Oakland Airport
 18001   15540  297 ; 15th/Franklin to South San Francisco
-18001   18012  231 ; 15th/Franklin to Howard
 18001   15542  626 ; 15th/Franklin to SFO
 14208   15506  434 ; Santa Clara to Rockridge
 14208   15503  521 ; Santa Clara to Walnut Creek
@@ -1348,14 +1335,17 @@
 15514   15542  605 ; Civic Center to SFO
 18009   15536  448 ; Fillmore to Pittsburg/ Bay Point
 18009   15539  234 ; Fillmore to Colma
+18009   18008  129 ; Fillmore to Van Ness
 18009   15544  451 ; Fillmore to Warm Springs
 18009   15520  322 ; Fillmore to Richmond
 18009   15537  346 ; Fillmore to Castro Valley
 18009   15527  399 ; Fillmore to Union City
 18009   15509  245 ; Fillmore to 12th St Oakland City Center
 18009   14204  525 ; Fillmore to Alum Rock
+18009   18002  231 ; Fillmore to Jack London Square
 18009   15502  371 ; Fillmore to Pleasant Hill
 18009   15507  259 ; Fillmore to MacArthur
+18009   18001  231 ; Fillmore to 15th/Franklin
 18009   14208  553 ; Fillmore to Santa Clara
 18009   15506  273 ; Fillmore to Rockridge
 18009   15503  360 ; Fillmore to Walnut Creek
@@ -1385,7 +1375,6 @@
 18009   18003  231 ; Fillmore to Alameda
 18009   15538  420 ; Fillmore to Dublin/ Pleasanton
 18009   15531  311 ; Fillmore to San Leandro
-18009   18011  129 ; Fillmore to 6th/Brannan
 18009   15543  311 ; Fillmore to Millbrae
 18009   15504  336 ; Fillmore to Lafayette
 18009   15526  420 ; Fillmore to Fremont
@@ -1400,7 +1389,6 @@
 18009   15505  311 ; Fillmore to Orinda
 18009   15532  290 ; Fillmore to Coliseum/Oakland Airport
 18009   15540  252 ; Fillmore to South San Francisco
-18009   18012  129 ; Fillmore to Howard
 18009   15542  602 ; Fillmore to SFO
 15523   15516  283 ; Berkeley to 24th St Mission
 15523   15529  245 ; Berkeley to Hayward
@@ -1599,8 +1587,10 @@
 18003   15527  283 ; Alameda to Union City
 18003   15509  129 ; Alameda to 12th St Oakland City Center
 18003   14204  409 ; Alameda to Alum Rock
+18003   18002  129 ; Alameda to Jack London Square
 18003   15502  255 ; Alameda to Pleasant Hill
 18003   15507  129 ; Alameda to MacArthur
+18003   18001  129 ; Alameda to 15th/Franklin
 18003   14208  434 ; Alameda to Santa Clara
 18003   15506  129 ; Alameda to Rockridge
 18003   15503  245 ; Alameda to Walnut Creek
@@ -1629,7 +1619,6 @@
 18003   15508  129 ; Alameda to 19th St Oakland
 18003   15538  304 ; Alameda to Dublin/ Pleasanton
 18003   15531  178 ; Alameda to San Leandro
-18003   18011  231 ; Alameda to 6th/Brannan
 18003   15543  329 ; Alameda to Millbrae
 18003   15504  220 ; Alameda to Lafayette
 18003   15526  308 ; Alameda to Fremont
@@ -1644,7 +1633,6 @@
 18003   15505  178 ; Alameda to Orinda
 18003   15532  147 ; Alameda to Coliseum/Oakland Airport
 18003   15540  290 ; Alameda to South San Francisco
-18003   18012  231 ; Alameda to Howard
 18003   15542  619 ; Alameda to SFO
 15538   15531  248 ; Dublin/ Pleasanton to San Leandro
 15538   15543  497 ; Dublin/ Pleasanton to Millbrae
@@ -1679,14 +1667,18 @@
 15531   15542  675 ; San Leandro to SFO
 18011   15536  441 ; 6th/Brannan to Pittsburg/ Bay Point
 18011   15539  234 ; 6th/Brannan to Colma
+18011   18008  129 ; 6th/Brannan to Van Ness
 18011   15544  448 ; 6th/Brannan to Warm Springs
 18011   15520  315 ; 6th/Brannan to Richmond
 18011   15537  339 ; 6th/Brannan to Castro Valley
 18011   15527  392 ; 6th/Brannan to Union City
 18011   15509  231 ; 6th/Brannan to 12th St Oakland City Center
 18011   14204  521 ; 6th/Brannan to Alum Rock
+18011   18002  231 ; 6th/Brannan to Jack London Square
 18011   15502  367 ; 6th/Brannan to Pleasant Hill
 18011   15507  245 ; 6th/Brannan to MacArthur
+18011   18010  129 ; 6th/Brannan to 4th/Brannan
+18011   18001  231 ; 6th/Brannan to 15th/Franklin
 18011   14208  546 ; 6th/Brannan to Santa Clara
 18011   15506  262 ; 6th/Brannan to Rockridge
 18011   15503  357 ; 6th/Brannan to Walnut Creek
@@ -1704,6 +1696,7 @@
 18011   15510  217 ; 6th/Brannan to West Oakland
 18011   14203  469 ; 6th/Brannan to Berryessa
 18011   15514  129 ; 6th/Brannan to Civic Center
+18011   18009  129 ; 6th/Brannan to Fillmore
 18011   15523  273 ; 6th/Brannan to Berkeley
 18011   15516  129 ; 6th/Brannan to 24th St Mission
 18011   15529  339 ; 6th/Brannan to Hayward
@@ -1713,6 +1706,7 @@
 18011   15000  703 ; 6th/Brannan to Oakland International Airport
 18011   15524  280 ; 6th/Brannan to North Berkeley
 18011   15508  231 ; 6th/Brannan to 19th St Oakland
+18011   18003  231 ; 6th/Brannan to Alameda
 18011   15538  416 ; 6th/Brannan to Dublin/ Pleasanton
 18011   15531  304 ; 6th/Brannan to San Leandro
 18011   15543  315 ; 6th/Brannan to Millbrae
@@ -1729,7 +1723,6 @@
 18011   15505  308 ; 6th/Brannan to Orinda
 18011   15532  283 ; 6th/Brannan to Coliseum/Oakland Airport
 18011   15540  252 ; 6th/Brannan to South San Francisco
-18011   18012  129 ; 6th/Brannan to Howard
 18011   15542  602 ; 6th/Brannan to SFO
 15543   15504  413 ; Millbrae to Lafayette
 15543   15526  497 ; Millbrae to Fremont
@@ -1838,14 +1831,18 @@
 15540   15542  518 ; South San Francisco to SFO
 18012   15536  441 ; Howard to Pittsburg/ Bay Point
 18012   15539  234 ; Howard to Colma
+18012   18008  129 ; Howard to Van Ness
 18012   15544  448 ; Howard to Warm Springs
 18012   15520  315 ; Howard to Richmond
 18012   15537  339 ; Howard to Castro Valley
 18012   15527  392 ; Howard to Union City
 18012   15509  231 ; Howard to 12th St Oakland City Center
 18012   14204  521 ; Howard to Alum Rock
+18012   18002  231 ; Howard to Jack London Square
 18012   15502  367 ; Howard to Pleasant Hill
 18012   15507  245 ; Howard to MacArthur
+18012   18010  129 ; Howard to 4th/Brannan
+18012   18001  231 ; Howard to 15th/Franklin
 18012   14208  546 ; Howard to Santa Clara
 18012   15506  262 ; Howard to Rockridge
 18012   15503  357 ; Howard to Walnut Creek
@@ -1863,6 +1860,7 @@
 18012   15510  217 ; Howard to West Oakland
 18012   14203  469 ; Howard to Berryessa
 18012   15514  129 ; Howard to Civic Center
+18012   18009  129 ; Howard to Fillmore
 18012   15523  273 ; Howard to Berkeley
 18012   15516  129 ; Howard to 24th St Mission
 18012   15529  339 ; Howard to Hayward
@@ -1872,8 +1870,10 @@
 18012   15000  703 ; Howard to Oakland International Airport
 18012   15524  280 ; Howard to North Berkeley
 18012   15508  231 ; Howard to 19th St Oakland
+18012   18003  231 ; Howard to Alameda
 18012   15538  416 ; Howard to Dublin/ Pleasanton
 18012   15531  304 ; Howard to San Leandro
+18012   18011  129 ; Howard to 6th/Brannan
 18012   15543  315 ; Howard to Millbrae
 18012   15504  332 ; Howard to Lafayette
 18012   15526  416 ; Howard to Fremont

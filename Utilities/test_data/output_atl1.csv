@@ -110,10 +110,10 @@
 108,18008.0,15527.0,399,Van Ness,Union City,1552718008,18008   15527  399 ; Van Ness to Union City
 109,18008.0,15509.0,245,Van Ness,12th St Oakland City Center,1550918008,18008   15509  245 ; Van Ness to 12th St Oakland City Center
 110,18008.0,14204.0,525,Van Ness,Alum Rock,1420418008,18008   14204  525 ; Van Ness to Alum Rock
-111,18008.0,18002.0,245,Van Ness,Jack London Square,1800218008,18008   18002  245 ; Van Ness to Jack London Square
+111,18008.0,18002.0,231,Van Ness,Jack London Square,1800218008,18008   18002  231 ; Van Ness to Jack London Square
 112,18008.0,15502.0,371,Van Ness,Pleasant Hill,1550218008,18008   15502  371 ; Van Ness to Pleasant Hill
 113,18008.0,15507.0,259,Van Ness,MacArthur,1550718008,18008   15507  259 ; Van Ness to MacArthur
-114,18008.0,18001.0,245,Van Ness,15th/Franklin,1800118008,18008   18001  245 ; Van Ness to 15th/Franklin
+114,18008.0,18001.0,231,Van Ness,15th/Franklin,1800118008,18008   18001  231 ; Van Ness to 15th/Franklin
 115,18008.0,14208.0,553,Van Ness,Santa Clara,1420818008,18008   14208  553 ; Van Ness to Santa Clara
 116,18008.0,15506.0,273,Van Ness,Rockridge,1550618008,18008   15506  273 ; Van Ness to Rockridge
 117,18008.0,15503.0,360,Van Ness,Walnut Creek,1550318008,18008   15503  360 ; Van Ness to Walnut Creek
@@ -130,7 +130,7 @@
 128,18008.0,14207.0,535,Van Ness,Diridon-Caltrain,1420718008,18008   14207  535 ; Van Ness to Diridon-Caltrain
 129,18008.0,15510.0,234,Van Ness,West Oakland,1551018008,18008   15510  234 ; Van Ness to West Oakland
 130,18008.0,14203.0,472,Van Ness,Berryessa,1420318008,18008   14203  472 ; Van Ness to Berryessa
-131,18008.0,15514.0,258,Van Ness,Civic Center,1551418008,18008   15514  258 ; Van Ness to Civic Center
+131,18008.0,15514.0,129,Van Ness,Civic Center,1551418008,18008   15514  129 ; Van Ness to Civic Center
 132,18008.0,15523.0,280,Van Ness,Berkeley,1552318008,18008   15523  280 ; Van Ness to Berkeley
 133,18008.0,15516.0,129,Van Ness,24th St Mission,1551618008,18008   15516  129 ; Van Ness to 24th St Mission
 134,18008.0,15529.0,346,Van Ness,Hayward,1552918008,18008   15529  346 ; Van Ness to Hayward
@@ -140,7 +140,7 @@
 138,18008.0,15000.0,710,Van Ness,Oakland International Airport,1500018008,18008   15000  710 ; Van Ness to Oakland International Airport
 139,18008.0,15524.0,283,Van Ness,North Berkeley,1552418008,18008   15524  283 ; Van Ness to North Berkeley
 140,18008.0,15508.0,245,Van Ness,19th St Oakland,1550818008,18008   15508  245 ; Van Ness to 19th St Oakland
-141,18008.0,18003.0,234,Van Ness,Alameda,1800318008,18008   18003  234 ; Van Ness to Alameda
+141,18008.0,18003.0,231,Van Ness,Alameda,1800318008,18008   18003  231 ; Van Ness to Alameda
 142,18008.0,15538.0,420,Van Ness,Dublin/ Pleasanton,1553818008,18008   15538  420 ; Van Ness to Dublin/ Pleasanton
 143,18008.0,15531.0,311,Van Ness,San Leandro,1553118008,18008   15531  311 ; Van Ness to San Leandro
 144,18008.0,15543.0,311,Van Ness,Millbrae,1554318008,18008   15543  311 ; Van Ness to Millbrae
@@ -585,7 +585,7 @@
 583,15507.0,15540.0,304,MacArthur,South San Francisco,1550715540,15507   15540  304 ; MacArthur to South San Francisco
 584,15507.0,15542.0,633,MacArthur,SFO,1550715542,15507   15542  633 ; MacArthur to SFO
 585,18004.0,15536.0,441,Mission Rock,Pittsburg/ Bay Point,1553618004,18004   15536  441 ; Mission Rock to Pittsburg/ Bay Point
-586,18004.0,15539.0,245,Mission Rock,Colma,1553918004,18004   15539  245 ; Mission Rock to Colma
+586,18004.0,15539.0,234,Mission Rock,Colma,1553918004,18004   15539  234 ; Mission Rock to Colma
 587,18004.0,18008.0,129,Mission Rock,Van Ness,1800418008,18004   18008  129 ; Mission Rock to Van Ness
 588,18004.0,15544.0,448,Mission Rock,Warm Springs,1554418004,18004   15544  448 ; Mission Rock to Warm Springs
 589,18004.0,15520.0,315,Mission Rock,Richmond,1552018004,18004   15520  315 ; Mission Rock to Richmond
@@ -603,8 +603,8 @@
 601,18004.0,15512.0,129,Mission Rock,Montgomery,1551218004,18004   15512  129 ; Mission Rock to Montgomery
 602,18004.0,15528.0,360,Mission Rock,South Hayward,1552818004,18004   15528  360 ; Mission Rock to South Hayward
 603,18004.0,15515.0,129,Mission Rock,16th St Mission,1551518004,18004   15515  129 ; Mission Rock to 16th St Mission
-604,18004.0,15541.0,290,Mission Rock,San Bruno,1554118004,18004   15541  290 ; Mission Rock to San Bruno
-605,18004.0,15519.0,220,Mission Rock,Daly City,1551918004,18004   15519  220 ; Mission Rock to Daly City
+604,18004.0,15541.0,280,Mission Rock,San Bruno,1554118004,18004   15541  280 ; Mission Rock to San Bruno
+605,18004.0,15519.0,206,Mission Rock,Daly City,1551918004,18004   15519  206 ; Mission Rock to Daly City
 606,18004.0,15535.0,406,Mission Rock,North Concord,1553518004,18004   15535  406 ; Mission Rock to North Concord
 607,18004.0,14202.0,458,Mission Rock,Milpitas,1420218004,18004   14202  458 ; Mission Rock to Milpitas
 608,18004.0,15534.0,231,Mission Rock,Lake Merritt,1553418004,18004   15534  231 ; Mission Rock to Lake Merritt
@@ -619,12 +619,12 @@
 617,18004.0,15516.0,129,Mission Rock,24th St Mission,1551618004,18004   15516  129 ; Mission Rock to 24th St Mission
 618,18004.0,15529.0,339,Mission Rock,Hayward,1552918004,18004   15529  339 ; Mission Rock to Hayward
 619,18004.0,15522.0,290,Mission Rock,El Cerrito Plaza,1552218004,18004   15522  290 ; Mission Rock to El Cerrito Plaza
-620,18004.0,15518.0,133,Mission Rock,Balboa Park,1551818004,18004   15518  133 ; Mission Rock to Balboa Park
+620,18004.0,15518.0,129,Mission Rock,Balboa Park,1551818004,18004   15518  129 ; Mission Rock to Balboa Park
 621,18004.0,15549.0,434,Mission Rock,Irvington,1554918004,18004   15549  434 ; Mission Rock to Irvington
 622,18004.0,15000.0,703,Mission Rock,Oakland International Airport,1500018004,18004   15000  703 ; Mission Rock to Oakland International Airport
 623,18004.0,15524.0,280,Mission Rock,North Berkeley,1552418004,18004   15524  280 ; Mission Rock to North Berkeley
 624,18004.0,15508.0,231,Mission Rock,19th St Oakland,1550818004,18004   15508  231 ; Mission Rock to 19th St Oakland
-625,18004.0,18003.0,217,Mission Rock,Alameda,1800318004,18004   18003  217 ; Mission Rock to Alameda
+625,18004.0,18003.0,231,Mission Rock,Alameda,1800318004,18004   18003  231 ; Mission Rock to Alameda
 626,18004.0,15538.0,416,Mission Rock,Dublin/ Pleasanton,1553818004,18004   15538  416 ; Mission Rock to Dublin/ Pleasanton
 627,18004.0,15531.0,304,Mission Rock,San Leandro,1553118004,18004   15531  304 ; Mission Rock to San Leandro
 628,18004.0,15543.0,315,Mission Rock,Millbrae,1554318004,18004   15543  315 ; Mission Rock to Millbrae
@@ -640,8 +640,8 @@
 638,18004.0,15511.0,129,Mission Rock,Embarcadero,1551118004,18004   15511  129 ; Mission Rock to Embarcadero
 639,18004.0,15505.0,308,Mission Rock,Orinda,1550518004,18004   15505  308 ; Mission Rock to Orinda
 640,18004.0,15532.0,283,Mission Rock,Coliseum/Oakland Airport,1553218004,18004   15532  283 ; Mission Rock to Coliseum/Oakland Airport
-641,18004.0,15540.0,266,Mission Rock,South San Francisco,1554018004,18004   15540  266 ; Mission Rock to South San Francisco
-642,18004.0,15542.0,605,Mission Rock,SFO,1554218004,18004   15542  605 ; Mission Rock to SFO
+641,18004.0,15540.0,252,Mission Rock,South San Francisco,1554018004,18004   15540  252 ; Mission Rock to South San Francisco
+642,18004.0,15542.0,602,Mission Rock,SFO,1554218004,18004   15542  602 ; Mission Rock to SFO
 643,18001.0,15536.0,322,15th/Franklin,Pittsburg/ Bay Point,1553618001,18001   15536  322 ; 15th/Franklin to Pittsburg/ Bay Point
 644,18001.0,15539.0,283,15th/Franklin,Colma,1553918001,18001   15539  283 ; 15th/Franklin to Colma
 645,18001.0,15544.0,332,15th/Franklin,Warm Springs,1554418001,18001   15544  332 ; 15th/Franklin to Warm Springs
@@ -1282,10 +1282,10 @@
 1280,18009.0,15527.0,399,Fillmore,Union City,1552718009,18009   15527  399 ; Fillmore to Union City
 1281,18009.0,15509.0,245,Fillmore,12th St Oakland City Center,1550918009,18009   15509  245 ; Fillmore to 12th St Oakland City Center
 1282,18009.0,14204.0,525,Fillmore,Alum Rock,1420418009,18009   14204  525 ; Fillmore to Alum Rock
-1283,18009.0,18002.0,245,Fillmore,Jack London Square,1800218009,18009   18002  245 ; Fillmore to Jack London Square
+1283,18009.0,18002.0,231,Fillmore,Jack London Square,1800218009,18009   18002  231 ; Fillmore to Jack London Square
 1284,18009.0,15502.0,371,Fillmore,Pleasant Hill,1550218009,18009   15502  371 ; Fillmore to Pleasant Hill
 1285,18009.0,15507.0,259,Fillmore,MacArthur,1550718009,18009   15507  259 ; Fillmore to MacArthur
-1286,18009.0,18001.0,245,Fillmore,15th/Franklin,1800118009,18009   18001  245 ; Fillmore to 15th/Franklin
+1286,18009.0,18001.0,231,Fillmore,15th/Franklin,1800118009,18009   18001  231 ; Fillmore to 15th/Franklin
 1287,18009.0,14208.0,553,Fillmore,Santa Clara,1420818009,18009   14208  553 ; Fillmore to Santa Clara
 1288,18009.0,15506.0,273,Fillmore,Rockridge,1550618009,18009   15506  273 ; Fillmore to Rockridge
 1289,18009.0,15503.0,360,Fillmore,Walnut Creek,1550318009,18009   15503  360 ; Fillmore to Walnut Creek
@@ -1302,7 +1302,7 @@
 1300,18009.0,14207.0,535,Fillmore,Diridon-Caltrain,1420718009,18009   14207  535 ; Fillmore to Diridon-Caltrain
 1301,18009.0,15510.0,234,Fillmore,West Oakland,1551018009,18009   15510  234 ; Fillmore to West Oakland
 1302,18009.0,14203.0,472,Fillmore,Berryessa,1420318009,18009   14203  472 ; Fillmore to Berryessa
-1303,18009.0,15514.0,258,Fillmore,Civic Center,1551418009,18009   15514  258 ; Fillmore to Civic Center
+1303,18009.0,15514.0,129,Fillmore,Civic Center,1551418009,18009   15514  129 ; Fillmore to Civic Center
 1304,18009.0,15523.0,280,Fillmore,Berkeley,1552318009,18009   15523  280 ; Fillmore to Berkeley
 1305,18009.0,15516.0,129,Fillmore,24th St Mission,1551618009,18009   15516  129 ; Fillmore to 24th St Mission
 1306,18009.0,15529.0,346,Fillmore,Hayward,1552918009,18009   15529  346 ; Fillmore to Hayward
@@ -1312,7 +1312,7 @@
 1310,18009.0,15000.0,710,Fillmore,Oakland International Airport,1500018009,18009   15000  710 ; Fillmore to Oakland International Airport
 1311,18009.0,15524.0,283,Fillmore,North Berkeley,1552418009,18009   15524  283 ; Fillmore to North Berkeley
 1312,18009.0,15508.0,245,Fillmore,19th St Oakland,1550818009,18009   15508  245 ; Fillmore to 19th St Oakland
-1313,18009.0,18003.0,234,Fillmore,Alameda,1800318009,18009   18003  234 ; Fillmore to Alameda
+1313,18009.0,18003.0,231,Fillmore,Alameda,1800318009,18009   18003  231 ; Fillmore to Alameda
 1314,18009.0,15538.0,420,Fillmore,Dublin/ Pleasanton,1553818009,18009   15538  420 ; Fillmore to Dublin/ Pleasanton
 1315,18009.0,15531.0,311,Fillmore,San Leandro,1553118009,18009   15531  311 ; Fillmore to San Leandro
 1316,18009.0,15543.0,311,Fillmore,Millbrae,1554318009,18009   15543  311 ; Fillmore to Millbrae
@@ -1485,7 +1485,7 @@
 1483,15000.0,15540.0,748,Oakland International Airport,South San Francisco,1500015540,15000   15540  748 ; Oakland International Airport to South San Francisco
 1484,15000.0,15542.0,1077,Oakland International Airport,SFO,1500015542,15000   15542  1077 ; Oakland International Airport to SFO
 1485,18007.0,15536.0,441,Union Square,Pittsburg/ Bay Point,1553618007,18007   15536  441 ; Union Square to Pittsburg/ Bay Point
-1486,18007.0,15539.0,245,Union Square,Colma,1553918007,18007   15539  245 ; Union Square to Colma
+1486,18007.0,15539.0,234,Union Square,Colma,1553918007,18007   15539  234 ; Union Square to Colma
 1487,18007.0,18008.0,129,Union Square,Van Ness,1800718008,18007   18008  129 ; Union Square to Van Ness
 1488,18007.0,15544.0,448,Union Square,Warm Springs,1554418007,18007   15544  448 ; Union Square to Warm Springs
 1489,18007.0,15520.0,315,Union Square,Richmond,1552018007,18007   15520  315 ; Union Square to Richmond
@@ -1504,8 +1504,8 @@
 1502,18007.0,15512.0,129,Union Square,Montgomery,1551218007,18007   15512  129 ; Union Square to Montgomery
 1503,18007.0,15528.0,360,Union Square,South Hayward,1552818007,18007   15528  360 ; Union Square to South Hayward
 1504,18007.0,15515.0,129,Union Square,16th St Mission,1551518007,18007   15515  129 ; Union Square to 16th St Mission
-1505,18007.0,15541.0,290,Union Square,San Bruno,1554118007,18007   15541  290 ; Union Square to San Bruno
-1506,18007.0,15519.0,220,Union Square,Daly City,1551918007,18007   15519  220 ; Union Square to Daly City
+1505,18007.0,15541.0,280,Union Square,San Bruno,1554118007,18007   15541  280 ; Union Square to San Bruno
+1506,18007.0,15519.0,206,Union Square,Daly City,1551918007,18007   15519  206 ; Union Square to Daly City
 1507,18007.0,15535.0,406,Union Square,North Concord,1553518007,18007   15535  406 ; Union Square to North Concord
 1508,18007.0,14202.0,458,Union Square,Milpitas,1420218007,18007   14202  458 ; Union Square to Milpitas
 1509,18007.0,15534.0,231,Union Square,Lake Merritt,1553418007,18007   15534  231 ; Union Square to Lake Merritt
@@ -1520,13 +1520,13 @@
 1518,18007.0,15516.0,129,Union Square,24th St Mission,1551618007,18007   15516  129 ; Union Square to 24th St Mission
 1519,18007.0,15529.0,339,Union Square,Hayward,1552918007,18007   15529  339 ; Union Square to Hayward
 1520,18007.0,15522.0,290,Union Square,El Cerrito Plaza,1552218007,18007   15522  290 ; Union Square to El Cerrito Plaza
-1521,18007.0,15518.0,133,Union Square,Balboa Park,1551818007,18007   15518  133 ; Union Square to Balboa Park
+1521,18007.0,15518.0,129,Union Square,Balboa Park,1551818007,18007   15518  129 ; Union Square to Balboa Park
 1522,18007.0,15549.0,434,Union Square,Irvington,1554918007,18007   15549  434 ; Union Square to Irvington
 1523,18007.0,15000.0,703,Union Square,Oakland International Airport,1500018007,18007   15000  703 ; Union Square to Oakland International Airport
 1524,18007.0,15524.0,280,Union Square,North Berkeley,1552418007,18007   15524  280 ; Union Square to North Berkeley
 1525,18007.0,18006.0,129,Union Square,3rd and Mission,1800618007,18007   18006  129 ; Union Square to 3rd and Mission
 1526,18007.0,15508.0,231,Union Square,19th St Oakland,1550818007,18007   15508  231 ; Union Square to 19th St Oakland
-1527,18007.0,18003.0,217,Union Square,Alameda,1800318007,18007   18003  217 ; Union Square to Alameda
+1527,18007.0,18003.0,231,Union Square,Alameda,1800318007,18007   18003  231 ; Union Square to Alameda
 1528,18007.0,15538.0,416,Union Square,Dublin/ Pleasanton,1553818007,18007   15538  416 ; Union Square to Dublin/ Pleasanton
 1529,18007.0,15531.0,304,Union Square,San Leandro,1553118007,18007   15531  304 ; Union Square to San Leandro
 1530,18007.0,15543.0,315,Union Square,Millbrae,1554318007,18007   15543  315 ; Union Square to Millbrae
@@ -1543,8 +1543,8 @@
 1541,18007.0,15505.0,308,Union Square,Orinda,1550518007,18007   15505  308 ; Union Square to Orinda
 1542,18007.0,18005.0,129,Union Square,Ballpark ,1800518007,18007   18005  129 ; Union Square to Ballpark 
 1543,18007.0,15532.0,283,Union Square,Coliseum/Oakland Airport,1553218007,18007   15532  283 ; Union Square to Coliseum/Oakland Airport
-1544,18007.0,15540.0,266,Union Square,South San Francisco,1554018007,18007   15540  266 ; Union Square to South San Francisco
-1545,18007.0,15542.0,605,Union Square,SFO,1554218007,18007   15542  605 ; Union Square to SFO
+1544,18007.0,15540.0,252,Union Square,South San Francisco,1554018007,18007   15540  252 ; Union Square to South San Francisco
+1545,18007.0,15542.0,602,Union Square,SFO,1554218007,18007   15542  602 ; Union Square to SFO
 1546,15524.0,15508.0,133,North Berkeley,19th St Oakland,1550815524,15524   15508  133 ; North Berkeley to 19th St Oakland
 1547,15524.0,15538.0,322,North Berkeley,Dublin/ Pleasanton,1552415538,15524   15538  322 ; North Berkeley to Dublin/ Pleasanton
 1548,15524.0,15531.0,213,North Berkeley,San Leandro,1552415531,15524   15531  213 ; North Berkeley to San Leandro
@@ -1564,7 +1564,7 @@
 1562,15524.0,15540.0,322,North Berkeley,South San Francisco,1552415540,15524   15540  322 ; North Berkeley to South San Francisco
 1563,15524.0,15542.0,651,North Berkeley,SFO,1552415542,15524   15542  651 ; North Berkeley to SFO
 1564,18006.0,15536.0,441,3rd and Mission,Pittsburg/ Bay Point,1553618006,18006   15536  441 ; 3rd and Mission to Pittsburg/ Bay Point
-1565,18006.0,15539.0,245,3rd and Mission,Colma,1553918006,18006   15539  245 ; 3rd and Mission to Colma
+1565,18006.0,15539.0,234,3rd and Mission,Colma,1553918006,18006   15539  234 ; 3rd and Mission to Colma
 1566,18006.0,18008.0,129,3rd and Mission,Van Ness,1800618008,18006   18008  129 ; 3rd and Mission to Van Ness
 1567,18006.0,15544.0,448,3rd and Mission,Warm Springs,1554418006,18006   15544  448 ; 3rd and Mission to Warm Springs
 1568,18006.0,15520.0,315,3rd and Mission,Richmond,1552018006,18006   15520  315 ; 3rd and Mission to Richmond
@@ -1583,8 +1583,8 @@
 1581,18006.0,15512.0,129,3rd and Mission,Montgomery,1551218006,18006   15512  129 ; 3rd and Mission to Montgomery
 1582,18006.0,15528.0,360,3rd and Mission,South Hayward,1552818006,18006   15528  360 ; 3rd and Mission to South Hayward
 1583,18006.0,15515.0,129,3rd and Mission,16th St Mission,1551518006,18006   15515  129 ; 3rd and Mission to 16th St Mission
-1584,18006.0,15541.0,290,3rd and Mission,San Bruno,1554118006,18006   15541  290 ; 3rd and Mission to San Bruno
-1585,18006.0,15519.0,220,3rd and Mission,Daly City,1551918006,18006   15519  220 ; 3rd and Mission to Daly City
+1584,18006.0,15541.0,280,3rd and Mission,San Bruno,1554118006,18006   15541  280 ; 3rd and Mission to San Bruno
+1585,18006.0,15519.0,206,3rd and Mission,Daly City,1551918006,18006   15519  206 ; 3rd and Mission to Daly City
 1586,18006.0,15535.0,406,3rd and Mission,North Concord,1553518006,18006   15535  406 ; 3rd and Mission to North Concord
 1587,18006.0,14202.0,458,3rd and Mission,Milpitas,1420218006,18006   14202  458 ; 3rd and Mission to Milpitas
 1588,18006.0,15534.0,231,3rd and Mission,Lake Merritt,1553418006,18006   15534  231 ; 3rd and Mission to Lake Merritt
@@ -1599,12 +1599,12 @@
 1597,18006.0,15516.0,129,3rd and Mission,24th St Mission,1551618006,18006   15516  129 ; 3rd and Mission to 24th St Mission
 1598,18006.0,15529.0,339,3rd and Mission,Hayward,1552918006,18006   15529  339 ; 3rd and Mission to Hayward
 1599,18006.0,15522.0,290,3rd and Mission,El Cerrito Plaza,1552218006,18006   15522  290 ; 3rd and Mission to El Cerrito Plaza
-1600,18006.0,15518.0,133,3rd and Mission,Balboa Park,1551818006,18006   15518  133 ; 3rd and Mission to Balboa Park
+1600,18006.0,15518.0,129,3rd and Mission,Balboa Park,1551818006,18006   15518  129 ; 3rd and Mission to Balboa Park
 1601,18006.0,15549.0,434,3rd and Mission,Irvington,1554918006,18006   15549  434 ; 3rd and Mission to Irvington
 1602,18006.0,15000.0,703,3rd and Mission,Oakland International Airport,1500018006,18006   15000  703 ; 3rd and Mission to Oakland International Airport
 1603,18006.0,15524.0,280,3rd and Mission,North Berkeley,1552418006,18006   15524  280 ; 3rd and Mission to North Berkeley
 1604,18006.0,15508.0,231,3rd and Mission,19th St Oakland,1550818006,18006   15508  231 ; 3rd and Mission to 19th St Oakland
-1605,18006.0,18003.0,217,3rd and Mission,Alameda,1800318006,18006   18003  217 ; 3rd and Mission to Alameda
+1605,18006.0,18003.0,231,3rd and Mission,Alameda,1800318006,18006   18003  231 ; 3rd and Mission to Alameda
 1606,18006.0,15538.0,416,3rd and Mission,Dublin/ Pleasanton,1553818006,18006   15538  416 ; 3rd and Mission to Dublin/ Pleasanton
 1607,18006.0,15531.0,304,3rd and Mission,San Leandro,1553118006,18006   15531  304 ; 3rd and Mission to San Leandro
 1608,18006.0,15543.0,315,3rd and Mission,Millbrae,1554318006,18006   15543  315 ; 3rd and Mission to Millbrae
@@ -1621,8 +1621,8 @@
 1619,18006.0,15505.0,308,3rd and Mission,Orinda,1550518006,18006   15505  308 ; 3rd and Mission to Orinda
 1620,18006.0,18005.0,129,3rd and Mission,Ballpark ,1800518006,18006   18005  129 ; 3rd and Mission to Ballpark 
 1621,18006.0,15532.0,283,3rd and Mission,Coliseum/Oakland Airport,1553218006,18006   15532  283 ; 3rd and Mission to Coliseum/Oakland Airport
-1622,18006.0,15540.0,266,3rd and Mission,South San Francisco,1554018006,18006   15540  266 ; 3rd and Mission to South San Francisco
-1623,18006.0,15542.0,605,3rd and Mission,SFO,1554218006,18006   15542  605 ; 3rd and Mission to SFO
+1622,18006.0,15540.0,252,3rd and Mission,South San Francisco,1554018006,18006   15540  252 ; 3rd and Mission to South San Francisco
+1623,18006.0,15542.0,602,3rd and Mission,SFO,1554218006,18006   15542  602 ; 3rd and Mission to SFO
 1624,15508.0,15538.0,297,19th St Oakland,Dublin/ Pleasanton,1550815538,15508   15538  297 ; 19th St Oakland to Dublin/ Pleasanton
 1625,15508.0,15531.0,168,19th St Oakland,San Leandro,1550815531,15508   15531  168 ; 19th St Oakland to San Leandro
 1626,15508.0,15543.0,336,19th St Oakland,Millbrae,1550815543,15508   15543  336 ; 19th St Oakland to Millbrae
@@ -1829,7 +1829,7 @@
 1827,15505.0,15540.0,350,Orinda,South San Francisco,1550515540,15505   15540  350 ; Orinda to South San Francisco
 1828,15505.0,15542.0,678,Orinda,SFO,1550515542,15505   15542  678 ; Orinda to SFO
 1829,18005.0,15536.0,441,Ballpark ,Pittsburg/ Bay Point,1553618005,18005   15536  441 ; Ballpark  to Pittsburg/ Bay Point
-1830,18005.0,15539.0,245,Ballpark ,Colma,1553918005,18005   15539  245 ; Ballpark  to Colma
+1830,18005.0,15539.0,234,Ballpark ,Colma,1553918005,18005   15539  234 ; Ballpark  to Colma
 1831,18005.0,18008.0,129,Ballpark ,Van Ness,1800518008,18005   18008  129 ; Ballpark  to Van Ness
 1832,18005.0,15544.0,448,Ballpark ,Warm Springs,1554418005,18005   15544  448 ; Ballpark  to Warm Springs
 1833,18005.0,15520.0,315,Ballpark ,Richmond,1552018005,18005   15520  315 ; Ballpark  to Richmond
@@ -1848,8 +1848,8 @@
 1846,18005.0,15512.0,129,Ballpark ,Montgomery,1551218005,18005   15512  129 ; Ballpark  to Montgomery
 1847,18005.0,15528.0,360,Ballpark ,South Hayward,1552818005,18005   15528  360 ; Ballpark  to South Hayward
 1848,18005.0,15515.0,129,Ballpark ,16th St Mission,1551518005,18005   15515  129 ; Ballpark  to 16th St Mission
-1849,18005.0,15541.0,290,Ballpark ,San Bruno,1554118005,18005   15541  290 ; Ballpark  to San Bruno
-1850,18005.0,15519.0,220,Ballpark ,Daly City,1551918005,18005   15519  220 ; Ballpark  to Daly City
+1849,18005.0,15541.0,280,Ballpark ,San Bruno,1554118005,18005   15541  280 ; Ballpark  to San Bruno
+1850,18005.0,15519.0,206,Ballpark ,Daly City,1551918005,18005   15519  206 ; Ballpark  to Daly City
 1851,18005.0,15535.0,406,Ballpark ,North Concord,1553518005,18005   15535  406 ; Ballpark  to North Concord
 1852,18005.0,14202.0,458,Ballpark ,Milpitas,1420218005,18005   14202  458 ; Ballpark  to Milpitas
 1853,18005.0,15534.0,231,Ballpark ,Lake Merritt,1553418005,18005   15534  231 ; Ballpark  to Lake Merritt
@@ -1864,12 +1864,12 @@
 1862,18005.0,15516.0,129,Ballpark ,24th St Mission,1551618005,18005   15516  129 ; Ballpark  to 24th St Mission
 1863,18005.0,15529.0,339,Ballpark ,Hayward,1552918005,18005   15529  339 ; Ballpark  to Hayward
 1864,18005.0,15522.0,290,Ballpark ,El Cerrito Plaza,1552218005,18005   15522  290 ; Ballpark  to El Cerrito Plaza
-1865,18005.0,15518.0,133,Ballpark ,Balboa Park,1551818005,18005   15518  133 ; Ballpark  to Balboa Park
+1865,18005.0,15518.0,129,Ballpark ,Balboa Park,1551818005,18005   15518  129 ; Ballpark  to Balboa Park
 1866,18005.0,15549.0,434,Ballpark ,Irvington,1554918005,18005   15549  434 ; Ballpark  to Irvington
 1867,18005.0,15000.0,703,Ballpark ,Oakland International Airport,1500018005,18005   15000  703 ; Ballpark  to Oakland International Airport
 1868,18005.0,15524.0,280,Ballpark ,North Berkeley,1552418005,18005   15524  280 ; Ballpark  to North Berkeley
 1869,18005.0,15508.0,231,Ballpark ,19th St Oakland,1550818005,18005   15508  231 ; Ballpark  to 19th St Oakland
-1870,18005.0,18003.0,217,Ballpark ,Alameda,1800318005,18005   18003  217 ; Ballpark  to Alameda
+1870,18005.0,18003.0,231,Ballpark ,Alameda,1800318005,18005   18003  231 ; Ballpark  to Alameda
 1871,18005.0,15538.0,416,Ballpark ,Dublin/ Pleasanton,1553818005,18005   15538  416 ; Ballpark  to Dublin/ Pleasanton
 1872,18005.0,15531.0,304,Ballpark ,San Leandro,1553118005,18005   15531  304 ; Ballpark  to San Leandro
 1873,18005.0,15543.0,315,Ballpark ,Millbrae,1554318005,18005   15543  315 ; Ballpark  to Millbrae
@@ -1885,8 +1885,8 @@
 1883,18005.0,15511.0,129,Ballpark ,Embarcadero,1551118005,18005   15511  129 ; Ballpark  to Embarcadero
 1884,18005.0,15505.0,308,Ballpark ,Orinda,1550518005,18005   15505  308 ; Ballpark  to Orinda
 1885,18005.0,15532.0,283,Ballpark ,Coliseum/Oakland Airport,1553218005,18005   15532  283 ; Ballpark  to Coliseum/Oakland Airport
-1886,18005.0,15540.0,266,Ballpark ,South San Francisco,1554018005,18005   15540  266 ; Ballpark  to South San Francisco
-1887,18005.0,15542.0,605,Ballpark ,SFO,1554218005,18005   15542  605 ; Ballpark  to SFO
+1886,18005.0,15540.0,252,Ballpark ,South San Francisco,1554018005,18005   15540  252 ; Ballpark  to South San Francisco
+1887,18005.0,15542.0,602,Ballpark ,SFO,1554218005,18005   15542  602 ; Ballpark  to SFO
 1888,15532.0,15540.0,329,Coliseum/Oakland Airport,South San Francisco,1553215540,15532   15540  329 ; Coliseum/Oakland Airport to South San Francisco
 1889,15532.0,15542.0,658,Coliseum/Oakland Airport,SFO,1553215542,15532   15542  658 ; Coliseum/Oakland Airport to SFO
 1890,15540.0,15542.0,518,South San Francisco,SFO,1554015542,15540   15542  518 ; South San Francisco to SFO
