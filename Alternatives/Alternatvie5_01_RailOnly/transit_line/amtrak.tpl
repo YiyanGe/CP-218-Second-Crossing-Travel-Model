@@ -45,23 +45,23 @@ LINE NAME="131_CAP1SB", LONGNAME=AMTRAK_Capitol_Fairfield_Vacaville_to_SanJose, 
 
 ; Amtrak Capitol from Coliseum to Fairfield/Vacaville
 ;
-LINE NAME="131_CAP2NB", LONGNAME=AMTRAK_Capitol_Coliseum_to_Fairfield_Vacaville, ONEWAY=T, MODE=131, OWNER="6", COLOR=10, 
-     FREQ[1]=0,
-     FREQ[2]=0,
-     FREQ[3]=0,
-     FREQ[4]=0,
-     FREQ[5]=0,
-     N=14647, 14648, 14649, 14650, 14651, -14652, 14654, 14655, 14656 
+;LINE NAME="131_CAP2NB", LONGNAME=AMTRAK_Capitol_Coliseum_to_Fairfield_Vacaville, ONEWAY=T, MODE=131, OWNER="6", COLOR=10,
+;     FREQ[1]=0,
+;     FREQ[2]=0,
+;     FREQ[3]=0,
+;     FREQ[4]=0,
+;     FREQ[5]=0,
+;     N=14647, 14648, 14649, 14650, 14651, -14652, 14654, 14655, 14656
 
 ; Amtrak Capitol from Fairfield/Vacaville to Coliseum
 ;
-LINE NAME="131_CAP2SB", LONGNAME=AMTRAK_Capitol_Fairfield_Vacaville_to_Coliseum, ONEWAY=T, MODE=131, OWNER="6", COLOR=10, 
-     FREQ[1]=0,
-     FREQ[2]=0,
-     FREQ[3]=0,
-     FREQ[4]=0,
-     FREQ[5]=0,
-     N=14656, 14655, 14654, -14652, 14651, 14650, 14649, 14648, 14647
+;LINE NAME="131_CAP2SB", LONGNAME=AMTRAK_Capitol_Fairfield_Vacaville_to_Coliseum, ONEWAY=T, MODE=131, OWNER="6", COLOR=10,
+;     FREQ[1]=0,
+;     FREQ[2]=0,
+;     FREQ[3]=0,
+;     FREQ[4]=0,
+;     FREQ[5]=0,
+;     N=14656, 14655, 14654, -14652, 14651, 14650, 14649, 14648, 14647
 
 ; Amtrak Capitol from Jack London Square to Fairfield/Vacaville
 ;
