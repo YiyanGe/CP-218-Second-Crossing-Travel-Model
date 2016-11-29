@@ -58,10 +58,10 @@ LINK NODES= 13672,13677, TIME = 9, DIST=720,     ONEWAY=NO, MODES=130 ; Menlo Pa
 LINK NODES= 13672,13670, TIME = 6, DIST=350,   ONEWAY=NO, MODES=130 ; Menlo Park - Redwood City
 
 ; extensions
-LINK NODES= 13654, 18023,TIME = 3.0, DIST=800, ONEWAY=NO, MODES=130 ; Transbay Terminal - 14th
-LINK NODES= 18023, 18020,TIME = 3.0, DIST=280, ONEWAY=NO, MODES=130 ; 14th - Emeryville
+LINK NODES= 13654, 18023,TIME = 10.0, DIST=800, ONEWAY=NO, MODES=130 ; Transbay Terminal - 14th
+LINK NODES= 18023, 18020,TIME = 3.5, DIST=280, ONEWAY=NO, MODES=130 ; 14th - Emeryville
 LINK NODES= 18020, 18021,TIME = 3.0, DIST=200, ONEWAY=NO, MODES=130 ; Emeryville - Berkeley
-LINK NODES= 13654, 13655,TIME = 3.0, DIST=560, ONEWAY=NO, MODES=130 ; Berkeley - Richmond
+LINK NODES= 18021, 18022,TIME = 7.0, DIST=560, ONEWAY=NO, MODES=130 ; Berkeley - Richmond
 
 ;****************************************************************
 ;*    Northbound Trains         
